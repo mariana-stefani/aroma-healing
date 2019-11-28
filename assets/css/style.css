@@ -1,8 +1,25 @@
 .callout {
-    background-image: url("../images/szmigiel-unsplash-min.jpg");
+    height: 100vh;
+    background: url("../images/oil.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 100vh;
 }
 
+max-width: 100%;
+    height: 100vh;
+    background: url("../images/oil.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    zoom: 100% !important;
