@@ -1,6 +1,6 @@
-.callout-container{
+.callout-container {
     height: 100vh;
-    background: url("../images/oil.jpg") no-repeat bottom right fixed;
+    background: url("../images/lavender.jpeg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -9,4 +9,8 @@
     align-items: center;
     justify-content: center;
     position: fixed;
+}
+
+.jumbotron {
+    background-color: transparent;
 }
