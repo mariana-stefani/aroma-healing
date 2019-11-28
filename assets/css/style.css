@@ -1,3 +1,8 @@
+body {
+    background-color: #D4C9EB
+    ;
+}
+
 .callout-container {
     height: 100vh;
     background: url("../images/lavender.jpeg") no-repeat center center fixed;
@@ -12,6 +17,14 @@
 
 .jumbotron {
     background-color: transparent;
+}
+
+.maps {
+    background-color: #fafafa;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 35px 70px;
+    margin-bottom: 10px;
 }
 
 /*----------mouse*/
@@ -52,3 +65,4 @@
         opacity: 0;
         transform: translateY(46px);
     }
+    /*----------maps*/
