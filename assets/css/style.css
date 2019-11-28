@@ -19,12 +19,18 @@ body {
     background-color: transparent;
 }
 
+/*----------Maps*/
+
 .maps {
     background-color: #fafafa;
     margin-top: 20px;
     border-radius: 20px;
     padding: 35px 70px;
     margin-bottom: 10px;
+}
+
+#country {
+    width: 100%;
 }
 
 /*----------mouse*/
