@@ -61,7 +61,7 @@
             <div class="row">
                 <div class="col-6 my-3">
                     <div id="map">
-                        <label for="country">Choose a country</label>
+                        <!-- <label for="country">Choose a country</label>
                         <select id="country">
                             <optgroup label="Africa">
                                 <option value="mo">Morocco</option>
@@ -97,12 +97,8 @@
                                 <option value="au">Australia</option>
                                 <option value="nz">New Zealand</option>
                             </optgroup>
-                        </select>
-                        <script async defer
-                            src="https://maps.googleapis.com/maps/api/js?key=YAIzaSyB-fgYdHvv7rQM_sc00qZp0qyAReekS9Ik&callback=initMap">
-                            </script>
+                        </select> -->
                     </div>
-
                 </div>
                 <div class="col-6 my-3">
                     <div class="history">
@@ -114,9 +110,6 @@
     </div>
 
 
-
-
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -126,7 +119,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
         integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script>
+        <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"> </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIfdgJ0vQGGCM-AnUVm7kaCOPBGoUP6-g&callback=initMap"> </script>
+    <script src="assets/js/maps.js"></script>
 </body>
 
 </html>
