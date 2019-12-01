@@ -1,7 +1,8 @@
 body {
-    background-color: #D4C9EB
-    ;
+    background-color: #D4C9EB;
 }
+
+/* Callout */
 
 .callout-container {
     height: 100vh;
@@ -19,7 +20,7 @@ body {
     background-color: transparent;
 }
 
-/*----------Maps*/
+/* Maps */
 
 .maps {
     background-color: #fafafa;
@@ -38,7 +39,7 @@ body {
     width: 100%;
 }
 
-/*----------mouse*/
+/* Mouse */
 
 .scroll-down, .scroll-down:before {
     position: absolute;
