@@ -7,37 +7,156 @@ function initMap() {
         }
     });
 
-    var locations = [
+    var markerData = [
         //France
-        [48.864716, 2.349014],
-            //Brazil
-            [-15.793889, -47.882778],
-            //Egypt
-            [30.045916, 31.224291],
-            //China
-            [39.916668, 116.383331],
-            //India
-            [28.644800, 77.216721],
-            //Greece
-            [37.983810, 23.727539],
-            //Rome
-            [41.902782, 12.496366],
-            //Persia (Iran)
-            [35.715298, 51.404343]
-        ];
+        { lat: 48.864716, lng: 2.349014, zoom: 5, name: "France" },
+        //Brazil
+        { lat: -15.793889, lng: -47.882778, zoom: 5, name: "Brazil" },
+        //Egypt
+        { lat: 30.045916, lng: 31.224291, zoom: 5, name: "Egypt" },
+        //China
+        { lat: 39.916668, lng: 116.383331, zoom: 5, name: "China" },
+        //India
+        { lat: 28.644800, lng: 77.216721, zoom: 5, name: "India" }
 
-    for (var i = 0; i < locations.length; i++) {
-        var city = locations[i];
-        var marker = new google.maps.Marker({
-            position: { lat: city[0], lng: city[1] },
+    ];
+
+    markerData.forEach(function (data) {
+        var newmarker = new google.maps.Marker({
             map: map,
+            position: { lat: data.lat, lng: data.lng },
+            title: data.name
         });
-    }
+        jQuery("#selectlocation").append('<option value="' + [data.lat, data.lng, data.zoom].join('|') + '">' + data.name + '</option>');
+    });
+
+    google.maps.event.addDomListener(window, 'load', initMap);
+
+    jQuery(document).on('change', '#selectlocation', function () {
+        var latlngzoom = jQuery(this).val().split('|');
+        var newzoom = 1 * latlngzoom[2],
+            newlat = 1 * latlngzoom[0],
+            newlng = 1 * latlngzoom[1];
+        map.setZoom(newzoom);
+        map.setCenter({ lat: newlat, lng: newlng });
+    });
 }
 
-document.getElementById("brazil").addEventListener("click", function (){
-    document.getElementById("text").innerText = "Brazil é um lindo país";
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function initMap() {
+//     var map = new google.maps.Map(document.getElementById("map"), {
+//         zoom: 2,
+//         center: {
+//             lat: 9.072264,
+//             lng: 7.491302
+//         }
+//     });
+
+//     var locations = [
+//         //France
+//         [48.864716, 2.349014],
+//             //Brazil
+//             [-15.793889, -47.882778],
+//             //Egypt
+//             [30.045916, 31.224291],
+//             //China
+//             [39.916668, 116.383331],
+//             //India
+//             [28.644800, 77.216721],
+//             //Greece
+//             [37.983810, 23.727539],
+//             //Rome
+//             [41.902782, 12.496366],
+//             //Persia (Iran)
+//             [35.715298, 51.404343]
+//         ];
+
+//     for (var i = 0; i < locations.length; i++) {
+//         var city = locations[i];
+//         var marker = new google.maps.Marker({
+//             position: { lat: city[0], lng: city[1] },
+//             map: map,
+//         });
+//     }
+
+
+// }
+
+// document.getElementById("brazil").addEventListener("click", function (){
+//     document.getElementById("text-brazil").innerText = "Brazil é um lindo país";
+// });
 
 
 
