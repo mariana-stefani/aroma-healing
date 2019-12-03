@@ -9,7 +9,7 @@ function initMap() {
 
     var markerData = [
         //France
-        { lat: 48.864716, lng: 2.349014, zoom: 5, name: "France" },
+        { lat: 48.864716, lng: 2.349014, zoom: 5, name: "France", id:"#france" },
         //Brazil
         { lat: -15.793889, lng: -47.882778, zoom: 5, name: "Brazil" },
         //Egypt
