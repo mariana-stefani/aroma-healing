@@ -24,13 +24,11 @@ function initMap() {
     markerData.forEach(function (data) {
         var newmarker = new google.maps.Marker({
             map: map,
-            position: { lat: data.lat, lng: data.lng },
-            title: data.name
+            position: { lat: data.lat, lng: data.lng }
         });
+
         jQuery("#selectlocation").append('<option value="' + [data.lat, data.lng, data.zoom].join('|') + '">' + data.name + '</option>');
     });
-
-    google.maps.event.addDomListener(window, 'load', initMap);
 
     jQuery(document).on('change', '#selectlocation', function () {
         var latlngzoom = jQuery(this).val().split('|');
@@ -41,126 +39,6 @@ function initMap() {
         map.setCenter({ lat: newlat, lng: newlng });
     });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function initMap() {
-//     var map = new google.maps.Map(document.getElementById("map"), {
-//         zoom: 2,
-//         center: {
-//             lat: 9.072264,
-//             lng: 7.491302
-//         }
-//     });
-
-//     var locations = [
-//         //France
-//         [48.864716, 2.349014],
-//             //Brazil
-//             [-15.793889, -47.882778],
-//             //Egypt
-//             [30.045916, 31.224291],
-//             //China
-//             [39.916668, 116.383331],
-//             //India
-//             [28.644800, 77.216721],
-//             //Greece
-//             [37.983810, 23.727539],
-//             //Rome
-//             [41.902782, 12.496366],
-//             //Persia (Iran)
-//             [35.715298, 51.404343]
-//         ];
-
-//     for (var i = 0; i < locations.length; i++) {
-//         var city = locations[i];
-//         var marker = new google.maps.Marker({
-//             position: { lat: city[0], lng: city[1] },
-//             map: map,
-//         });
-//     }
-
-
-// }
-
-// document.getElementById("brazil").addEventListener("click", function (){
-//     document.getElementById("text-brazil").innerText = "Brazil é um lindo país";
-// });
-
-
-
-
 
 
 
