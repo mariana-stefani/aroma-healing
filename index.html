@@ -55,40 +55,32 @@
         <div class="scroll-down"> </div>
     </div>
 
-    <!-- Maps Container -->
+    <!-- Maps and history Container -->
     <div class="container-fluid maps-container">
         <section class="maps">
             <div class="row">
                 <div class="col-12 my-3">
-                    <h2>Aromatherapy Around the World</h2>
+                    <h2>Essential Oils Around the World</h2>
                 </div>
             </div>
 
-            <!-- Google Searchbox -->
+
+            <!-- Maps -->
             <div class="row">
-                <div class="col-12 map-canvas">
-                    <div class="map-searchbox d-flex justify-content-center">
-                        <input id="search" class="controls" type="text" placeholder="Aromatherapy Courses">
-                    </div>
-                </div>
-            </div>
-            <!-- Map -->
-            <div class="row">
-                <div class="col-12 my-3">
+                <div class="col-lg-8 col-sm-12 my-3">
                     <div id="map">
+
                     </div>
                 </div>
-            
+                <!-- History -->
+                <div class="col-lg-4 col-sm-12 my-3">
+                    <select id="selectlocation">
+                        <option value="10|10|3">Select a Country</option>
+                    </select>
+                </div>
             </div>
         </section>
     </div>
-
-    <script>
-        function initMap() {
-            var input = document.getElementById("search");
-            var autocomplete = new google.maps.places.Autocomplete(input);
-        }
-    </script>
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -107,7 +99,7 @@
 
     <!-- Google API Key -->
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIfdgJ0vQGGCM-AnUVm7kaCOPBGoUP6-g&libraries=places&callback=initMap"> </script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIfdgJ0vQGGCM-AnUVm7kaCOPBGoUP6-g&callback=initMap"> </script>
 
     <!-- Maps.js-->
     <script src="assets/js/maps.js"></script>
