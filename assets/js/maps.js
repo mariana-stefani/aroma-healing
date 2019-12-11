@@ -42,13 +42,13 @@ function initMap() {
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     map = new google.maps.Map(document.getElementById("map"), mapOptions);
-    countries.forEach(function(data){
+    countries.forEach(function (data) {
         var countriesMarker = new google.maps.Marker({
             map: map,
-            position: {lat: data.lat, lng: data.lng},
+            position: { lat: data.lat, lng: data.lng },
             title: data.name
         });
-        jQuery("#selectlocation").append('<option value="'+[data.lat, data.lng,data.zoom].join('|')+'">'+data.name+'</option>');
+        jQuery("#selectlocation").append('<option value="' + [data.lat, data.lng, data.zoom].join('|') + '">' + data.name + '</option>');
     });
 
 
@@ -75,21 +75,21 @@ function initMap() {
     }
 };
 
-// google.maps.event.addDomListener(window, 'load', initialize);
-
-	jQuery(document).on('change','#selectlocation',function() {
-		var latlngzoom = jQuery(this).val().split('|');
-		var newzoom = 1*latlngzoom[2],
-		newlat = 1*latlngzoom[0],
-		newlng = 1*latlngzoom[1];
-		map.setZoom(newzoom);
-		map.setCenter({lat:newlat, lng:newlng});
-	});
+// Created drop-down menu for each Country
+// Code from http://bl.ocks.org/amenadiel/353e4d04d4b2923c438e
+jQuery(document).on('change', '#selectlocation', function () {
+    var latlngzoom = jQuery(this).val().split('|');
+    var newzoom = 1 * latlngzoom[2],
+        newlat = 1 * latlngzoom[0],
+        newlng = 1 * latlngzoom[1];
+    map.setZoom(newzoom);
+    map.setCenter({ lat: newlat, lng: newlng });
+});
 
 
 //France
     //Courses
-    
+
 //    
 //     {
 //         // icon: icon,
