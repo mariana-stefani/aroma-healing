@@ -31,12 +31,13 @@ body {
 }
 
 #map {
-    height: 400px;
+    height: 600px;
     width: 100%;
 }
 
-#country {
-    width: 100%;
+.maps-container {
+    align-items: center;
+    justify-content: center;
 }
 
 /* Mouse */
