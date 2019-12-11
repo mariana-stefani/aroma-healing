@@ -23,6 +23,13 @@ var markers = [
 
 ];
 
+var countries = [
+    { lat: 48.857497, lng: 2.347628, zoom: 5, name: "France" },
+    //Brazil
+    { lat: -15.793889, lng: -47.882778, zoom: 5, name: "Brazil" }
+];
+
+var map;
 
 
 function initMap() {
@@ -34,7 +41,15 @@ function initMap() {
         zoom: 2,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    countries.forEach(function(data){
+        var countriesMarker = new google.maps.Marker({
+            map: map,
+            position: {lat: data.lat, lng: data.lng},
+            title: data.name
+        });
+        jQuery("#selectlocation").append('<option value="'+[data.lat, data.lng,data.zoom].join('|')+'">'+data.name+'</option>');
+    });
 
 
     //Tutorial from https://www.aspsnippets.com/Articles/Google-Maps-API-V3-Add-multiple-markers-with-InfoWindow-to-Google-Map.aspx
@@ -56,20 +71,20 @@ function initMap() {
                 infowindow.setContent(markersData.description);
                 infowindow.open(map, marker);
             });
-
-            //Code from http://bl.ocks.org/amenadiel/353e4d04d4b2923c438e
-            jQuery("#selectlocation").append('<option value="' + [markersData.lat, markersData.lng, markersData.zoom].join('|') + '">' + markersData.title + '</option>');
-            jQuery(document).on('change', '#selectlocation', function () {
-                var latlngzoom = jQuery(this).val().split('|');
-                var newzoom = 1 * latlngzoom[2],
-                    newlat = 1 * latlngzoom[0],
-                    newlng = 1 * latlngzoom[1];
-                map.setZoom(newzoom);
-                map.setCenter({ lat: newlat, lng: newlng });
-            });
         })(marker, markersData);
     }
 };
+
+// google.maps.event.addDomListener(window, 'load', initialize);
+
+	jQuery(document).on('change','#selectlocation',function() {
+		var latlngzoom = jQuery(this).val().split('|');
+		var newzoom = 1*latlngzoom[2],
+		newlat = 1*latlngzoom[0],
+		newlng = 1*latlngzoom[1];
+		map.setZoom(newzoom);
+		map.setCenter({lat:newlat, lng:newlng});
+	});
 
 
 //France
