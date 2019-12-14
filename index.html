@@ -82,9 +82,9 @@
     </section>
 
     <!-- Recipes-->
-    <section id="recipes-link" class="container-fluid containers">
+    <section id="recipes-link" class="container-fluid containers recipe-container">
         <div class="row">
-            <div class="col-12 my-3 text-center">
+            <div class="col-12 my-3">
                 <h2 class="mb-4">Recipes for every situation</h2>
                 <p class="p-maps">With the use of essential oils we can help aliviate many of most common afflictions.<br/>Click on the buttons to find the perfect recipe.<br /></p>
                 <div class="recipe-text">
@@ -93,16 +93,20 @@
                 </div>
             </div>
 
-            <!-- Moods button-->
-            <div class="col-12">
-                <button onclick="update(data1)">Variable 1</button>
-                <button onclick="update(data2)">Variable 2</button>
-            </div>
+          
 
             <!-- D3 Graph -->
-            <!-- Tutorial from: https://www.d3-graph-gallery.com/graph/barplot_button_data_hard.html-->
-            <div class="row">
+            <div class="row col-4">
                 <div id="recipe-graph"></div>
+            </div>
+              <!-- Moods button-->
+              <div class="col-8">
+                <button onclick="update(data1)">Variable 1</button>
+                <button onclick="update(data2)">Variable 2</button>
+                <button onclick="update(data1)">Variable 1</button>
+                <button onclick="update(data2)">Variable 2</button>
+                <button onclick="update(data1)">Variable 1</button>
+                <button onclick="update(data2)">Variable 2</button>
             </div>
     </section>
 
