@@ -40,6 +40,17 @@ body {
     justify-content: center;
 }
 
+.style-map {
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.style-select {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
 /* Mouse */
 
 .scroll-down, .scroll-down:before {

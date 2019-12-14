@@ -56,31 +56,30 @@
     </div>
 
     <!-- Maps and history Container -->
-    <div class="container-fluid maps-container">
-        <section class="maps">
-            <div class="row">
-                <div class="col-12 my-3">
-                    <h2>Aromatherapy Courses Around the World</h2>
-                </div>
+    <section class="container-fluid maps-container maps">
+        <div class="row">
+            <div class="col-12 my-3 text-center">
+                <h2 class="mb-4">Aromatherapy Courses Around the World</h2>
+                <h5>To find the your nearest aromathepy course, please select the country on the drop-down menu.</h5>
             </div>
+        </div>
 
+        <div class="col-4 my-3 style-select">
+            <select id="selectlocation">
+                <option value="10|10|3">Select a Country</option>
+            </select>
+        </div>
 
-            <!-- Maps -->
-            <div class="row ">
-                <div class="col-lg-8 col-sm-12 my-3">
-                    <div id="map">
-
-                    </div>
-                </div>
-                <!-- History -->
-                <div class="col-lg-4 col-sm-12 my-3">
-                    <select id="selectlocation">
-                        <option value="10|10|3">Select a Country</option>
-                    </select>
-                </div>
+        <!-- Maps -->
+        <div class="row style-map">
+            <div class="col-12 ">
+                <div id="map"></div>
             </div>
-        </section>
-    </div>
+            <!-- History -->
+           
+        </div>
+    </section>
+
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
