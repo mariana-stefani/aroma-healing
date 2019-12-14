@@ -89,18 +89,17 @@
                 <p class="p-maps">With the use of essential oils we can help aliviate many of most common afflictions.
                     Click on the buttons to find the perfect recipe.</h5>
             </div>
-            <!-- Drop-down menu -->
-            <div class="col-3 my-3 style-maps">
-                <select class="style-select" id="selectlocation">
-                    <option value="10|10|3">Select a Country</option>
-                </select>
+
+            <!-- Moods button-->
+            <div class="col-12">
+                <button onclick="update(data1)">Variable 1</button>
+                <button onclick="update(data2)">Variable 2</button>                
             </div>
 
-            <!-- Maps -->
-            <div class="row style-maps">
-                <div class="col-12 ">
-                    <div id="map"></div>
-                </div>
+            <!-- D3 Graph -->
+            <!-- Tutorial from: https://www.d3-graph-gallery.com/graph/barplot_button_data_hard.html-->
+            <div class="row">
+                <div id="my_dataviz"></div>
             </div>
     </section>
 
@@ -137,9 +136,9 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
 
     <!-- Popper-->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 
     <!-- Google API Key -->
     <script async defer
