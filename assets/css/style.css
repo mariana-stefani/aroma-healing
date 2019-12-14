@@ -3,7 +3,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-/* Callout */
+/*-- Callout --*/
 
 .callout-container {
     height: 100vh;
@@ -21,7 +21,7 @@ body {
     background-color: transparent;
 }
 
-/* Maps */
+/*-- Maps --*/
 
 .maps {
     background-color: #fafafa;
@@ -66,7 +66,7 @@ body {
     margin-top: 20px;
 }
 
-/* Mouse */
+/*-- Mouse --*/
 
 .scroll-down, .scroll-down:before {
     position: absolute;
@@ -104,4 +104,49 @@ body {
         opacity: 0;
         transform: translateY(46px);
     }
+}
+
+/*-- Footer --*/
+footer {
+    min-height: 150px;
+    text-align: center;
+    margin: 0;
+}
+
+#footer-details {
+    margin: 25px;
+}
+
+.social-links {
+    padding: 15px 0;
+}
+
+.social-links li a i {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 7px;
+    background: #f2eef9;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+footer h5 {
+    font-weight: bold;
 }
