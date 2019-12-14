@@ -21,24 +21,23 @@ body {
     background-color: transparent;
 }
 
-/*-- Maps --*/
+/*-- Containers --*/
 
-.maps {
+.containers {
     background-color: #fafafa;
-    margin: 25px 0px;
     border-radius: 20px;
-    padding: 35px 35px;
-    
+    padding: 20px 30px 50px 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    width: 95%;
 }
+
+/*-- Maps --*/
 
 #map {
     height: 600px;
     width: 100%;
-}
-
-.maps-container {
-    align-items: center;
-    justify-content: center;
 }
 
 .style-maps {
@@ -107,10 +106,12 @@ body {
 }
 
 /*-- Footer --*/
+
 footer {
     min-height: 150px;
     text-align: center;
-    margin: 0;
+    background-color: #A790D6;
+    padding: 5px 0px 5px 0px;
 }
 
 #footer-details {
@@ -133,6 +134,7 @@ footer {
     font-size: 20px;
     line-height: 7px;
     background: #f2eef9;
+    color: #6E47BA;
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
@@ -145,8 +147,4 @@ footer {
 
 a:link {
     text-decoration: none;
-}
-
-footer h5 {
-    font-weight: bold;
 }

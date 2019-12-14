@@ -35,8 +35,8 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
                 <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-                <li class="nav-item mr-2"><a class="nav-link" href="">Courses</a></li>
-                <li class="nav-item mr-2"><a class="nav-link" href="recipes.html">Recipes</a></li>
+                <li class="nav-item mr-2"><a class="nav-link" href="index.html#maps-link">Courses</a></li>
+                <li class="nav-item mr-2"><a class="nav-link" href="index.html#recipes-link">Recipes</a></li>
             </ul>
         </div>
     </nav>
@@ -57,7 +57,7 @@
     </div>
 
     <!-- Maps and Drop-Down container-->
-    <section class="container-fluid maps-container maps">
+    <section id="maps-link" class="container-fluid containers">
         <div class="row">
             <div class="col-12 my-3 text-center">
                 <h2 class="mb-4">Aromatherapy Courses Around the World</h2>
@@ -67,6 +67,28 @@
         </div>
 
         <!-- Drop-down menu -->
+        <div class="col-lg-3 col-md-4 my-3 style-maps">
+            <select class="style-select" id="selectlocation">
+                <option value="10|10|3">Select a Country</option>
+            </select>
+        </div>
+
+        <!-- Maps -->
+        <div class="row style-maps">
+            <div class="col-12 ">
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes-->
+    <section id="recipes-link" class="container-fluid containers">
+        <div class="row">
+            <div class="col-12 my-3 text-center">
+                <h2 class="mb-4">Recipes for every situation</h2>
+                <p class="p-maps">With the use of essential oils we can help aliviate many of most common afflictions. Click on the buttons to find the perfect recipe.</h5>
+            </div>
+            <!-- Drop-down menu -->
         <div class="col-3 my-3 style-maps">
             <select class="style-select" id="selectlocation">
                 <option value="10|10|3">Select a Country</option>
@@ -87,7 +109,7 @@
 
             <div class="col-12">
                 <h4>Follow Us</h4>
-                <ul class="list-inline social-links mt-2 mb-2">
+                <ul class="list-inline social-links ">
                     <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
                     <li class="list-inline-item"><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
                     <li class="list-inline-item"><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
