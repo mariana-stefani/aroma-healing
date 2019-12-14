@@ -40,7 +40,7 @@ body {
     justify-content: center;
 }
 
-.style-map {
+.style-maps {
     justify-content: center;
     margin-right: 20px;
     margin-left: 20px;
@@ -49,6 +49,22 @@ body {
 .style-select {
     margin-right: 20px;
     margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .style-maps {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    
+    .style-select {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+.p-maps{
+    font-size: 20px;
 }
 
 /* Mouse */
