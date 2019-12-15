@@ -5,46 +5,46 @@ const data1 = [
     { group: "Frankincense", value: 2 }
 ];
 
-var data2 = [
+const data2 = [
     { group: "Patchouli", value: 4 },
     { group: "Orange", value: 4 },
     { group: "Ylang Ylang", value: 2 },
     { group: "Bergamot", value: 1}
 ];
 
-var data3 = [
+const data3 = [
     { group: "Peppermint", value: 3 },
     { group: "Rosemary", value: 3 },
     { group: "Orange", value: 3 }
 ];
 
-var data4 = [
+const data4 = [
     { group: "Copaiba", value: 4 },
     { group: "Lavender", value: 3 },
     { group: "Blue Tansy", value: 3 },
     { group: "Frankincense", value: 2 }
 ];
 
-var data5 = [
+const data5 = [
     { group: "Ylang Ylang", value: 3 },
     { group: "Lavender", value: 2 },
     { group: "Bergamot", value: 2 }
 ];
 
-var data6 = [
-    { group: "Peppermint", value: 4 },
-    { group: "Eucalyptus", value: 3 },
-    { group: "Lemon", value: 2 },
-    { group: "Lavender", value: 2 }
-];
+// var data6 = [
+//     { group: "Peppermint", value: 4 },
+//     { group: "Eucalyptus", value: 3 },
+//     { group: "Lemon", value: 2 },
+//     { group: "Lavender", value: 2 }
+// ];
 
 // set the dimensions and margins of the graph
-var margin = { top: 90, right: 10, bottom: 20, left: 60 },
-    width = 500 - margin.left - margin.right,
+let margin = { top: 90, right: 10, bottom: 20, left: 60 },
+    width = 320 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
 
-var svg = d3.select("#recipe-graph").append("svg")
+let svg = d3.select("#recipe-graph").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -52,16 +52,16 @@ var svg = d3.select("#recipe-graph").append("svg")
         "translate(" + margin.left + "," + margin.top + ")");
 
 // Initialize the X axis
-var x = d3.scaleBand()
+let x = d3.scaleBand()
     .range([0, width])
     .padding(0.2);
-var xAxis = svg.append("g")
+let xAxis = svg.append("g")
     .attr("transform", "translate(0," + height + ")")
 
 // Initialize the Y axis
-var y = d3.scaleLinear()
+let y = d3.scaleLinear()
     .range([height, 0]);
-var yAxis = svg.append("g")
+let yAxis = svg.append("g")
     .attr("class", "myYaxis")
 
 
@@ -77,7 +77,7 @@ function update(data) {
     yAxis.transition().duration(1000).call(d3.axisLeft(y));
 
     // Create the u variable
-    var u = svg.selectAll("rect")
+    let u = svg.selectAll("rect")
         .data(data)
 
     u

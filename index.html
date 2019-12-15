@@ -26,7 +26,7 @@
 
 <body>
     <!-- Navbar -->
-    <a name="top"></a>
+    <div id="top"></div>
     <nav class="navbar navbar-light navbar-expand-sm">
         <a href="/" class="navbar-brand">Aroma Healing</a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -36,8 +36,8 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
                 <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-                <li class="nav-item mr-2"><a class="nav-link" href="index.html#maps-link">Courses</a></li>
-                <li class="nav-item mr-2"><a class="nav-link" href="index.html#recipes-link">Recipes</a></li>
+                <li class="nav-item mr-2"><a class="nav-link" href="#maps-link">Courses</a></li>
+                <li class="nav-item mr-2"><a class="nav-link" href="#recipes-link">Recipes</a></li>
             </ul>
         </div>
     </nav>
@@ -83,7 +83,7 @@
         </div>
         <div class="row">
             <div class="col-12 ">
-                <a href="#top" class="btn button-top" role="button">Back to top</a>
+                <div name="#top" class="btn button-top" role="button">Back to top</div>
             </div>
         </div>
     </section>
@@ -111,8 +111,8 @@
                 <button onclick="update(data2)">Be Happy</button>
                 <button onclick="update(data3)">Stay Focused</button>
                 <button onclick="update(data4)">Positive Energy</button>
-                <button onclick="update(data5)">Positive Energy</button>
-                <button onclick="update(data6)">Sinus Relief</button>
+                <button onclick="update(data5)">Peaceful Sleep</button>
+                <!-- <button onclick="update(data6)">Sinus Relief</button> -->
             </div>
         </div>
         <!-- D3 Graph -->
