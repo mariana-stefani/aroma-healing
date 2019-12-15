@@ -1,101 +1,63 @@
-//Tutorial from: https://www.d3-graph-gallery.com/graph/barplot_button_data_hard.html-->
-const data1 = [
-    { group: "Cedarwood", value: 6 },
-    { group: "Lavender", value: 4 },
-    { group: "Frankincense", value: 2 }
-];
-
-const data2 = [
-    { group: "Patchouli", value: 4 },
-    { group: "Orange", value: 4 },
-    { group: "Ylang Ylang", value: 2 },
-    { group: "Bergamot", value: 1 }
-];
-
-const data3 = [
-    { group: "Peppermint", value: 3 },
-    { group: "Rosemary", value: 3 },
-    { group: "Orange", value: 3 }
-];
-
-const data4 = [
-    { group: "Copaiba", value: 4 },
-    { group: "Lavender", value: 3 },
-    { group: "Blue Tansy", value: 3 },
-    { group: "Frankincense", value: 2 }
-];
-
-const data5 = [
-    { group: "Ylang Ylang", value: 3 },
-    { group: "Lavender", value: 2 },
-    { group: "Bergamot", value: 2 }
-];
-
-// var data6 = [
-//     { group: "Peppermint", value: 4 },
-//     { group: "Eucalyptus", value: 3 },
-//     { group: "Lemon", value: 2 },
-//     { group: "Lavender", value: 2 }
-// ];
-
+//Tutorial from: https://www.d3-graph-gallery.com/graph/pie_changeData.html
 // set the dimensions and margins of the graph
-let margin = { top: 90, right: 10, bottom: 20, left: 60 },
-    width = 320 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+var width = 320
+    height = 450
+    margin = 40
 
+// The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+var radius = Math.min(width, height) / 2 - margin
 
-let svg = d3.select("#recipe-graph").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform",
-        "translate(" + margin.left + "," + margin.top + ")");
+// append the svg object to the div called 'my_dataviz'
+var svg = d3.select("#recipe-graph")
+  .append("svg")
+    .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-// Initialize the X axis
-let x = d3.scaleBand()
-    .range([0, width])
-    .padding(0.2);
-let xAxis = svg.append("g")
-    .attr("transform", "translate(0," + height + ")")
+// create 2 data_set
+var data1 = {a: 9, b: 20, c:30, d:8, e:12}
+var data2 = {a: 6, b: 16, c:20, d:14, e:19, f:12}
 
-// Initialize the Y axis
-let y = d3.scaleLinear()
-    .range([height, 0]);
-let yAxis = svg.append("g")
-    .attr("class", "myYaxis")
-
+// set the color scale
+var color = d3.scaleOrdinal()
+  .domain(["a", "b", "c", "d", "e", "f"])
+  .range(d3.schemeDark2);
 
 // A function that create / update the plot for a given variable:
 function update(data) {
 
-    // Update the X axis
-    x.domain(data.map(function (d) { return d.group; }))
-    xAxis.call(d3.axisBottom(x))
+  // Compute the position of each group on the pie:
+  var pie = d3.pie()
+    .value(function(d) {return d.value; })
+    .sort(function(a, b) { console.log(a) ; return d3.ascending(a.key, b.key);} ) // This make sure that group order remains the same in the pie chart
+  var data_ready = pie(d3.entries(data))
 
-    // Update the Y axis
-    y.domain([0, d3.max(data, function (d) { return d.value })]);
-    yAxis.transition().duration(1000).call(d3.axisLeft(y));
+  // map to data
+  var u = svg.selectAll("path")
+    .data(data_ready)
 
-    // Create the u variable
-    let u = svg.selectAll("rect")
-        .data(data)
+  // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+  u
+    .enter()
+    .append('path')
+    .merge(u)
+    .transition()
+    .duration(1000)
+    .attr('d', d3.arc()
+      .innerRadius(0)
+      .outerRadius(radius)
+    )
+    .attr('fill', function(d){ return(color(d.data.key)) })
+    .attr("stroke", "white")
+    .style("stroke-width", "2px")
+    .style("opacity", 1)
 
-    u
-        .enter()
-        .append("rect") // Add a new rect for each new elements
-        .merge(u) // get the already existing elements as well
-        .transition() // and apply changes to all of them
-        .duration(1000)
-        .attr("x", function (d) { return x(d.group); })
-        .attr("y", function (d) { return y(d.value); })
-        .attr("width", x.bandwidth())
-        .attr("height", function (d) { return height - y(d.value); })
-        .attr("fill", "#CEDDC9")
+  // remove the group that is not present anymore
+  u
+    .exit()
+    .remove()
 
-    // If less group in the new dataset, I delete the ones not in use anymore
-    u
-        .exit()
-        .remove()
 }
 
 // Initialize the plot with the first dataset
