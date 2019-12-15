@@ -12,17 +12,15 @@ var data2 = [
 ];
 
 var data3 = [
-    { group: "A", value: 19 },
-    { group: "B", value: 1 },
-    { group: "C", value: 3 },
-    { group: "D", value: 6 }
+    { group: "Peppermint", value: 3 },
+    { group: "Rosemary", value: 3 },
+    { group: "Orange", value: 3 }
 ];
 
 var data4 = [
-    { group: "A", value: 15 },
-    { group: "B", value: 12 },
-    { group: "C", value: 4 },
-    { group: "D", value: 9 }
+    { group: "Bergamot", value: 3 },
+    { group: "Orange", value: 12 },
+    { group: "C", value: 4 }
 ];
 
 var data5 = [
