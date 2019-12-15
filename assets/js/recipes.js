@@ -28,7 +28,7 @@ var data4 = [
 var data5 = [
     { group: "Ylang Ylang", value: 3 },
     { group: "Lavender", value: 2 },
-    { group: "Bergamot, value: 2 }
+    { group: "Bergamot", value: 2 }
 ];
 
 var data6 = [
@@ -40,7 +40,7 @@ var data6 = [
 
 // set the dimensions and margins of the graph
 var margin = { top: 90, right: 10, bottom: 20, left: 60 },
-    width = 700 - margin.left - margin.right,
+    width = 500 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
 
