@@ -6,10 +6,9 @@ var data1 = [
 ];
 
 var data2 = [
-    { group: "A", value: 7 },
-    { group: "B", value: 1 },
-    { group: "C", value: 20 },
-    { group: "D", value: 10 }
+    { group: "Lime", value: 2 },
+    { group: "Peppermint", value: 2 },
+    { group: "Orange", value: 2 }
 ];
 
 var data3 = [
