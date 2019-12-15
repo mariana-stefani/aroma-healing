@@ -107,21 +107,23 @@
                     which essential oil should be used.<br /> Mix the amount of drops in 10ml of your chosen carrier
                     oil and use it in a diffuser or in a spray bottle.</p>
             </div>
-            <div class="col-6 recipe-buttons">
-                <button onclick="selectCategory('Cedarwood: 6 drops <br/> Lavender: 4 drops <br/> Frankincense: 2 drops', 'recipe-instruction')">Stress Relief</button>
-                <button onclick="selectCategory('Patchouli: 4 drops <br/> Orange: 4 drops <br/> Ylang Ylang: 2 drops <br/> Bergamot: 1 drops', 'recipe-instruction')">Be Happy</button>
-                <button onclick="selectCategory('Peppermint: 3 drops <br/> Rosemary: 3 drops <br/> Orange: 3 drops', 'recipe-instruction')">Stay Focused</button>
-                <button onclick="selectCategory('Copaiba: 4 drops <br/> Lavender: 3 drops <br/> Blue Tansy: 3 drops <br/> Frankincense: 2 drops', 'recipe-instruction')">Positive Energy</button>
-                <button onclick="selectCategory('Ylang Ylang: 3 drops <br/> Lavender: 2 drops <br/> Bergamot: 2 drops', 'recipe-instruction')">Peaceful Sleep</button>
+            <div class="col recipe-buttons">
+                <button onclick="selectCategory('Cedarwood: 6 drops <br/> Lavender: 4 drops <br/> Frankincense: 2 drops', 'recipeInst-text')">Stress Relief</button>
+                <button onclick="selectCategory('Patchouli: 4 drops <br/> Orange: 4 drops <br/> Ylang Ylang: 2 drops <br/> Bergamot: 1 drops', 'recipeInst-text')">Be Happy</button>
+                <button onclick="selectCategory('Peppermint: 3 drops <br/> Rosemary: 3 drops <br/> Orange: 3 drops', 'recipeInst-text')">Stay Focused</button>
+                <button onclick="selectCategory('Copaiba: 4 drops <br/> Lavender: 3 drops <br/> Blue Tansy: 3 drops <br/> Frankincense: 2 drops', 'recipeInst-text')">Positive Energy</button>
+                <button onclick="selectCategory('Ylang Ylang: 3 drops <br/> Lavender: 2 drops <br/> Bergamot: 2 drops', 'recipeInst-text')">Peaceful Sleep</button>
             </div>
         </div>
+
+
         <!-- D3 Graph -->
-        <div class="row">
-            <div class="col-6">
+        <div class="row justify-content-around">
+            <div class="col-4">
                 <div id="recipe-graph"></div>
             </div>
-            <div class="col graph-container">
-                <div id="recipe-instruction"></div>
+            <div class="col-3 recipeInst-container">
+                <div id="recipeInst-text"></div>
             </div>
         </div>
         <div class="row">

@@ -91,14 +91,19 @@ html {
 }
 
 .recipe-container {
+    position: relative;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
-#recipe-instruction {
-    margin-top: 50px;
+#recipeInst-text {
     font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 #recipe-graph {}
@@ -121,12 +126,12 @@ button {
     margin: 60px 20px 20px 20px;
 }
 
-.graph-container {
-    background-color: lightpink;
-    height: 225px;
-    width: 150px !important;
-    margin-top: 50px;
-    margin-right: 10px;    
+.recipeInst-container {
+    background-color:#f2eef9;
+    height: 200px;
+    margin-top: 120px;
+    margin-right: 70px;
+    border-radius: 4%;    
 }
 
 /*-- Mouse --*/
