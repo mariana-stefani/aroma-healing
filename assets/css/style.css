@@ -6,6 +6,10 @@ body {
 h2, h5 {
     color: #6E47BA;
 }
+
+nav {
+    background-color: #F6F9EF;
+}
 /*-- Callout --*/
 
 .callout-container {
@@ -81,13 +85,17 @@ justify-content: center;
 }
 
 #recipe-graph {
-    align-items: center;
-justify-content: center;
+    
 }
 
 .recipe-buttons {
     margin: 100px 50px 0px 0px;
 }
+
+button {
+    background-color:#E4DBF2;
+}
+
 
 
 /*-- Mouse --*/
@@ -167,7 +175,7 @@ footer {
 }
 
 .social-links li a i:hover {
-    background: white;
+    background:#D5E4B6;
 }
 
 a:link {
