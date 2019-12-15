@@ -9,7 +9,7 @@ const data2 = [
     { group: "Patchouli", value: 4 },
     { group: "Orange", value: 4 },
     { group: "Ylang Ylang", value: 2 },
-    { group: "Bergamot", value: 1}
+    { group: "Bergamot", value: 1 }
 ];
 
 const data3 = [
@@ -100,3 +100,10 @@ function update(data) {
 
 // Initialize the plot with the first dataset
 update(data1)
+
+
+//Change Recipe according to button selected
+function selectCategory(category, results) {
+    var postResults = document.getElementById(results);
+    postResults.innerHTML = category;
+  }

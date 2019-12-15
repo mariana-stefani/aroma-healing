@@ -66,9 +66,10 @@ html {
 .style-select {
     position: absolute;
     top: 8px;
-    width: 30%;
-    background-color: #f2eef9;
+    width: 20%;
+    background-color: #D4C9EB;
     padding: 5px;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -95,6 +96,11 @@ html {
     justify-content: center;
 }
 
+#recipe-instruction {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
 #recipe-graph {}
 
 .recipe-buttons {
@@ -113,6 +119,14 @@ button {
     border-color: #B2C9AA;
     float: right;
     margin: 60px 20px 20px 20px;
+}
+
+.graph-container {
+    background-color: lightpink;
+    height: 225px;
+    width: 150px !important;
+    margin-top: 50px;
+    margin-right: 10px;    
 }
 
 /*-- Mouse --*/
