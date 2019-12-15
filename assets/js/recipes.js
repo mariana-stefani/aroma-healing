@@ -6,9 +6,10 @@ var data1 = [
 ];
 
 var data2 = [
-    { group: "Lime", value: 2 },
-    { group: "Peppermint", value: 2 },
-    { group: "Orange", value: 2 }
+    { group: "Patchouli", value: 4 },
+    { group: "Orange", value: 4 },
+    { group: "Ylang Ylang", value: 2 },
+    { group: "Bergamot", value: 1}
 ];
 
 var data3 = [
@@ -18,20 +19,23 @@ var data3 = [
 ];
 
 var data4 = [
-    { group: "Bergamot", value: 3 },
-    { group: "Orange", value: 3 },
-    { group: "Eucalyptus", value: 2 }
+    { group: "Copaiba", value: 4 },
+    { group: "Lavender", value: 3 },
+    { group: "Blue Tansy", value: 3 },
+    { group: "Frankincense", value: 2 }
 ];
 
 var data5 = [
-    { group: "Lavender", value: 3 },
-    { group: "Cedarwood", value: 3 }
+    { group: "Ylang Ylang", value: 3 },
+    { group: "Lavender", value: 2 },
+    { group: "Bergamot, value: 2 }
 ];
 
 var data6 = [
+    { group: "Peppermint", value: 4 },
     { group: "Eucalyptus", value: 3 },
-    { group: "Tea Tree", value: 3 },
-    { group: "Peppermint", value: 2 }
+    { group: "Lemon", value: 2 },
+    { group: "Lavender", value: 2 }
 ];
 
 // set the dimensions and margins of the graph
