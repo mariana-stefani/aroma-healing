@@ -24,15 +24,14 @@ var data4 = [
 ];
 
 var data5 = [
-    { group: "A", value: 20 },
-    { group: "B", value: 13 }
+    { group: "Lavender", value: 3 },
+    { group: "Cedarwood", value: 3 }
 ];
 
 var data6 = [
-    { group: "A", value: 17 },
-    { group: "B", value: 4 },
-    { group: "C", value: 14 },
-    { group: "D", value: 6 }
+    { group: "Eucalyptus", value: 3 },
+    { group: "Tea Tree", value: 3 },
+    { group: "Peppermint", value: 2 }
 ];
 
 // set the dimensions and margins of the graph
