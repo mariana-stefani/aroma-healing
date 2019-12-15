@@ -1,4 +1,4 @@
-var markers = [
+const markers = [
     {
         "title": 'France',
         "lat": '43.583627',
@@ -23,17 +23,17 @@ var markers = [
 
 ];
 
-var countries = [
+const countries = [
     { lat: 48.857497, lng: 2.347628, zoom: 5, name: "France" },
     //Brazil
     { lat: -15.793889, lng: -47.882778, zoom: 5, name: "Brazil" }
 ];
 
-var map;
+let map;
 
 
 function initMap() {
-    var mapOptions = {
+    const mapOptions = {
         center: {
             lat: 9.072264,
             lng: 7.491302
@@ -43,7 +43,7 @@ function initMap() {
     };
     map = new google.maps.Map(document.getElementById("map"), mapOptions);
     countries.forEach(function (data) {
-        var countriesMarker = new google.maps.Marker({
+        let countriesMarker = new google.maps.Marker({
             map: map,
             position: { lat: data.lat, lng: data.lng },
             title: data.name
@@ -54,12 +54,12 @@ function initMap() {
 
     //Tutorial from https://www.aspsnippets.com/Articles/Google-Maps-API-V3-Add-multiple-markers-with-InfoWindow-to-Google-Map.aspx
     //Created infoWindow 
-    var infowindow = new google.maps.InfoWindow();
+    let infowindow = new google.maps.InfoWindow();
 
-    for (var i = 0; i < markers.length; i++) {
-        var markersData = markers[i];
-        var coords = new google.maps.LatLng(markersData.lat, markersData.lng);
-        var marker = new google.maps.Marker({
+    for (const i = 0; i < markers.length; i++) {
+        let markersData = markers[i];
+        let coords = new google.maps.LatLng(markersData.lat, markersData.lng);
+        let marker = new google.maps.Marker({
             position: coords,
             map: map,
             title: markersData.title
@@ -78,8 +78,8 @@ function initMap() {
 // Created drop-down menu for each Country
 // Code from http://bl.ocks.org/amenadiel/353e4d04d4b2923c438e
 jQuery(document).on('change', '#selectlocation', function () {
-    var latlngzoom = jQuery(this).val().split('|');
-    var newzoom = 1 * latlngzoom[2],
+    let latlngzoom = jQuery(this).val().split('|');
+    let newzoom = 1 * latlngzoom[2],
         newlat = 1 * latlngzoom[0],
         newlng = 1 * latlngzoom[1];
     map.setZoom(newzoom);
