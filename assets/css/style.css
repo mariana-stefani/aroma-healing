@@ -3,6 +3,9 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+h2, h5 {
+    color: #6E47BA;
+}
 /*-- Callout --*/
 
 .callout-container {
@@ -68,7 +71,7 @@ body {
 /*-- Recipes --*/
 
 .recipe-text {
-margin: 55px 0px 30px 10px;
+margin: 55px 0px 0px 30px;
 }
 
 .recipe-container {
@@ -82,9 +85,10 @@ justify-content: center;
 justify-content: center;
 }
 
-/* .recipe-buttons {
-    margin-left: 30px;;
-} */
+.recipe-buttons {
+    margin: 100px 50px 0px 0px;
+}
+
 
 /*-- Mouse --*/
 

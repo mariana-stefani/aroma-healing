@@ -14,7 +14,7 @@ var data2 = [
 
 // set the dimensions and margins of the graph
 var margin = { top: 90, right: 10, bottom: 20, left: 60 },
-    width = 800 - margin.left - margin.right,
+    width = 700 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
 

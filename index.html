@@ -86,21 +86,20 @@
         <div class="row">
             <div class="col-12 my-3">
                 <h2 class="mb-4">Recipes for every situation</h2>
-                <p class="p-maps">With the use of essential oils we can help aliviate many of most common afflictions.<br/>Click on the buttons to find the perfect recipe.<br /></p>
-                <div class="recipe-text">
-                    <h5><strong>To create the perfect blend:</strong></h5>
-                    <p>Essential oil blends should be used with a carrier oil. We recommend argan oil, but you can also use x, y or z. <br/> The vertical bar shows the amount of drops and the horizontal bar shows which essential oil should be used.<br/> Mix the amount of drops in 100ml of your chosen carrier oil.</p>
-                </div>
+                <p class="p-maps">With the use of essential oils we can help aliviate many of most common
+                    afflictions.<br />Click on the buttons to find the perfect recipe.<br /></p>
             </div>
-
-          
-
-            <!-- D3 Graph -->
-            <div class="row col-4">
-                <div id="recipe-graph"></div>
+        </div>
+        <!-- Moods button-->
+        <div class="row">
+            <div class="col recipe-text">
+                <h5><strong>To create the perfect blend:</strong></h5>
+                <p>Essential oil blends should be used with a carrier oil. We recommend argan oil, but you can also
+                    use x, y or z. <br /> The vertical bar shows the amount of drops and the horizontal bar shows
+                    which essential oil should be used.<br /> Mix the amount of drops in 100ml of your chosen
+                    carrier oil.</p>
             </div>
-              <!-- Moods button-->
-              <div class="col-8">
+            <div class="col recipe-buttons">
                 <button onclick="update(data1)">Variable 1</button>
                 <button onclick="update(data2)">Variable 2</button>
                 <button onclick="update(data1)">Variable 1</button>
@@ -108,10 +107,19 @@
                 <button onclick="update(data1)">Variable 1</button>
                 <button onclick="update(data2)">Variable 2</button>
             </div>
+        </div>
+        <!-- D3 Graph -->
+        <div class="row">
+            <div class="col-12">
+                
+                    <div id="recipe-graph"></div>
+                
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer class="container-fluid">
+    <footer class=" container-fluid">
         <div id="footer-details" class="row">
 
             <div class="col-12">
@@ -119,10 +127,12 @@
                 <ul class="list-inline social-links ">
                     <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-square"
                                 aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    </li>
                     <li class="list-inline-item"><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                     </li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </li>
                 </ul>
             </div>
         </div>
