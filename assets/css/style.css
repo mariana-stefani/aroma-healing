@@ -57,15 +57,17 @@ html {
 }
 
 .style-maps {
+    position: relative;
     justify-content: center;
     margin-right: 20px;
     margin-left: 20px;
 }
 
 .style-select {
+    position: absolute;
+    top: 8px;
+    width: 30%;
     background-color: #f2eef9;
-    width: 100%;
-    max-width: 100%;
     padding: 5px;
 }
 
@@ -102,6 +104,7 @@ html {
 button {
     background-color: #E4DBF2;
     width: 150px;
+    margin: 2px 1px;
 }
 
 .button-top {
