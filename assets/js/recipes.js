@@ -19,15 +19,13 @@ var data3 = [
 
 var data4 = [
     { group: "Bergamot", value: 3 },
-    { group: "Orange", value: 12 },
-    { group: "C", value: 4 }
+    { group: "Orange", value: 3 },
+    { group: "Eucalyptus", value: 2 }
 ];
 
 var data5 = [
     { group: "A", value: 20 },
-    { group: "B", value: 13 },
-    { group: "C", value: 5 },
-    { group: "D", value: 18 }
+    { group: "B", value: 13 }
 ];
 
 var data6 = [
