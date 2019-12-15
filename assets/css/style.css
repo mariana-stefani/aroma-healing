@@ -99,6 +99,7 @@ button {
 
 
 /*-- Mouse --*/
+/*-- Code from: https://codemyui.com/scroll-icon-animation/ --*/
 
 .scroll-down, .scroll-down:before {
     position: absolute;

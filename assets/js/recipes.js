@@ -12,6 +12,34 @@ var data2 = [
     { group: "D", value: 10 }
 ];
 
+var data3 = [
+    { group: "A", value: 19 },
+    { group: "B", value: 1 },
+    { group: "C", value: 3 },
+    { group: "D", value: 6 }
+];
+
+var data4 = [
+    { group: "A", value: 15 },
+    { group: "B", value: 12 },
+    { group: "C", value: 4 },
+    { group: "D", value: 9 }
+];
+
+var data5 = [
+    { group: "A", value: 20 },
+    { group: "B", value: 13 },
+    { group: "C", value: 5 },
+    { group: "D", value: 18 }
+];
+
+var data6 = [
+    { group: "A", value: 17 },
+    { group: "B", value: 4 },
+    { group: "C", value: 14 },
+    { group: "D", value: 6 }
+];
+
 // set the dimensions and margins of the graph
 var margin = { top: 90, right: 10, bottom: 20, left: 60 },
     width = 700 - margin.left - margin.right,
