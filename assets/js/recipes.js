@@ -1,5 +1,5 @@
 //Tutorial from: https://www.d3-graph-gallery.com/graph/barplot_button_data_hard.html-->
-var data1 = [
+const data1 = [
     { group: "Cedarwood", value: 6 },
     { group: "Lavender", value: 4 },
     { group: "Frankincense", value: 2 }
