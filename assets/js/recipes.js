@@ -24,10 +24,16 @@ var data3 = {a: 52.9, e:47.1} //woody, citrus
 var data4 = {b: 56.2, c: 43.8} //floral, resinous
 var data5 = {b: 82.6, e: 17.4} //floral, citrus
 
+//cores
+//woody: #66c2a5
+//floral: #fd8d62
+//resinous: #8ea0cc
+//citrus: #a7d955
+
 // set the color scale
 var color = d3.scaleOrdinal()
   .domain(["a", "b", "c", "d", "e", "f"])
-  .range(d3.schemeSet3);
+  .range(d3.schemeSet2);
 
 // A function that create / update the plot for a given variable:
 function update(data) {

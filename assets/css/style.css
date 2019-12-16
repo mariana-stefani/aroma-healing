@@ -152,23 +152,27 @@ button {
     font-size: 18px;
     position: absolute;
     top: 53%;
-    left: 50%;
+    left: 48%;
     margin-right: -15%;
     transform: translate(-50%, -50%)
 }
 
 .recipeInst-container {
     background-color: #f2eef9;
-    height: 250px;
-    margin-top: 80px;
+    height: 320px;
+    margin-top: 120px;
     margin-left: 70px;
     border-radius: 4%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #A790D6;
 }
 
 @media screen and (max-width: 992px) {
     .recipeInst-container {
         margin-left: 0px;
         width: 200px !important;
+        margin-top: 70px;
     }
 }
 
@@ -191,6 +195,10 @@ svg {
     }
 }
 
+#recipe-graph {
+    margin-top: 40px;
+}
+
 /*-- Pie Chart/ Aromatic profile Legend --*/
 
 .legend {
@@ -208,7 +216,23 @@ svg {
     border-radius: 10%;
     font-size: 20px;
     line-height: 7px;
-    background: #f2eef9;
+}
+
+/*-- Aromatic profile legend colors --*/
+.woody {
+    background: #66c2a5;
+}
+
+.floral {
+    background: #fd8d62;
+}
+
+.resinous {
+    background: #8ea0cc;
+}
+
+.citrus {
+    background: #a7d955;
 }
 
 @media (max-width: 415px) and (min-width: 375px) {
