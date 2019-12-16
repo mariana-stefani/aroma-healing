@@ -16,8 +16,13 @@ var svg = d3.select("#recipe-graph")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 // create 2 data_set
-var data1 = {a:56.2, b: 25, c:18.8}
-var data2 = {c: 50, d: 31.2, e:18.8}
+//Aromatic Profile
+//a: woody, b: floral, c: resinous, d: herbaceus, e: citrus, f: minty, 
+var data1 = {a:56.2, b: 25, c:18.8} //woody, floral, resinous
+var data2 = {b: 31.2, d: 50, e:18.8} //floral, herbaceus, citus
+var data3 = {d: 33.3, e:11.1, f: 55.6} //herbaceous, citrus, minty
+var data4 = {b: 56.2, c: 43.8} //floral, resinous
+var data5 = {b: 82.6, e: 17.4} //floral, citrus
 
 // set the color scale
 var color = d3.scaleOrdinal()
