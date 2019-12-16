@@ -1,6 +1,6 @@
 //Tutorial from: https://www.d3-graph-gallery.com/graph/pie_changeData.html
 // set the dimensions and margins of the graph
-var width = 320
+var width = 300
     height = 400
     margin = 40
 

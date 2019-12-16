@@ -46,11 +46,10 @@ html {
     justify-content: center;
     margin-top: 30px;
     width: 95%;
-
 }
 
 @media screen and (max-width: 992px) {
-    .containers {      
+    .containers {
         padding: 30px;
     }
 }
@@ -62,11 +61,25 @@ html {
     width: 100%;
 }
 
+@media screen and (max-width: 576px) {
+    #map {
+        height: 400px;
+        margin-top: 25px;
+    }
+}
+
 .style-maps {
     position: relative;
     justify-content: center;
     margin-right: 20px;
     margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .style-maps {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
 }
 
 .style-select {
@@ -78,10 +91,10 @@ html {
     text-align: center;
 }
 
-@media (max-width: 768px) {
-    .style-maps {
-        margin-right: 0px;
-        margin-left: 0px;
+@media screen and (max-width: 992px) {
+    .style-select {
+        top: -40px;
+        width: 67%;
     }
 }
 
@@ -93,7 +106,7 @@ html {
 /*-- Recipes --*/
 
 .recipe-text {
-    margin-top:55px;
+    margin-top: 55px;
 }
 
 @media screen and (max-width: 992px) {
@@ -112,7 +125,7 @@ html {
 #recipe-graph {}
 
 .recipe-buttons {
-    margin: 100px 50px 0px 0px;
+    margin: 45px 50px 0px 0px;
 }
 
 @media screen and (max-width: 992px) {
@@ -132,30 +145,49 @@ button {
     background-color: #B2C9AA;
     border-color: #B2C9AA;
     float: right;
-    margin: 60px 20px 20px 20px;
+    margin: 10px 20px 0px 20px;
 }
 
 #recipeInst-text {
     font-size: 18px;
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 50%;
-    margin-right: -50%;
+    margin-right: -15%;
     transform: translate(-50%, -50%)
 }
 
 .recipeInst-container {
-    background-color:#f2eef9;
+    background-color: #f2eef9;
     height: 250px;
     margin-top: 80px;
-    margin-right: 70px;
-    border-radius: 4%;    
+    margin-left: 70px;
+    border-radius: 4%;
 }
 
 @media screen and (max-width: 992px) {
     .recipeInst-container {
-        margin-top: 0px;
-    margin-right: 0px;
+        margin-left: 0px;
+        width: 200px !important;
+    }
+}
+
+/*-- Recipe pie chart --*/
+
+svg {
+    max-height: 400px;
+    margin: 0 auto;
+    /* poor attempt at centering */
+    height: auto !important;
+    /* overrides inline */
+    width: 300px !important;
+    /* overrides inline */
+    display: block;
+}
+
+@media screen and (max-width: 320px) {
+    svg {
+        margin: 0px -24px;
     }
 }
 
@@ -176,6 +208,12 @@ button {
     box-shadow: inset 0 0 0 2px black;
     border-radius: 25px;
     bottom: 10px;
+}
+
+@media screen and (max-width: 320px) {
+    .scroll-down {
+        bottom: -45px;
+    }
 }
 
 .scroll-down:before {

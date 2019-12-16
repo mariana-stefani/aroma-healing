@@ -103,8 +103,8 @@
             <div class="col-sm-12 recipe-text">
                 <h5><strong>To create the perfect blend:</strong></h5>
                 <p>Essential oil blends should be used with a carrier oil. We recommend argan oil, but you can also use
-                    coconut oil. <br /> The vertical bar shows the amount of drops and the horizontal bar shows
-                    which essential oil should be used.<br /> Mix the amount of drops in 10ml of your chosen carrier
+                    coconut oil. <br /> Click on the buttons below to find the perfect blend.<br /> Mix the amount of
+                    drops in 10ml of your chosen carrier
                     oil and use it in a diffuser or in a spray bottle.</p>
             </div>
             <div class="col-sm-12 recipe-buttons">
@@ -129,14 +129,16 @@
 
         <!-- D3 Graph -->
         <div class="row justify-content-around">
-            <div class="col-lg-4 col-md-12">
+            <!-- Recipe Instructions Container-->
+            <div class="col-lg-3 col-md-6 recipeInst-container">
+                <div id="recipeInst-text">Click on the buttons above to find the perfect blend.</div>
+            </div>
+            <!-- D3 pie chart -->
+            <div class=" col-lg-4 col-md-12">
                 <div id="recipe-graph"></div>
             </div>
 
-            <!-- Recipe Instructions Container-->
-            <div class="col-lg-3 col-md-12 recipeInst-container">
-                <div id="recipeInst-text">Click on the buttons above to find the perfect blend.</div>
-            </div>
+
         </div>
 
         <!-- Button back to top-->
