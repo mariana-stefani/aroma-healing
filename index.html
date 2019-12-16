@@ -26,7 +26,6 @@
 
 <body>
     <!-- Navbar -->
-    <div id="top"></div>
     <nav class="navbar navbar-light navbar-expand-sm">
         <a href="/" class="navbar-brand">Aroma Healing</a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -84,7 +83,7 @@
         </div>
         <div class="row">
             <div class="col-12 ">
-                <div name="#top" class="btn button-top" role="button">Back to top</div>
+                <button onclick="backtoTop()" id="topBtn" title="Go to top">Back to Top</button>
             </div>
         </div>
     </section>
@@ -105,7 +104,8 @@
                 <p>Essential oil blends should be used with a carrier oil. We recommend argan oil, but you can also use
                     coconut oil. <br /> Click on the buttons below to find the perfect blend.<br /> Mix the amount of
                     drops in 10ml of your chosen carrier
-                    oil and use it in a diffuser or in a spray bottle.<br/> The pie chart below will show you the aroma profile of selected blend.</p>
+                    oil and use it in a diffuser or in a spray bottle.<br /> The pie chart below will show you the aroma
+                    profile of selected blend.</p>
             </div>
             <div class="col-sm-12 recipe-buttons">
                 <button
@@ -137,22 +137,14 @@
             <div class=" col-lg-4 col-md-12">
                 <div id="recipe-graph"></div>
                 <h5><strong>Aromatic Profile</strong></h5>
-                <p>The aromatic profile of each essential oil is unique and stirring. Every aroma interact with individual noses a little bit differently. This is the beauty and magic of smell.</p>
-                    <ul class="list-inline legend">
-                        <li class="list-inline-item woody"></li><span class="aromaticProf-text">Woody</span>
-                        <li class="list-inline-item floral"></li><span class="aromaticProf-text">Floral</span>
-                        <li class="list-inline-item resinous"></li><span class="aromaticProf-text">Resinous</span>
-                        <li class="list-inline-item citrus"></li><span class="aromaticProf-text">Citrus</span>
-                    </ul>
-            </div>
-
-
-        </div>
-
-        <!-- Button back to top-->
-        <div class="row">
-            <div class="col-12 ">
-                <a href="#top" class="btn button-top" role="button">Back to top</a>
+                <p>The aromatic profile of each essential oil is unique and stirring. Every aroma interact with
+                    individual noses a little bit differently. This is the beauty and magic of smell.</p>
+                <ul class="list-inline legend">
+                    <li class="list-inline-item woody"></li><span class="aromaticProf-text">Woody</span>
+                    <li class="list-inline-item floral"></li><span class="aromaticProf-text">Floral</span>
+                    <li class="list-inline-item resinous"></li><span class="aromaticProf-text">Resinous</span>
+                    <li class="list-inline-item citrus"></li><span class="aromaticProf-text">Citrus</span>
+                </ul>
             </div>
         </div>
     </section>
@@ -208,6 +200,9 @@
 
     <!-- Recipes.js-->
     <script src="assets/js/recipes.js"></script>
+
+    <!-- Script.js-->
+    <script src="assets/js/script.js"></script>
 
 
 </body>
