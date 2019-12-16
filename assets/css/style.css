@@ -175,7 +175,7 @@ button {
 /*-- Recipe pie chart --*/
 
 svg {
-    max-height: 400px;
+    max-height: 300px;
     margin: 0 auto;
     /* poor attempt at centering */
     height: auto !important;
@@ -190,6 +190,34 @@ svg {
         margin: 0px -24px;
     }
 }
+
+/*-- Pie Chart/ Aromatic profile Legend --*/
+
+.legend {
+    padding: 15px 0;
+}
+
+.legend li {
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    width: 45px;
+    height: 25px;
+    padding: 12px 0;
+    margin: 7px;
+    border-radius: 10%;
+    font-size: 20px;
+    line-height: 7px;
+    background: #f2eef9;
+}
+
+@media (max-width: 415px) and (min-width: 375px) {
+    .legend li {
+        margin: 5px 19px;
+    }
+}
+
+.aromaticProf-text {}
 
 /*-- Mouse --*/
 
