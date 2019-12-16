@@ -18,6 +18,11 @@ html {
     scroll-behavior: smooth;
 }
 
+p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
 /*-- Callout --*/
 
 .callout-container {
@@ -96,11 +101,6 @@ html {
         top: -40px;
         width: 67%;
     }
-}
-
-.p-maps {
-    font-size: 20px;
-    margin-top: 20px;
 }
 
 /*-- Recipes --*/
