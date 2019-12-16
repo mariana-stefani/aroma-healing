@@ -49,6 +49,12 @@ html {
 
 }
 
+@media screen and (max-width: 992px) {
+    .containers {      
+        padding: 30px;
+    }
+}
+
 /*-- Maps --*/
 
 #map {
@@ -87,7 +93,13 @@ html {
 /*-- Recipes --*/
 
 .recipe-text {
-    margin: 55px 0px 0px 30px;
+    margin-top:55px;
+}
+
+@media screen and (max-width: 992px) {
+    .recipe-text {
+        margin-top: 15px;
+    }
 }
 
 .recipe-container {
@@ -97,19 +109,16 @@ html {
     justify-content: center;
 }
 
-#recipeInst-text {
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-}
-
 #recipe-graph {}
 
 .recipe-buttons {
     margin: 100px 50px 0px 0px;
+}
+
+@media screen and (max-width: 992px) {
+    .recipe-buttons {
+        margin: 0;
+    }
 }
 
 button {
@@ -126,12 +135,28 @@ button {
     margin: 60px 20px 20px 20px;
 }
 
+#recipeInst-text {
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
 .recipeInst-container {
     background-color:#f2eef9;
-    height: 200px;
-    margin-top: 120px;
+    height: 250px;
+    margin-top: 80px;
     margin-right: 70px;
     border-radius: 4%;    
+}
+
+@media screen and (max-width: 992px) {
+    .recipeInst-container {
+        margin-top: 0px;
+    margin-right: 0px;
+    }
 }
 
 /*-- Mouse --*/

@@ -1,7 +1,7 @@
 //Tutorial from: https://www.d3-graph-gallery.com/graph/pie_changeData.html
 // set the dimensions and margins of the graph
 var width = 320
-    height = 450
+    height = 400
     margin = 40
 
 // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
