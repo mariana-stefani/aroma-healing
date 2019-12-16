@@ -56,7 +56,7 @@ function initMap() {
     //Created infoWindow 
     let infowindow = new google.maps.InfoWindow();
 
-    for (const i = 0; i < markers.length; i++) {
+    for (let i = 0; i < markers.length; i++) {
         let markersData = markers[i];
         let coords = new google.maps.LatLng(markersData.lat, markersData.lng);
         let marker = new google.maps.Marker({
