@@ -1,27 +1,27 @@
-const markers = [
-    {
-        "title": 'France',
-        "lat": '43.583627',
-        "lng": '3.814796 ',
-        "description": '<div id="web-info"> <h6><a target="_blank" href="https://www.ipal-formation.com/">Ipal</a></h6><p>Artomatherapy and Essential Oils Training</p></div>',
-        "zoom": '5'
-    },
-    {
-        "title": 'France',
-        "lat": '46.521448',
-        "lng": '6.633112',
-        "description": '<div id="web-info"> <h6><a target="_blank" href="http://www.ecole-era.ch/">Ecole Romande d\'Aromathérapie ERA</a></h6><p>Aromatherapy Course</p></div>',
-        "zoom": '5'
-    },
-    {
-        "title": 'France',
-        "lat": '43.651153',
-        "lng": '1.513574',
-        "description": '<div id="web-info"> <h6><a target="_blank" href="https://www.formationaromatherapie.com/">French Aromatherapy Federation</a></h6><p>Aromatherapy and Essential Oils Training</p></div>',
-        "zoom": '5'
-    }
+let markersJson = [],
+mainObj = {};
 
-];
+let showObj = function () {
+    for (let prop in mainObj) {
+        console.log(prop);
+        console.log(mainObj[prop]);
+    };
+}
+
+
+fetch("assets/json/maps.json")
+    .then(function(resp) {
+        return resp.json();
+    })
+    .then(function(data) {
+        console.log(data);
+        markersJson = data.markers;
+        mainObj = data.markers;
+        showObj();
+    });
+
+
+
 
 const countries = [
     { lat: 48.857497, lng: 2.347628, zoom: 5, name: "France" },
@@ -56,8 +56,8 @@ function initMap() {
     //Created infoWindow 
     let infowindow = new google.maps.InfoWindow();
 
-    for (let i = 0; i < markers.length; i++) {
-        let markersData = markers[i];
+    for (let i = 0; i < mainObj.length; i++) {
+        let markersData = mainObj[i];
         let coords = new google.maps.LatLng(markersData.lat, markersData.lng);
         let marker = new google.maps.Marker({
             position: coords,
