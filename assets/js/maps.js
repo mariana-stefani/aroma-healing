@@ -1,26 +1,22 @@
-let markersJson = [],
-mainObj = {};
+let mainObj = {};
 
 let showObj = function () {
     for (let prop in mainObj) {
         console.log(prop);
         console.log(mainObj[prop]);
-    };
-}
+    }
+};
 
 
-fetch("assets/json/maps.json")
-    .then(function(resp) {
+fetch("assets/data/maps.json")
+    .then(function (resp) {
         return resp.json();
     })
-    .then(function(data) {
+    .then(function (data) {
         console.log(data);
-        markersJson = data.markers;
         mainObj = data.markers;
         showObj();
     });
-
-
 
 
 const countries = [
@@ -73,7 +69,7 @@ function initMap() {
             });
         })(marker, markersData);
     }
-};
+}
 
 // Created drop-down menu for each Country
 // Code from http://bl.ocks.org/amenadiel/353e4d04d4b2923c438e
