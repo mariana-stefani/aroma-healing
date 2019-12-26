@@ -30,6 +30,8 @@ function initMap() {
 
 
     let infowindow = new google.maps.InfoWindow();
+
+    //Method found on StackOverflow: https://stackoverflow.com/questions/28606149/load-data-from-json-file-into-map-markers-in-google-maps
     $.getJSON(jsonData, function (jsonMarkers) {
         $.each(jsonMarkers.markers, function (key, data) {
             let latLng = new google.maps.LatLng(data.lat, data.lng);
