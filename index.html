@@ -11,23 +11,13 @@
     <title>Aroma Healing</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
-        integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/f3234df15c.js" crossorigin="anonymous"></script>
-
-    <!-- Font Family -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-
-    <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Json -->
-    <script async defer type="application/json" src="assets/data/maps.json"></script>
 
 </head>
 
@@ -147,10 +137,10 @@
                 <p>The aromatic profile of each essential oil is unique and stirring. Every aroma interact with
                     individual noses a little bit differently. This is the beauty and magic of smell.</p>
                 <ul class="list-inline legend">
-                    <li class="list-inline-item woody"></li><span class="aromaticProf-text">Woody</span>
-                    <li class="list-inline-item floral"></li><span class="aromaticProf-text">Floral</span>
-                    <li class="list-inline-item resinous"></li><span class="aromaticProf-text">Resinous</span>
-                    <li class="list-inline-item citrus"></li><span class="aromaticProf-text">Citrus</span>
+                    <li class="list-inline-item woody"></li><div class="aromaticProf-text">Woody</div>
+                    <li class="list-inline-item floral"></li><div class="aromaticProf-text">Floral</div>
+                    <li class="list-inline-item resinous"></li><div class="aromaticProf-text">Resinous</div>
+                    <li class="list-inline-item citrus"></li><div class="aromaticProf-text">Citrus</div>
                 </ul>
             </div>
         </div>
@@ -176,10 +166,17 @@
         </div>
     </footer>
 
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Json -->
+    <script async defer type="application/json" src="assets/data/maps.json"></script>
+
+    <!-- Popper-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
     <!-- Bootstrap-JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
-        integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
     <!-- D3.js-->
     <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -189,11 +186,6 @@
 
     <!-- Color scale -->
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-
-    <!-- Popper-->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
 
     <!-- Google API Key -->
     <script async defer
