@@ -1,3 +1,5 @@
+let map;
+let jsonData = "assets/Data/maps.json";
 
 const countries = [
     { lat: 48.857497, lng: 2.347628, zoom: 5, name: "France" },
@@ -5,8 +7,7 @@ const countries = [
     { lat: -15.793889, lng: -47.882778, zoom: 5, name: "Brazil" }
 ];
 
-let map;
-let jsonData = "assets/Data/maps.json";
+
 
 function initMap() {
     const mapOptions = {
@@ -27,8 +28,8 @@ function initMap() {
         jQuery("#selectlocation").append('<option value="' + [data.lat, data.lng, data.zoom].join('|') + '">' + data.name + '</option>');
     });
 
-    
-    
+
+    let infowindow = new google.maps.InfoWindow();
     $.getJSON(jsonData, function (jsonMarkers) {
         $.each(jsonMarkers.markers, function (key, data) {
             let latLng = new google.maps.LatLng(data.lat, data.lng);
@@ -37,16 +38,16 @@ function initMap() {
                 map: map,
                 title: data.title
             });
-        });
 
-        let infowindow = new google.maps.InfoWindow();
-        //Added click listener
-        (function (marker, data) {
-            google.maps.event.addListener(marker, "click", function (e) {
-                infowindow.setContent(data.description);
-                infowindow.open(map, marker);
-            });
-        })(marker, data);
+
+            //Added click listener
+            (function (marker, data) {
+                google.maps.event.addListener(marker, "click", function (e) {
+                    infowindow.setContent(data.description);
+                    infowindow.open(map, marker);
+                });
+            })(marker, data);
+        });
     });
 };
 
@@ -60,8 +61,6 @@ jQuery(document).on('change', '#selectlocation', function () {
     map.setZoom(newzoom);
     map.setCenter({ lat: newlat, lng: newlng });
 });
-
-google.maps.event.addDomListener(window, 'load', initialize);
 
 
 //France
