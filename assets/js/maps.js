@@ -51,7 +51,7 @@ function initMap() {
             })(marker, data);
         });
     });
-};
+}
 
 // Created drop-down menu for each Country
 // Code from http://bl.ocks.org/amenadiel/353e4d04d4b2923c438e
