@@ -223,6 +223,10 @@ svg {
 
 /*-- Pie Chart/ Aromatic profile Legend --*/
 
+.aromaticProf-text {
+    display: inline;
+}
+
 .legend {
     padding: 15px 0;
 }
