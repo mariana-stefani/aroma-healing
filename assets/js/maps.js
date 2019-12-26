@@ -25,7 +25,7 @@ function initMap() {
             position: { lat: data.lat, lng: data.lng },
             title: data.name
         });
-        jQuery("#selectlocation").append('<option value="' + [data.lat, data.lng, data.zoom].join('|') + '">' + data.name + '</option>');
+        $("#selectlocation").append('<option value="' + [data.lat, data.lng, data.zoom].join('|') + '">' + data.name + '</option>');
     });
 
 
@@ -55,8 +55,8 @@ function initMap() {
 
 // Created drop-down menu for each Country
 // Code from http://bl.ocks.org/amenadiel/353e4d04d4b2923c438e
-jQuery(document).on('change', '#selectlocation', function () {
-    let latlngzoom = jQuery(this).val().split('|');
+$(document).on('change', '#selectlocation', function () {
+    let latlngzoom = $(this).val().split('|');
     let newzoom = 1 * latlngzoom[2],
         newlat = 1 * latlngzoom[0],
         newlng = 1 * latlngzoom[1];

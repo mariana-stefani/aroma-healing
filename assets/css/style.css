@@ -225,13 +225,15 @@ svg {
 
 .aromaticProf-text {
     display: inline;
+    font-size: 15px;
+    margin-top: 0px;
 }
 
-.legend {
+.legend-container {
     padding: 15px 0;
 }
 
-.legend li {
+.legend-text {
     align-items: center;
     vertical-align: middle;
     justify-content: center;
