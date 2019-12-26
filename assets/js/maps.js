@@ -1,23 +1,3 @@
-let mainObj = {};
-
-let showObj = function () {
-    for (let prop in mainObj) {
-        console.log(prop);
-        console.log(mainObj[prop]);
-    }
-};
-
-
-fetch("assets/data/maps.json")
-    .then(function (resp) {
-        return resp.json();
-    })
-    .then(function (data) {
-        console.log(data);
-        mainObj = data.markers;
-        showObj();
-    });
-
 
 const countries = [
     { lat: 48.857497, lng: 2.347628, zoom: 5, name: "France" },
@@ -26,7 +6,7 @@ const countries = [
 ];
 
 let map;
-
+let jsonData = "assets/Data/maps.json";
 
 function initMap() {
     const mapOptions = {
@@ -47,29 +27,28 @@ function initMap() {
         jQuery("#selectlocation").append('<option value="' + [data.lat, data.lng, data.zoom].join('|') + '">' + data.name + '</option>');
     });
 
-
-    //Tutorial from https://www.aspsnippets.com/Articles/Google-Maps-API-V3-Add-multiple-markers-with-InfoWindow-to-Google-Map.aspx
-    //Created infoWindow 
-    let infowindow = new google.maps.InfoWindow();
-
-    for (let i = 0; i < mainObj.length; i++) {
-        let markersData = mainObj[i];
-        let coords = new google.maps.LatLng(markersData.lat, markersData.lng);
-        let marker = new google.maps.Marker({
-            position: coords,
-            map: map,
-            title: markersData.title
+    
+    
+    $.getJSON(jsonData, function (jsonMarkers) {
+        $.each(jsonMarkers.markers, function (key, data) {
+            let latLng = new google.maps.LatLng(data.lat, data.lng);
+            let marker = new google.maps.Marker({
+                position: latLng,
+                map: map,
+                title: data.title
+            });
         });
 
+        let infowindow = new google.maps.InfoWindow();
         //Added click listener
-        (function (marker, markersData) {
+        (function (marker, data) {
             google.maps.event.addListener(marker, "click", function (e) {
-                infowindow.setContent(markersData.description);
+                infowindow.setContent(data.description);
                 infowindow.open(map, marker);
             });
-        })(marker, markersData);
-    }
-}
+        })(marker, data);
+    });
+};
 
 // Created drop-down menu for each Country
 // Code from http://bl.ocks.org/amenadiel/353e4d04d4b2923c438e
@@ -82,19 +61,21 @@ jQuery(document).on('change', '#selectlocation', function () {
     map.setCenter({ lat: newlat, lng: newlng });
 });
 
+google.maps.event.addDomListener(window, 'load', initialize);
 
-// // //France
-// //     //Courses
 
-// // //    
-// // //     {
-// // //         // icon: icon,
-// // //         content: '<div id="web-info"> <h6><a target="_blank" href="https://www.ecole-aroma.com/">French School  of Integrative Aromatherapy</a></h6><p>Integrative Aromatherapy Practitioner Training</p></div>',
-// // //         position: { lat: 48.829997, lng: 2.227497 }
-// // //     },
-// // //     {
-// // //         // icon: icon,
-// // //         content: '<div id="web-info"> <h6><a target="_blank" href="https://www.laromatheque.fr/">L\'Aromathèque Jacobins</a></h6><p>Complete Essential Oils Training</p></div>',
-// // //         position: { lat: 45.761047, lng: 4.832847 }
-// // //     }
-// // // ];
+//France
+    //Courses
+
+//    
+//     {
+//         // icon: icon,
+//         content: '<div id="web-info"> <h6><a target="_blank" href="https://www.ecole-aroma.com/">French School  of Integrative Aromatherapy</a></h6><p>Integrative Aromatherapy Practitioner Training</p></div>',
+//         position: { lat: 48.829997, lng: 2.227497 }
+//     },
+//     {
+//         // icon: icon,
+//         content: '<div id="web-info"> <h6><a target="_blank" href="https://www.laromatheque.fr/">L\'Aromathèque Jacobins</a></h6><p>Complete Essential Oils Training</p></div>',
+//         position: { lat: 45.761047, lng: 4.832847 }
+//     }
+// ];
