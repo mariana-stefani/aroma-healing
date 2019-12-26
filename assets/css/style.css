@@ -23,23 +23,6 @@ p {
     margin-top: 20px;
 }
 
-/*-- Callout --*/
-
-.callout-container {
-    height: 100vh;
-    background: url("../images/lavender.jpeg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.jumbotron {
-    background-color: transparent;
-}
 
 /*-- Containers --*/
 
@@ -58,6 +41,26 @@ p {
         padding: 30px;
     }
 }
+
+
+/*-- Callout Container --*/
+
+.callout-container {
+    height: 100vh;
+    background: url("../images/lavender.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
 
 /*-- Maps --*/
 
@@ -103,7 +106,15 @@ p {
     }
 }
 
-/*-- Recipes --*/
+
+/*---- Recipes container ----*/
+
+.recipe-container {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 
 .recipe-text {
     margin-top: 55px;
@@ -115,14 +126,7 @@ p {
     }
 }
 
-.recipe-container {
-    position: relative;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-#recipe-graph {}
+/*-- Recipes buttons --*/
 
 .recipe-buttons {
     margin: 45px 50px 0px 0px;
@@ -161,6 +165,8 @@ button {
     background-color: #7AA16B;
 }
 
+/*-- Recipes Instructions --*/
+
 #recipeInst-text {
     font-size: 18px;
     position: absolute;
@@ -189,7 +195,7 @@ button {
     }
 }
 
-/*-- Recipe pie chart --*/
+/*-- Recipes pie chart --*/
 
 svg {
     max-height: 300px;
@@ -254,10 +260,8 @@ svg {
     }
 }
 
-.aromaticProf-text {}
 
 /*-- Mouse --*/
-
 /*-- Code from: https://codemyui.com/scroll-icon-animation/ --*/
 
 .scroll-down, .scroll-down:before {
