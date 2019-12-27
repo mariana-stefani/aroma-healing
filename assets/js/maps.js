@@ -7,7 +7,7 @@ const countries = [
     { lat: -15.793889, lng: -47.882778, zoom: 5, name: "Brazil" }
 ];
 
-
+let icons = "assets/images/lotus-flower.png"
 
 function initMap() {
     const mapOptions = {
@@ -38,9 +38,9 @@ function initMap() {
             let marker = new google.maps.Marker({
                 position: latLng,
                 map: map,
+                icon: icons,
                 title: data.title
             });
-
 
             //Added click listener
             (function (marker, data) {
@@ -50,6 +50,7 @@ function initMap() {
                 });
             })(marker, data);
         });
+
     });
 }
 
