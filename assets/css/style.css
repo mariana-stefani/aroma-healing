@@ -22,8 +22,8 @@ html {
 }
 
 p {
-    font-size: 18px;
-    margin-top: 20px;
+    font-size: 1.125rem;
+    margin-top: 1.25rem;
 }
 
 
@@ -31,17 +31,17 @@ p {
 
 .containers {
     background-color: #fafafa;
-    border-radius: 20px;
-    padding: 20px 30px 20px 20px;
+    border-radius: 1.25rem;
+    padding: 1.25rem 1.875rem 1.25rem 1.25rem;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 1.875rem;
     width: 95%;
 }
 
 @media screen and (max-width: 992px) {
     .containers {
-        padding: 30px;
+        padding: 1.875rem;
     }
 }
 
@@ -68,43 +68,43 @@ p {
 /*-- Maps --*/
 
 #map {
-    height: 600px;
+    height: 37.5rem;
     width: 100%;
 }
 
 @media screen and (max-width: 576px) {
     #map {
-        height: 400px;
-        margin-top: 25px;
+        height: 25rem;
+        margin-top: 1.563rem;
     }
 }
 
 .style-maps {
     position: relative;
     justify-content: center;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
 }
 
 @media screen and (max-width: 768px) {
     .style-maps {
-        margin-right: 0px;
-        margin-left: 0px;
+        margin-right: 0rem;
+        margin-left: 0rem;
     }
 }
 
 .style-select {
     position: absolute;
-    top: 8px;
+    top: 0.5rem;
     width: 20%;
     background-color: #D4C9EB;
-    padding: 5px;
+    padding: 0.313rem;
     text-align: center;
 }
 
 @media screen and (max-width: 992px) {
     .style-select {
-        top: -40px;
+        top: -2.5rem;
         width: 67%;
     }
 }
@@ -120,19 +120,19 @@ p {
 }
 
 .recipe-text {
-    margin-top: 55px;
+    margin-top: 3.438rem;
 }
 
 @media screen and (max-width: 992px) {
     .recipe-text {
-        margin-top: 15px;
+        margin-top: 0.938rem;
     }
 }
 
 /*-- Recipes buttons --*/
 
 .recipe-buttons {
-    margin: 45px 50px 0px 0px;
+    margin: 2.813rem 3.125rem 0rem 0rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -143,25 +143,25 @@ p {
 
 button {
     background-color: #E4DBF2;
-    width: 150px;
-    margin: 2px 1px;
+    width: 9.375rem;
+    margin: 0.125rem 0.063rem;
 }
 
 #topBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 40px;
+    bottom: 1.25rem;
+    right: 2.5rem;
     z-index: 99;
     border: none;
     outline: none;
     color: #fff;
     background-color: #B2C9AA;
     cursor: pointer;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 15px;
-    width: 105px;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+    font-size: 0.938rem;
+    width: 6.563rem;
 }
 
 #topBtn:hover{
@@ -171,7 +171,7 @@ button {
 /*-- Recipes Instructions --*/
 
 #recipeInst-text {
-    font-size: 18px;
+    font-size: 1.125rem;
     position: absolute;
     top: 53%;
     left: 50%;
@@ -181,69 +181,69 @@ button {
 
 .recipeInst-container {
     background-color: #f2eef9;
-    height: 320px;
-    margin-top: 120px;
-    margin-left: 70px;
+    height: 20rem;
+    margin-top: 7.5rem;
+    margin-left: 4.375rem;
     border-radius: 4%;
     border-style: solid;
-    border-width: 2px;
+    border-width: 0.125rem;
     border-color: #A790D6;
 }
 
 @media screen and (max-width: 992px) {
     .recipeInst-container {
-        margin-left: 0px;
-        width: 200px !important;
-        margin-top: 70px;
+        margin-left: 0rem;
+        width: 12.5rem !important;
+        margin-top: 4.375rem;
     }
 }
 
 /*-- Recipes pie chart --*/
 
 svg {
-    max-height: 300px;
+    max-height: 18.75rem;
     margin: 0 auto;
     /* poor attempt at centering */
     height: auto !important;
     /* overrides inline */
-    width: 300px !important;
+    width: 18.75rem !important;
     /* overrides inline */
     display: block;
 }
 
 @media screen and (max-width: 320px) {
     svg {
-        margin: 0px -24px;
+        margin: 0rem -1.5rem;
     }
 }
 
 #recipe-graph {
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 /*-- Pie Chart/ Aromatic profile Legend --*/
 
 .aromaticProf-text {
     display: inline;
-    font-size: 15px;
-    margin-top: 0px;
+    font-size: 0.938rem;
+    margin-top: 0rem;
 }
 
 .legend-container {
-    padding: 15px 0;
+    padding: 0.938rem 0;
 }
 
 .legend-text {
     align-items: center;
     vertical-align: middle;
     justify-content: center;
-    width: 45px;
-    height: 25px;
-    padding: 12px 0;
-    margin: 7px;
+    width: 2.813rem;
+    height: 1.563rem;
+    padding: 0.75rem 0;
+    margin: 0.438rem;
     border-radius: 10%;
-    font-size: 20px;
-    line-height: 7px;
+    font-size: 1.25rem;
+    line-height: 0.438rem;
 }
 
 /*-- Aromatic profile legend colors --*/
@@ -265,7 +265,7 @@ svg {
 
 @media (max-width: 415px) and (min-width: 375px) {
     .legend li {
-        margin: 5px 19px;
+        margin: 0.313rem 1.188rem;
     }
 }
 
@@ -279,29 +279,29 @@ svg {
 }
 
 .scroll-down {
-    width: 40px;
-    height: 70px;
-    margin-left: -20px;
-    margin-top: -35px;
-    box-shadow: inset 0 0 0 2px black;
-    border-radius: 25px;
-    bottom: 10px;
+    width: 2.5rem;
+    height: 4.375rem;
+    margin-left: -1.25rem;
+    margin-top: -2.188rem;
+    box-shadow: inset 0 0 0 0.125rem black;
+    border-radius: 1.563rem;
+    bottom: 0.625rem;
 }
 
 @media screen and (max-width: 320px) {
     .scroll-down {
-        bottom: -45px;
+        bottom: -2.813rem;
     }
 }
 
 .scroll-down:before {
     content: '';
-    width: 10px;
-    height: 10px;
+    width: 0.625rem;
+    height: 0.625rem;
     background: black;
-    margin-left: -5px;
-    top: 10px;
-    border-radius: 5px;
+    margin-left: -0.313rem;
+    top: 0.625rem;
+    border-radius: 0.313rem;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-name: scroll;
@@ -313,25 +313,25 @@ svg {
     }
     100% {
         opacity: 0;
-        transform: translateY(46px);
+        transform: translateY(2.875rem);
     }
 }
 
 /*-- Footer --*/
 
 footer {
-    min-height: 150px;
+    min-height: 9.375rem;
     text-align: center;
     background-color: #A790D6;
-    padding: 5px 0px 5px 0px;
+    padding: 0.313rem 0rem 0.313rem 0rem;
 }
 
 #footer-details {
-    margin: 25px;
+    margin: 1.563rem;
 }
 
 .social-links {
-    padding: 15px 0;
+    padding: 0.938rem 0;
 }
 
 .social-links li a i {
@@ -339,12 +339,12 @@ footer {
     align-items: center;
     position: relative;
     justify-content: center;
-    width: 45px;
-    height: 45px;
-    padding: 12px 0;
+    width: 2.813rem;
+    height: 2.813rem;
+    padding: 0.75rem 0;
     border-radius: 50%;
-    font-size: 20px;
-    line-height: 7px;
+    font-size: 1.25rem;
+    line-height: 0.438rem;
     background: #f2eef9;
     color: #6E47BA;
     transition: all 0.5s ease-in-out;
