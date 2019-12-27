@@ -183,7 +183,7 @@ The technologies used were:
 ## Acknowledgments
 
 All my gratitude to my husband and family who always have supported me. 
-A big thank you to my mentor Simen Daehlin. My gratitude to Tim Nelson from Code Institute for your time and assistance.
+A big thank you to my mentor Simen Daehlin. Thank you to Tim Nelson from Code Institute for your time and assistance.
 Thank you to everyone from Code Institute!
 
 
