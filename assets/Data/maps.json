@@ -30,9 +30,37 @@
         },
         {
             "title": "Brazil",
-            "lat": -23.591730,
-            "lng": -46.635113,
+            "lat": -15.875426,
+            "lng": -47.766048,
             "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://www.apotecariosdafloresta.com/\">Apotecários da Floresta</a></h6><p>Complete Aromatherapy Training</p></div>",
+            "zoom": 5
+        },
+        {
+            "title": "Brazil",
+            "lat": -8.118860,
+            "lng": -34.904118,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"http://www.ibraromatologia.com.br/\">IBRA</a></h6><p>Psycho Aromatherapy Course</p></div>",
+            "zoom": 5
+        },
+        {
+            "title": "Australia",
+            "lat": -32.008736,
+            "lng": 115.925801,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://www.aaowt.edu.au/\">AAOWT</a></h6><p>Complete Aromatherapy and Aromatherapy for Dementia Courses</p></div>",
+            "zoom": 5
+        },
+        {
+            "title": "Australia",
+            "lat": -27.380324,
+            "lng": 153.078662,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://www.perfectpotion.com.au/\">Perfect Potion</a></h6><p>Aromatherapy and Chakras Masterclasses</p></div>",
+            "zoom": 5
+        },
+        {
+            "title": "Australia",
+            "lat": -33.823525,
+            "lng": 151.187036,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://www.naturecare.com.au/\">Nature Care College</a></h6><p>Professional Certificate in Clinical Aromatherapy</p></div>",
             "zoom": 5
         }
     ]

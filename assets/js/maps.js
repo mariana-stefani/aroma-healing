@@ -2,9 +2,12 @@ let map;
 let jsonData = "assets/Data/maps.json";
 
 const countries = [
+    //France
     { lat: 48.857497, lng: 2.347628, zoom: 5, name: "France" },
     //Brazil
-    { lat: -15.793889, lng: -47.882778, zoom: 5, name: "Brazil" }
+    { lat: -15.793889, lng: -47.882778, zoom: 4, name: "Brazil" },
+    //Australia
+    { lat: -35.279382, lng: 149.129349, zoom: 4, name: "Australia" }
 ];
 
 let icons = "assets/images/lotus-flower.png"
@@ -40,7 +43,6 @@ function initMap() {
             let marker = new google.maps.Marker({
                 position: latLng,
                 map: map,
-                icon: icons,
                 title: data.title
             });
 
