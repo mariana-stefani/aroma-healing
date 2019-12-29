@@ -9,9 +9,9 @@
         },
         {
             "title": "France",
-            "lat": 46.521448,
-            "lng": 6.633112,
-            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"http://www.ecole-era.ch/\">Ecole Romande d'Aromathérapie ERA</a></h6><p>Aromatherapy Course</p></div>",
+            "lat": 45.761047,
+            "lng": 4.832847,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://www.laromatheque.fr/\">LAromathèque Jacobins</a></h6><p>Complete Essential Oils Training</p></div>",
             "zoom": 5
         },
         {
@@ -23,3 +23,4 @@
         }
     ]
 }
+

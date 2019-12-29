@@ -8,6 +8,7 @@ const countries = [
 ];
 
 let icons = "assets/images/lotus-flower.png"
+let countriesIcon = "assets/images/circle.png"
 
 function initMap() {
     const mapOptions = {
@@ -15,7 +16,7 @@ function initMap() {
             lat: 9.072264,
             lng: 7.491302
         },
-        zoom: 2,
+        zoom: 1.6,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     map = new google.maps.Map(document.getElementById("map"), mapOptions);
@@ -23,7 +24,8 @@ function initMap() {
         let countriesMarker = new google.maps.Marker({
             map: map,
             position: { lat: data.lat, lng: data.lng },
-            title: data.name
+            title: data.name,
+            icon: countriesIcon
         });
         $("#selectlocation").append('<option value="' + [data.lat, data.lng, data.zoom].join('|') + '">' + data.name + '</option>');
     });
