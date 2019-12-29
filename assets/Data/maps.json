@@ -62,6 +62,20 @@
             "lng": 151.187036,
             "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://www.naturecare.com.au/\">Nature Care College</a></h6><p>Professional Certificate in Clinical Aromatherapy</p></div>",
             "zoom": 5
+        },
+        {
+            "title": "India",
+            "lat": 22.610115,
+            "lng": 88.427210,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"http://www.aromatherapyacademy.com/\">Indian Institute of Aromatherapy & Cosmetology</a></h6><p>Professional Certificate in Clinical Aromatherapy</p></div>",
+            "zoom": 5
+        },
+        {
+            "title": "India",
+            "lat": 30.128795,
+            "lng": 78.326920,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://maayaahealing.com/\">Sound Healing & Reiki in India - Maayaa International Healing School</a></h6><p>Aromatheraoy Workshop</p></div>",
+            "zoom": 5
         }
     ]
 }

@@ -7,10 +7,12 @@ const countries = [
     //Brazil
     { lat: -15.793889, lng: -47.882778, zoom: 4, name: "Brazil" },
     //Australia
-    { lat: -35.279382, lng: 149.129349, zoom: 4, name: "Australia" }
+    { lat: -35.279382, lng: 149.129349, zoom: 4, name: "Australia" },
+    //India
+    { lat: 28.613068, lng: 77.207920, zoom: 4, name: "India" }
 ];
 
-let icons = "assets/images/lotus-flower.png"
+let icons = "assets/images/lotus.png"
 let countriesIcon = "assets/images/circle.png"
 
 function initMap() {
@@ -43,6 +45,7 @@ function initMap() {
             let marker = new google.maps.Marker({
                 position: latLng,
                 map: map,
+                icon: icons,
                 title: data.title
             });
 
