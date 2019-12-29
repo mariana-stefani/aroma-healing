@@ -20,7 +20,20 @@
             "lng": 1.513574,
             "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://www.formationaromatherapie.com/\">French Aromatherapy Federation</a></h6><p>Aromatherapy and Essential Oils Training</p></div>",
             "zoom": 5
+        },
+        {
+            "title": "Brazil",
+            "lat": -23.591730,
+            "lng": -46.635113,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://www.aromaflora.com.br/\">Aromaflora</a></h6><p>Artomatherapy, Phytotherapy and Essential Oils Training</p></div>",
+            "zoom": 5
+        },
+        {
+            "title": "Brazil",
+            "lat": -23.591730,
+            "lng": -46.635113,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://www.apotecariosdafloresta.com/\">Apotecários da Floresta</a></h6><p>Complete Aromatherapy Training</p></div>",
+            "zoom": 5
         }
     ]
 }
-
