@@ -2,15 +2,18 @@ let map;
 let jsonData = "assets/Data/maps.json";
 
 const countries = [
-    //France
-    { lat: 48.857497, lng: 2.347628, zoom: 5, name: "France" },
-    //Brazil
-    { lat: -15.793889, lng: -47.882778, zoom: 4, name: "Brazil" },
     //Australia
     { lat: -35.279382, lng: 149.129349, zoom: 4, name: "Australia" },
+    //Brazil
+    { lat: -15.793889, lng: -47.882778, zoom: 4, name: "Brazil" },
+    //France
+    { lat: 48.857497, lng: 2.347628, zoom: 5, name: "France" },        
     //India
-    { lat: 28.613068, lng: 77.207920, zoom: 4, name: "India" }
+    { lat: 28.613068, lng: 77.207920, zoom: 4, name: "India" },
+    //USA
+    { lat: 38.904845, lng: -77.036535, zoom: 3.5, name: "USA" }
 ];
+
 
 let icons = "assets/images/lotus.png"
 let countriesIcon = "assets/images/circle.png"
