@@ -40,18 +40,21 @@ function initMap() {
 
 
     let infowindow = new google.maps.InfoWindow();
+    let clusterMarkers = [];
 
     //Method found on StackOverflow: https://stackoverflow.com/questions/28606149/load-data-from-json-file-into-map-markers-in-google-maps
     $.getJSON(jsonData, function (jsonMarkers) {
         $.each(jsonMarkers.markers, function (key, data) {
             let latLng = new google.maps.LatLng(data.lat, data.lng);
+            if (!data.title)
+              data.title = ""+key;
             let marker = new google.maps.Marker({
                 position: latLng,
                 map: map,
                 icon: icons,
                 title: data.title
             });
-
+            clusterMarkers.push(marker);
             //Added click listener
             (function (marker, data) {
                 google.maps.event.addListener(marker, "click", function (e) {
@@ -60,8 +63,13 @@ function initMap() {
                 });
             })(marker, data);
         });
+        //Had help of StackOverflow to solve Marker Clustering issue: https://stackoverflow.com/questions/59521349/marker-clustering-on-google-maps-with-json-multi-markers
+        var markerCluster = new MarkerClusterer(map, clusterMarkers,
+            { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+          });
 
     });
+    
 }
 
 // Created drop-down menu for each Country
