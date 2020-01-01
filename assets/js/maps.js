@@ -13,7 +13,9 @@ const countries = [
     //India
     { lat: 28.613068, lng: 77.207920, zoom: 4, name: "India" },
     //USA
-    { lat: 38.904845, lng: -77.036535, zoom: 3.5, name: "USA" }
+    { lat: 38.904845, lng: -77.036535, zoom: 3.5, name: "USA" },
+    //South Africa
+    { lat: -33.925323, lng: 18.423684, zoom: 4, name: "South Africa"}
 ];
 
 

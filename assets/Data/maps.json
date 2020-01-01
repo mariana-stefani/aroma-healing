@@ -126,6 +126,14 @@
             "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://www.thearomatherapist.com/\">The Aromatherapist</a></h6><p>Aromatherapy Courses and Workshops</p></div>",
             "zoom": 5
         }
+        ,
+        {
+            "title": "South Africa",
+            "lat": 43.534035,
+            "lng": -80.257363,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://www.thearomatherapist.com/\">The Aromatherapist</a></h6><p>Aromatherapy Courses and Workshops</p></div>",
+            "zoom": 5
+        }
         
     ]
 }
