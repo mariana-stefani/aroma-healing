@@ -7,15 +7,15 @@ const countries = [
     //Brazil
     { lat: -15.793889, lng: -47.882778, zoom: 4, name: "Brazil" },
     //Canada
-    { lat: 45.422186, lng: -75.692438, zoom: 4, name: "Canada"},
+    { lat: 45.422186, lng: -75.692438, zoom: 3.5, name: "Canada"},
     //France
     { lat: 48.857497, lng: 2.347628, zoom: 5, name: "France" },        
     //India
-    { lat: 28.613068, lng: 77.207920, zoom: 4, name: "India" },
+    { lat: 28.613068, lng: 77.207920, zoom: 4.5, name: "India" },
     //USA
     { lat: 38.904845, lng: -77.036535, zoom: 3.5, name: "USA" },
     //South Africa
-    { lat: -33.925323, lng: 18.423684, zoom: 4, name: "South Africa"}
+    { lat: -33.925323, lng: 18.423684, zoom: 5, name: "South Africa"}
 ];
 
 
