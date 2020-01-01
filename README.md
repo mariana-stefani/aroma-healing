@@ -105,6 +105,10 @@ The technologies used were:
 
 * It was used to create a pie chart that shows the aromatic profile for each recipe.
 
+[Flat Icon](https://www.flaticon.com/)
+
+* Its icons were used on Maps Markers.
+
 [Font Awesome](https://fontawesome.com/icons)
 
 * Its icons were used on the Footer.
@@ -176,7 +180,9 @@ The technologies used were:
 
 * The logo was designed by me on [Canva](https://www.canva.com/).
 
-* Responsiveness across devices image from [Am I Reponsive Design](http://ami.responsivedesign.is/)
+* Responsiveness across devices image from [Am I Reponsive Design](http://ami.responsivedesign.is/).
+
+* Icons used on maps markers are from [Flat Icon](https://www.flaticon.com/).
 
 
 

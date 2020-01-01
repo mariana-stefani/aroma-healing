@@ -7,25 +7,32 @@ const countries = [
     //Brazil
     { lat: -15.793889, lng: -47.882778, zoom: 4, name: "Brazil" },
     //Canada
-    { lat: 45.422186, lng: -75.692438, zoom: 3.5, name: "Canada" },
+    { lat: 45.422186, lng: -75.692438, zoom: 3, name: "Canada" },
+    //China
+    { lat: 39.904218, lng: 116.407432, zoom: 5, name: "China" },
     //France
-    { lat: 48.857497, lng: 2.347628, zoom: 5.4, name: "France" },
+    { lat: 48.857497, lng: 2.347628, zoom: 5, name: "France" },
     //India
     { lat: 28.613068, lng: 77.207920, zoom: 4.5, name: "India" },
     //Japan
     { lat: 35.681244, lng: 139.767123, zoom: 6, name: "Japan" },
+    //New Zeland
+    { lat: -41.289315, lng: 174.777456, zoom: 5.5, name: "New Zealand" },
+    //UK
+    { lat: 51.508049, lng: -0.128050, zoom: 5, name: "UK"},
     //USA
-    { lat: 38.904845, lng: -77.036535, zoom: 3.5, name: "USA" },
+    { lat: 38.904845, lng: -77.036535, zoom: 3, name: "USA" },
     //South Africa
     { lat: -33.925323, lng: 18.423684, zoom: 5, name: "South Africa" },
     //Taiwan
     { lat: 25.012994, lng: 121.461239, zoom: 7, name: "Taiwan" }
 ];
 
-
+//Icon made by Pixel perfect from www.flaticon.com
 let icons = "assets/images/lotus.png"
 let countriesIcon = "assets/images/circle.png"
 
+//Create Map
 function initMap() {
     const mapOptions = {
         center: {
@@ -35,6 +42,7 @@ function initMap() {
         zoom: 1.6,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
+    //Countries Markers
     map = new google.maps.Map(document.getElementById("map"), mapOptions);
     countries.forEach(function (data) {
         let countriesMarker = new google.maps.Marker({
@@ -50,6 +58,7 @@ function initMap() {
     let infowindow = new google.maps.InfoWindow();
     let clusterMarkers = [];
 
+    //JSON Markers Clustering
     //Method found on StackOverflow: https://stackoverflow.com/questions/28606149/load-data-from-json-file-into-map-markers-in-google-maps
     $.getJSON(jsonData, function (jsonMarkers) {
         $.each(jsonMarkers.markers, function (key, data) {
@@ -62,12 +71,14 @@ function initMap() {
                 icon: icons,
                 title: data.title
             });
+           
             clusterMarkers.push(marker);
             //Added click listener
             (function (marker, data) {
                 google.maps.event.addListener(marker, "click", function (e) {
                     infowindow.setContent(data.description);
                     infowindow.open(map, marker);
+                    // map.setZoom(14);
                 });
             })(marker, data);
         });
