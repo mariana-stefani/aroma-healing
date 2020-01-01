@@ -27,6 +27,21 @@ p {
 }
 
 
+/*-- Navbar--*/
+.navbar-brand {
+    color: #6E47BA !important;
+    
+}
+
+a.nav-link {
+    margin-left: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color:  #6E47BA;
+}
+
+
 /*-- Containers --*/
 
 .containers {
@@ -129,6 +144,7 @@ p {
     }
 }
 
+
 /*-- Recipes buttons --*/
 
 .recipe-buttons {
@@ -168,6 +184,7 @@ button {
     background-color: #7AA16B;
 }
 
+
 /*-- Recipes Instructions --*/
 
 #recipeInst-text {
@@ -198,6 +215,7 @@ button {
     }
 }
 
+
 /*-- Recipes pie chart --*/
 
 svg {
@@ -220,6 +238,7 @@ svg {
 #recipe-graph {
     margin-top: 2.5rem;
 }
+
 
 /*-- Pie Chart/ Aromatic profile Legend --*/
 
@@ -245,6 +264,7 @@ svg {
     font-size: 1.25rem;
     line-height: 0.438rem;
 }
+
 
 /*-- Aromatic profile legend colors --*/
 .woody {
