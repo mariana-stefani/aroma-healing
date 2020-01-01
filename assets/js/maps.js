@@ -13,11 +13,13 @@ const countries = [
     //India
     { lat: 28.613068, lng: 77.207920, zoom: 4.5, name: "India" },
     //Japan
-    { lat: 35.681244, lng: 139.767123, zoom: 5, name: "Japan" },
+    { lat: 35.681244, lng: 139.767123, zoom: 6, name: "Japan" },
     //USA
     { lat: 38.904845, lng: -77.036535, zoom: 3.5, name: "USA" },
     //South Africa
-    { lat: -33.925323, lng: 18.423684, zoom: 5, name: "South Africa" }
+    { lat: -33.925323, lng: 18.423684, zoom: 5, name: "South Africa" },
+    //Taiwan
+    { lat: 25.012994, lng: 121.461239, zoom: 7, name: "Taiwan" }
 ];
 
 

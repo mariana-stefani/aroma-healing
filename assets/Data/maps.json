@@ -144,7 +144,14 @@
             "title": "Japan",
             "lat": 35.751757,
             "lng": 139.639087,
-            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://aromatierra.wixsite.com/aroma-crystal-tierra\">Aroma Tierra</a></h6><p>Holistic Aromatherapy Diploma Course</p></div>",
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://aromatierra.wixsite.com/aroma-crystal-tierra/\">Tierra</a></h6><p>Holistic Aromatherapy Diploma Course</p></div>",
+            "zoom": 5
+        },
+        {
+            "title": "Japan",
+            "lat": 24.159468,
+            "lng": 120.653139,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://www.aromawish.com/\">Aroma Wish</a></h6><p>International Aroma Therapist Training Course</p></div>",
             "zoom": 5
         }
     ]
