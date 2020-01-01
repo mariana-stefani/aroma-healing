@@ -6,6 +6,8 @@ const countries = [
     { lat: -35.279382, lng: 149.129349, zoom: 4, name: "Australia" },
     //Brazil
     { lat: -15.793889, lng: -47.882778, zoom: 4, name: "Brazil" },
+    //Canada
+    { lat: 45.422186, lng: -75.692438, zoom: 4, name: "Canada"},
     //France
     { lat: 48.857497, lng: 2.347628, zoom: 5, name: "France" },        
     //India
@@ -63,7 +65,7 @@ function initMap() {
                 });
             })(marker, data);
         });
-        //Had help of StackOverflow to solve Marker Clustering issue: https://stackoverflow.com/questions/59521349/marker-clustering-on-google-maps-with-json-multi-markers
+        //StackOverflow helped to solve Marker Clustering issue: https://stackoverflow.com/questions/59521349/marker-clustering-on-google-maps-with-json-multi-markers
         var markerCluster = new MarkerClusterer(map, clusterMarkers,
             { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
           });

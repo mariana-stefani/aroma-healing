@@ -76,6 +76,49 @@
             "lng": 78.326920,
             "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://maayaahealing.com/\">Sound Healing & Reiki in India - Maayaa International Healing School</a></h6><p>Aromatheraoy Workshop</p></div>",
             "zoom": 5
+        },
+        {
+            "title": "USA",
+            "lat": 45.486970,
+            "lng": -122.675941,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://achs.edu/\">American College of Healthcare Sciences</a></h6><p>Full Range of Aromatherapy Certificate, Diploma and Degrees</p></div>",
+            "zoom": 5
+        },
+        {
+            "title": "USA",
+            "lat": 40.728927,
+            "lng": -73.979496,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://aromaticstudies.com/\">New York Institute of Aromatic Studies</a></h6><p>Foundations of Aromatherapy Course</p></div>",
+            "zoom": 5
+        },
+        {
+            "title": "USA",
+            "lat": 33.038126,
+            "lng": -117.238908,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"http://nhicollege.net/\">Natural Healing Institute</a></h6><p>Certified Aromatherapist Course</p></div>",
+            "zoom": 5
+        },
+        {
+            "title": "USA",
+            "lat": 33.914253,
+            "lng": -84.377581,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://healcenteratlanta.com/\">Heal Center Atlanta</a></h6><p>Aromatherapy Certificate Course</p></div>",
+            "zoom": 5
+        },
+        {
+            "title": "Canada",
+            "lat": 43.335210,
+            "lng": -79.790937,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"http://www.stepstohealth.ca/\">Steps to Health</a></h6><p>Advanced Aromatherapy Practitioner Course</p></div>",
+            "zoom": 5
+        },
+        {
+            "title": "Canada",
+            "lat": 53.559431,
+            "lng": -113.542624,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"http://albertaaromatherapy.com/\">Alberta - Aromatherapy Institute</a></h6><p>Aromatherapist Certificate Program</p></div>",
+            "zoom": 5
         }
+        
     ]
 }
