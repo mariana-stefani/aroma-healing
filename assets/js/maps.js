@@ -19,7 +19,7 @@ const countries = [
     //New Zeland
     { lat: -41.289315, lng: 174.777456, zoom: 5.5, name: "New Zealand" },
     //UK
-    { lat: 51.508049, lng: -0.128050, zoom: 5, name: "UK"},
+    { lat: 51.508049, lng: -0.128050, zoom: 5, name: "UK" },
     //USA
     { lat: 38.904845, lng: -77.036535, zoom: 3, name: "USA" },
     //South Africa
@@ -30,6 +30,7 @@ const countries = [
 
 //Icon made by Pixel perfect from www.flaticon.com
 let icons = "assets/images/lotus.png"
+//Icon made by Smashicons from www.flaticon.com
 let countriesIcon = "assets/images/circle.png"
 
 //Create Map
@@ -71,7 +72,7 @@ function initMap() {
                 icon: icons,
                 title: data.title
             });
-           
+
             clusterMarkers.push(marker);
             //Added click listener
             (function (marker, data) {
