@@ -7,15 +7,17 @@ const countries = [
     //Brazil
     { lat: -15.793889, lng: -47.882778, zoom: 4, name: "Brazil" },
     //Canada
-    { lat: 45.422186, lng: -75.692438, zoom: 3.5, name: "Canada"},
+    { lat: 45.422186, lng: -75.692438, zoom: 3.5, name: "Canada" },
     //France
-    { lat: 48.857497, lng: 2.347628, zoom: 5, name: "France" },        
+    { lat: 48.857497, lng: 2.347628, zoom: 5.4, name: "France" },
     //India
     { lat: 28.613068, lng: 77.207920, zoom: 4.5, name: "India" },
+    //Japan
+    { lat: 35.681244, lng: 139.767123, zoom: 5, name: "Japan" },
     //USA
     { lat: 38.904845, lng: -77.036535, zoom: 3.5, name: "USA" },
     //South Africa
-    { lat: -33.925323, lng: 18.423684, zoom: 5, name: "South Africa"}
+    { lat: -33.925323, lng: 18.423684, zoom: 5, name: "South Africa" }
 ];
 
 
@@ -51,7 +53,7 @@ function initMap() {
         $.each(jsonMarkers.markers, function (key, data) {
             let latLng = new google.maps.LatLng(data.lat, data.lng);
             if (!data.title)
-              data.title = ""+key;
+                data.title = "" + key;
             let marker = new google.maps.Marker({
                 position: latLng,
                 map: map,
@@ -69,11 +71,12 @@ function initMap() {
         });
         //StackOverflow helped to solve Marker Clustering issue: https://stackoverflow.com/questions/59521349/marker-clustering-on-google-maps-with-json-multi-markers
         var markerCluster = new MarkerClusterer(map, clusterMarkers,
-            { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-          });
+            {
+                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+            });
 
     });
-    
+
 }
 
 // Created drop-down menu for each Country

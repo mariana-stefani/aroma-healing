@@ -139,6 +139,13 @@
             "lng": 28.030846,
             "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://madge-wallace.co.za/\">Madge Wallace</a></h6><p>Diploma in Aromatherapy</p></div>",
             "zoom": 5
+        },
+        {
+            "title": "Japan",
+            "lat": 35.751757,
+            "lng": 139.639087,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://aromatierra.wixsite.com/aroma-crystal-tierra\">Aroma Tierra</a></h6><p>Holistic Aromatherapy Diploma Course</p></div>",
+            "zoom": 5
         }
     ]
 }
