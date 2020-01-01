@@ -125,15 +125,20 @@
             "lng": -80.257363,
             "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://www.thearomatherapist.com/\">The Aromatherapist</a></h6><p>Aromatherapy Courses and Workshops</p></div>",
             "zoom": 5
-        }
-        ,
+        },
         {
             "title": "South Africa",
-            "lat": 43.534035,
-            "lng": -80.257363,
-            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://www.thearomatherapist.com/\">The Aromatherapist</a></h6><p>Aromatherapy Courses and Workshops</p></div>",
+            "lat": -29.822877,
+            "lng": 31.010690,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://camelotint.co.za/\">Camelot International</a></h6><p>Diploma in Therapeutic Aromatherapy</p></div>",
+            "zoom": 5
+        },
+        {
+            "title": "South Africa",
+            "lat": -26.144410,
+            "lng": 28.030846,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://madge-wallace.co.za/\">Madge Wallace</a></h6><p>Diploma in Aromatherapy</p></div>",
             "zoom": 5
         }
-        
     ]
 }
