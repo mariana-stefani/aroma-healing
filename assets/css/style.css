@@ -40,6 +40,10 @@ a.nav-link {
     color: #6E47BA;
 }
 
+button.navbar-toggler {
+    width: 6.25rem;
+}
+
 /*-- Containers --*/
 
 .containers {
