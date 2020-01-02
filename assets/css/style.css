@@ -308,7 +308,7 @@ svg {
 
 @media screen and (max-width: 375px) {
     .scroll-down {
-        bottom: -2.813rem;
+        bottom: -1.813rem;
     }
 }
 
