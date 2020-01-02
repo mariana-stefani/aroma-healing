@@ -61,7 +61,6 @@ a.nav-link {
 /*-- Callout Container --*/
 
 .callout-container {
-    height: 100vh;
     background: url("../images/lavender.jpeg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
