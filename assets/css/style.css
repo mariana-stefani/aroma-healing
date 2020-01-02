@@ -60,7 +60,7 @@ a.nav-link {
 
 /*-- Callout Container --*/
 
-.teste {
+.callout-container {
     background: url("../images/lavender.jpeg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -74,7 +74,7 @@ a.nav-link {
 }
 
 @media only screen and (max-width: 767px) {
-    .teste {
+    .callout-container {
       background-image: url("../images/lavenderSmall.jpeg");
     }
   }
@@ -306,7 +306,7 @@ svg {
     bottom: 0.625rem;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
     .scroll-down {
         bottom: -2.813rem;
     }
