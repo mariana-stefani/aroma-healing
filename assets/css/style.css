@@ -1,6 +1,6 @@
 /*-- Font Family --*/
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 body {
     background-color: #D4C9EB;
     font-family: 'Raleway', sans-serif;
@@ -26,11 +26,10 @@ p {
     margin-top: 1.25rem;
 }
 
-
 /*-- Navbar--*/
+
 .navbar-brand {
     color: #6E47BA !important;
-    
 }
 
 a.nav-link {
@@ -38,9 +37,8 @@ a.nav-link {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color:  #6E47BA;
+    color: #6E47BA;
 }
-
 
 /*-- Containers --*/
 
@@ -60,13 +58,11 @@ a.nav-link {
     }
 }
 
-
 /*-- Callout Container --*/
 
 .callout-container {
     height: 100vh;
     background: url("../images/lavender.jpeg") no-repeat center center fixed;
-    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -74,12 +70,13 @@ a.nav-link {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 .jumbotron {
     background-color: transparent;
 }
-
 
 /*-- Maps --*/
 
@@ -125,7 +122,6 @@ a.nav-link {
     }
 }
 
-
 /*---- Recipes container ----*/
 
 .recipe-container {
@@ -144,7 +140,6 @@ a.nav-link {
         margin-top: 0.938rem;
     }
 }
-
 
 /*-- Recipes buttons --*/
 
@@ -181,10 +176,9 @@ button {
     width: 6.563rem;
 }
 
-#topBtn:hover{
+#topBtn:hover {
     background-color: #7AA16B;
 }
-
 
 /*-- Recipes Instructions --*/
 
@@ -216,7 +210,6 @@ button {
     }
 }
 
-
 /*-- Recipes pie chart --*/
 
 svg {
@@ -239,7 +232,6 @@ svg {
 #recipe-graph {
     margin-top: 2.5rem;
 }
-
 
 /*-- Pie Chart/ Aromatic profile Legend --*/
 
@@ -266,8 +258,8 @@ svg {
     line-height: 0.438rem;
 }
 
-
 /*-- Aromatic profile legend colors --*/
+
 .woody {
     background: #66c2a5;
 }
@@ -290,8 +282,8 @@ svg {
     }
 }
 
-
 /*-- Mouse --*/
+
 /*-- Code from: https://codemyui.com/scroll-icon-animation/ --*/
 
 .scroll-down, .scroll-down:before {
