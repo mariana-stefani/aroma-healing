@@ -60,7 +60,7 @@ a.nav-link {
 
 /*-- Callout Container --*/
 
-.callout-container {
+.teste {
     background: url("../images/lavender.jpeg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -74,9 +74,7 @@ a.nav-link {
 }
 
 @media only screen and (max-width: 767px) {
-    .callout-container {
-      /* The file size of this background image is 93% smaller
-         to improve page load speed on mobile internet connections */
+    .teste {
       background-image: url("../images/lavenderSmall.jpeg");
     }
   }
