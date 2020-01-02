@@ -79,7 +79,7 @@ button.navbar-toggler {
 
 @media only screen and (max-width: 375px) {
     .callout-container {
-      background-image: url("../images/lavenderSmall.jpeg");
+      background: url("../images/lavenderSmall.jpeg") no-repeat center center fixed;;
     }
   }
 
