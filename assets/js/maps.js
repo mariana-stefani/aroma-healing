@@ -103,20 +103,3 @@ $(document).on('change', '#selectlocation', function () {
     map.setZoom(newzoom);
     map.setCenter({ lat: newlat, lng: newlng });
 });
-
-
-//France
-    //Courses
-
-//    
-//     {
-//         // icon: icon,
-//         content: '<div id="web-info"> <h6><a target="_blank" href="https://www.ecole-aroma.com/">French School  of Integrative Aromatherapy</a></h6><p>Integrative Aromatherapy Practitioner Training</p></div>',
-//         position: { lat: 48.829997, lng: 2.227497 }
-//     },
-//     {
-//         // icon: icon,
-//         content: '<div id="web-info"> <h6><a target="_blank" href="https://www.laromatheque.fr/">L\'Aromathèque Jacobins</a></h6><p>Complete Essential Oils Training</p></div>',
-//         position: { lat: 45.761047, lng: 4.832847 }
-//     }
-// ];
