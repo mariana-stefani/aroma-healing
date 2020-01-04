@@ -106,6 +106,7 @@ $(document).on('change', '#selectlocation', function () {
 
 
 //Back to top Button
+
 $("#topBtn").click(function(){
     $(window).scrollTop(0);
   });
@@ -118,9 +119,19 @@ $("#topBtn").click(function(){
 // });
 
 
-//On Click try
+//Recipe and Pie Chart update when selected recipe is clicked
 
 $("#stressReliefBtn").click(function() {
     $("#recipeInst-text").html(('<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
     $(this).data(update(data1));
+});
+
+$("#beHappyBtn").click(function() {
+    $("#recipeInst-text").html((('<ul><li>Lavender: 5 drops</li> <br/> <li>Orange: 2 drops</li> <br/> <li>Lemon: 2 drops</li></ul>'));
+    $(this).data(update(data2));
+});
+
+$("#beHappyBtn").click(function() {
+    $("#recipeInst-text").html((('<ul><li>Lavender: 5 drops</li> <br/> <li>Orange: 2 drops</li> <br/> <li>Lemon: 2 drops</li></ul>'));
+    $(this).data(update(data2));
 });
