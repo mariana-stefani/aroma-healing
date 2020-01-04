@@ -121,5 +121,6 @@ $("#topBtn").click(function(){
 //On Click try
 
 $("#stressReliefBtn").click(function() {
-    $("#recipeInst-text").html(('<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'))
+    $("#recipeInst-text").html(('<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
+    $(this).data(update(data1));
 });
