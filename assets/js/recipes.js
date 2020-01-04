@@ -1,5 +1,7 @@
+//PIE CHART
+
 //Tutorial from: https://www.d3-graph-gallery.com/graph/pie_changeData.html
-// set the dimensions and margins of the graph
+// set the dimensions and margins of the pie chart
 let width = 300
 let height = 300
 let margin = 40
@@ -7,7 +9,7 @@ let margin = 40
 // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
 let radius = Math.min(width, height) / 2 - margin
 
-// append the svg object to the div called 'my_dataviz'
+// append the svg object to the div called '#recipe-graph'
 let svg = d3.select("#recipe-graph")
   .append("svg")
     .attr("width", width)
@@ -17,29 +19,12 @@ let svg = d3.select("#recipe-graph")
 
 // create 2 data_set
 //Aromatic Profile
-//a: woody, b: floral, c: resinous, d: herbaceus, e: citrus, f: grassy, 
-// let srChart = {a:56.2, b: 25, c:18.8} //woody, floral, resinous
-// let bhChart = {b: 62.5, e: 37.5} //floral, citrus
-// let sfChart = {a: 52.9, e:47.1} //woody, citrus
-// let peChart = {b: 56.2, c: 43.8} //floral, resinous
-// let psChart = {b: 82.6, e: 17.4} //floral, citrus
 
-let srChart = {woody:56.2, floral: 25, resinous:18.8} //woody, floral, resinous
-let bhChart = {floral: 62.5, citrus: 37.5} //floral, citrus
-let sfChart = {woody: 52.9, citrus:47.1} //woody, citrus
-let peChart = {floral: 56.2, resinous: 43.8} //floral, resinous
-let psChart = {floral: 82.6, citrus: 17.4} //floral, citrus
-
-//cores
-//woody: #66c2a5
-//floral: #fd8d62
-//resinous: #8ea0cc
-//citrus: #a7d955
-
-// set the color scale
-// let color = d3.scaleOrdinal()
-//   .domain(["a", "b", "c", "d", "e", "f"])
-//   .range(d3.schemeSet2);
+let srChart = {woody:56.2, floral: 25, resinous:18.8} 
+let bhChart = {floral: 62.5, citrus: 37.5} 
+let sfChart = {woody: 52.9, citrus:47.1} 
+let peChart = {floral: 56.2, resinous: 43.8} 
+let psChart = {floral: 82.6, citrus: 17.4} 
 
 let color = d3.scaleOrdinal()
   .domain(["woody", "floral", "resinous", "herbaceus", "citrus", "grassy"])
@@ -47,18 +32,12 @@ let color = d3.scaleOrdinal()
 
 // A function that create / update the plot for a given variable:
 function update(data) {
-
-  // Compute the position of each group on the pie:
   let pie = d3.pie()
     .value(function(d) {return d.value; })
-    // .sort(function(woody, floral) {return d3.ascending(woody.key, floral.key);} ) // This make sure that group order remains the same in the pie chart
   let data_ready = pie(d3.entries(data))
 
-  // map to data
   let u = svg.selectAll("path")
     .data(data_ready)
-
-  // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
   u
     .enter()
     .append('path')
@@ -73,17 +52,11 @@ function update(data) {
     .attr("stroke", "white")
     .style("stroke-width", "2px")
     .style("opacity", 1)
-
-  // remove the group that is not present anymore
   u
     .exit()
     .remove()
-
 }
-
-// Initialize the plot with the first dataset
 update(srChart)
-
 
 //Change Recipe according to button selected
 function selectCategory(category, results) {

@@ -182,7 +182,7 @@ The technologies used were:
 
 * Responsiveness across devices image from [Am I Reponsive Design](http://ami.responsivedesign.is/).
 
-* Icons used on maps markers are from [Flat Icon](https://www.flaticon.com/).
+* Icons used on maps markers are made by Pixel perfect and Smashicons from [Flat Icon](https://www.flaticon.com/).
 
 
 

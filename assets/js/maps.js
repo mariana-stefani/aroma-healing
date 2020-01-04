@@ -29,7 +29,7 @@ const countries = [
     { lat: 25.012994, lng: 121.461239, zoom: 7, name: "Taiwan" }
 ];
 
-//Icon made by Pixel perfect from www.flaticon.com
+
 let icons = "assets/images/lotus.png"
 //Icon made by Smashicons from www.flaticon.com
 let countriesIcon = "assets/images/circle.png"
