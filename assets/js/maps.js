@@ -120,3 +120,7 @@ $("#topBtn").click(function(){
 
 //On Click try
 
+$("#stressReliefBtn").click(function() {
+    $("#recipeInst-text").text(('<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>');
+}
+);
