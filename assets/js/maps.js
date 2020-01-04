@@ -140,3 +140,8 @@ $("#positiveEnergyBtn").click(function() {
     $("#recipeInst-text").html(('<ul><li>Copaiba: 4 drops</li> <br/> <li>Lavender: 3 drops</li> <br/> <li>Blue Tansy: 3 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
     $(this).data(update(data4));
 });
+
+$("#peacefulSleepBtn").click(function() {
+    $("#recipeInst-text").html(('<ul><li>Ylang Ylang: 3 drops</li> <br/> <li>Lavender: 2 drops</li> <br/> <li>Bergamot: 2 drops</li></ul>'));
+    $(this).data(update(data5));
+});
