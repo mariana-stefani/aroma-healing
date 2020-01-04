@@ -1,28 +1,16 @@
 {
-"countries" = [
-    //Australia
+"countries" : [
     { "lat": -35.279382, "lng": 149.129349, "zoom": 4, "name": "Australia" },
-    //Brazil
-    { "lat": -15.793889, lng: -47.882778, zoom: 4, name: "Brazil" },
-    //Canada
-    { "lat": 45.422186, lng: -75.692438, zoom: 3, name: "Canada" },
-    //China
-    { "lat": 39.904218, lng: 116.407432, zoom: 5, name: "China" },
-    //France
-    { "lat": 48.857497, lng: 2.347628, zoom: 5, name: "France" },
-    //India
-    { "lat": 28.613068, lng: 77.207920, zoom: 4.5, name: "India" },
-    //Japan
-    { "lat": 35.681244, lng: 139.767123, zoom: 6, name: "Japan" },
-    //New Zeland
-    { "lat": -41.289315, lng: 174.777456, zoom: 5.5, name: "New Zealand" },
-    //UK
-    { "lat": 51.508049, lng: -0.128050, zoom: 5, name: "UK" },
-    //USA
-    { "lat": 38.904845, lng: -77.036535, zoom: 3, name: "USA" },
-    //South Africa
-    { "lat": -33.925323, lng: 18.423684, zoom: 5, name: "South Africa" },
-    //Taiwan
-    { "lat": 25.012994, lng: 121.461239, zoom: 7, name: "Taiwan" }
-];
+    { "lat": -15.793889, "lng": -47.882778, "zoom": 4, "name": "Brazil" },
+    { "lat": 45.422186, "lng": -75.692438, "zoom": 3, "name": "Canada" },
+    { "lat": 39.904218, "lng": 116.407432, "zoom": 5, "name": "China" },
+    { "lat": 48.857497, "lng": 2.347628, "zoom": 5, "name": "France" },
+    { "lat": 28.613068, "lng": 77.207920, "zoom": 4.5, "name": "India" },
+    { "lat": 35.681244, "lng": 139.767123, "zoom": 6, "name": "Japan" },
+    { "lat": -41.289315, "lng": 174.777456, "zoom": 5.5, "name": "New Zealand" },
+    { "lat": 51.508049, "lng": -0.128050, "zoom": 5, "name": "UK" },
+    { "lat": 38.904845, "lng": -77.036535, "zoom": 3, "name": "USA" },
+    { "lat": -33.925323, "lng": 18.423684, "zoom": 5, "name": "South Africa" },
+    { "lat": 25.012994, "lng": 121.461239, "zoom": 7, "name": "Taiwan" }
+]
 }
