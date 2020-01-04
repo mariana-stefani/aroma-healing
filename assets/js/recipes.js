@@ -21,7 +21,7 @@ let svg = d3.select("#recipe-graph")
 let srChart = {a:56.2, b: 25, c:18.8} //woody, floral, resinous
 let bhChart = {b: 62.5, e: 37.5} //floral, citrus
 let sfChart = {a: 52.9, e:47.1} //woody, citrus
-let data4 = {b: 56.2, c: 43.8} //floral, resinous
+let peChart = {b: 56.2, c: 43.8} //floral, resinous
 let data5 = {b: 82.6, e: 17.4} //floral, citrus
 
 //cores

@@ -139,7 +139,7 @@ $("#stayFocusedBtn").click(function() {
 
 $("#positiveEnergyBtn").click(function() {
     $("#recipeInst-text").html(('<ul><li>Copaiba: 4 drops</li> <br/> <li>Lavender: 3 drops</li> <br/> <li>Blue Tansy: 3 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
-    $(this).data(update(data4));
+    $(this).data(update(peChart));
 });
 
 $("#peacefulSleepBtn").click(function() {
