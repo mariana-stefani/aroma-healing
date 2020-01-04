@@ -144,5 +144,5 @@ $("#positiveEnergyBtn").click(function() {
 
 $("#peacefulSleepBtn").click(function() {
     $("#recipeInst-text").html(('<ul><li>Ylang Ylang: 3 drops</li> <br/> <li>Lavender: 2 drops</li> <br/> <li>Bergamot: 2 drops</li></ul>'));
-    $(this).data(update(data5));
+    $(this).data(update(psChart));
 });
