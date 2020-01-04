@@ -51,7 +51,7 @@ function update(data) {
   // Compute the position of each group on the pie:
   let pie = d3.pie()
     .value(function(d) {return d.value; })
-    .sort(function(woody, floral) {return d3.ascending(woody.key, floral.key);} ) // This make sure that group order remains the same in the pie chart
+    // .sort(function(woody, floral) {return d3.ascending(woody.key, floral.key);} ) // This make sure that group order remains the same in the pie chart
   let data_ready = pie(d3.entries(data))
 
   // map to data
