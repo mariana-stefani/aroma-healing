@@ -151,12 +151,12 @@ button.navbar-toggler {
 
 /*-- Recipes buttons --*/
 
-.recipe-buttons {
+.recipeBtnContainer {
     margin: 2.813rem 3.125rem 0rem 0rem;
 }
 
 @media screen and (max-width: 992px) {
-    .recipe-buttons {
+    .recipeBtnContainer {
         margin: 0;
     }
 }
