@@ -31,7 +31,6 @@ const countries = [
 
 
 let icons = "assets/images/lotus.png"
-//Icon made by Smashicons from www.flaticon.com
 let countriesIcon = "assets/images/circle.png"
 
 //Create Map
