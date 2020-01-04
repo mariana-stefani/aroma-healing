@@ -18,11 +18,17 @@ let svg = d3.select("#recipe-graph")
 // create 2 data_set
 //Aromatic Profile
 //a: woody, b: floral, c: resinous, d: herbaceus, e: citrus, f: grassy, 
-let srChart = {a:56.2, b: 25, c:18.8} //woody, floral, resinous
-let bhChart = {b: 62.5, e: 37.5} //floral, citrus
-let sfChart = {a: 52.9, e:47.1} //woody, citrus
-let peChart = {b: 56.2, c: 43.8} //floral, resinous
-let psChart = {b: 82.6, e: 17.4} //floral, citrus
+// let srChart = {a:56.2, b: 25, c:18.8} //woody, floral, resinous
+// let bhChart = {b: 62.5, e: 37.5} //floral, citrus
+// let sfChart = {a: 52.9, e:47.1} //woody, citrus
+// let peChart = {b: 56.2, c: 43.8} //floral, resinous
+// let psChart = {b: 82.6, e: 17.4} //floral, citrus
+
+let srChart = {woody:56.2, floral: 25, resinous:18.8} //woody, floral, resinous
+let bhChart = {floral: 62.5, citrus: 37.5} //floral, citrus
+let sfChart = {woody: 52.9, citrus:47.1} //woody, citrus
+let peChart = {floral: 56.2, resinous: 43.8} //floral, resinous
+let psChart = {floral: 82.6, citrus: 17.4} //floral, citrus
 
 //cores
 //woody: #66c2a5
@@ -31,8 +37,12 @@ let psChart = {b: 82.6, e: 17.4} //floral, citrus
 //citrus: #a7d955
 
 // set the color scale
+// let color = d3.scaleOrdinal()
+//   .domain(["a", "b", "c", "d", "e", "f"])
+//   .range(d3.schemeSet2);
+
 let color = d3.scaleOrdinal()
-  .domain(["a", "b", "c", "d", "e", "f"])
+  .domain(["woody", "floral", "resinous", "herbaceus", "citrus", "grassy"])
   .range(d3.schemeSet2);
 
 // A function that create / update the plot for a given variable:
@@ -41,7 +51,7 @@ function update(data) {
   // Compute the position of each group on the pie:
   let pie = d3.pie()
     .value(function(d) {return d.value; })
-    .sort(function(a, b) {return d3.ascending(a.key, b.key);} ) // This make sure that group order remains the same in the pie chart
+    .sort(function(woody, floral) {return d3.ascending(woody.key, floral.key);} ) // This make sure that group order remains the same in the pie chart
   let data_ready = pie(d3.entries(data))
 
   // map to data
