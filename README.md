@@ -13,7 +13,7 @@ This project is a website for people who are looking for an aromatherapy course 
 
 This wireframe was created at [Moqups](https://moqups.com/).
 
-![Wireframe]( assets/images/wireframe.png)
+![Wireframe]( wireframes/wireframe.png)
 
 
 ## UX
