@@ -1,6 +1,6 @@
 //Maps 
 let map;
-let jsonData = "assets/data/maps.json";
+let mapsJsonData = "assets/data/maps.json";
 let countriesJsonData = "assets/data/countries.json";
 
 
@@ -44,8 +44,8 @@ function initMap() {
 
         //JSON Markers Clustering
         //Method found on StackOverflow: https://stackoverflow.com/questions/28606149/load-data-from-json-file-into-map-markers-in-google-maps
-        $.getJSON(jsonData, function (jsonMarkers) {
-            $.each(jsonMarkers.markers, function (key, data) {
+        $.getJSON(mapsJsonData, function (mapsMarkers) {
+            $.each(mapsMarkers.markers, function (key, data) {
                 let latLng = new google.maps.LatLng(data.lat, data.lng);
                 if (!data.title)
                     data.title = "" + key;
