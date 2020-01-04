@@ -131,7 +131,7 @@ $("#beHappyBtn").click(function() {
     $(this).data(update(data2));
 });
 
-$("#beHappyBtn").click(function() {
-    $("#recipeInst-text").html((('<ul><li>Lavender: 5 drops</li> <br/> <li>Orange: 2 drops</li> <br/> <li>Lemon: 2 drops</li></ul>'));
-    $(this).data(update(data2));
+$("#stayFocusedBtn").click(function() {
+    $("#recipeInst-text").html((('<ul><li>Orange: 6 drops</li> <br/> <li>Lemon: 2 drops</li> <br/> <li>Cedarwood: 3 drops</li></ul>'));
+    $(this).data(update(data3));
 });
