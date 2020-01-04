@@ -5,10 +5,10 @@ let width = 300
     margin = 40
 
 // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
-var radius = Math.min(width, height) / 2 - margin
+let radius = Math.min(width, height) / 2 - margin
 
 // append the svg object to the div called 'my_dataviz'
-var svg = d3.select("#recipe-graph")
+let svg = d3.select("#recipe-graph")
   .append("svg")
     .attr("width", width)
     .attr("height", height)
@@ -18,11 +18,11 @@ var svg = d3.select("#recipe-graph")
 // create 2 data_set
 //Aromatic Profile
 //a: woody, b: floral, c: resinous, d: herbaceus, e: citrus, f: grassy, 
-var data1 = {a:56.2, b: 25, c:18.8} //woody, floral, resinous
-var data2 = {b: 62.5, e: 37.5} //floral, citrus
-var data3 = {a: 52.9, e:47.1} //woody, citrus
-var data4 = {b: 56.2, c: 43.8} //floral, resinous
-var data5 = {b: 82.6, e: 17.4} //floral, citrus
+let data1 = {a:56.2, b: 25, c:18.8} //woody, floral, resinous
+let data2 = {b: 62.5, e: 37.5} //floral, citrus
+let data3 = {a: 52.9, e:47.1} //woody, citrus
+let data4 = {b: 56.2, c: 43.8} //floral, resinous
+let data5 = {b: 82.6, e: 17.4} //floral, citrus
 
 //cores
 //woody: #66c2a5
@@ -31,7 +31,7 @@ var data5 = {b: 82.6, e: 17.4} //floral, citrus
 //citrus: #a7d955
 
 // set the color scale
-var color = d3.scaleOrdinal()
+let color = d3.scaleOrdinal()
   .domain(["a", "b", "c", "d", "e", "f"])
   .range(d3.schemeSet2);
 
@@ -39,13 +39,13 @@ var color = d3.scaleOrdinal()
 function update(data) {
 
   // Compute the position of each group on the pie:
-  var pie = d3.pie()
+  let pie = d3.pie()
     .value(function(d) {return d.value; })
     .sort(function(a, b) {return d3.ascending(a.key, b.key);} ) // This make sure that group order remains the same in the pie chart
-  var data_ready = pie(d3.entries(data))
+  let data_ready = pie(d3.entries(data))
 
   // map to data
-  var u = svg.selectAll("path")
+  let u = svg.selectAll("path")
     .data(data_ready)
 
   // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
@@ -77,6 +77,6 @@ update(data1)
 
 //Change Recipe according to button selected
 function selectCategory(category, results) {
-    var postResults = document.getElementById(results);
+    let postResults = document.getElementById(results);
     postResults.innerHTML = category;
   }
