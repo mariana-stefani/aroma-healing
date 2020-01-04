@@ -18,8 +18,8 @@ let svg = d3.select("#recipe-graph")
 // create 2 data_set
 //Aromatic Profile
 //a: woody, b: floral, c: resinous, d: herbaceus, e: citrus, f: grassy, 
-let data1 = {a:56.2, b: 25, c:18.8} //woody, floral, resinous
-let data2 = {b: 62.5, e: 37.5} //floral, citrus
+let srChart = {a:56.2, b: 25, c:18.8} //woody, floral, resinous
+let bhChart = {b: 62.5, e: 37.5} //floral, citrus
 let data3 = {a: 52.9, e:47.1} //woody, citrus
 let data4 = {b: 56.2, c: 43.8} //floral, resinous
 let data5 = {b: 82.6, e: 17.4} //floral, citrus
