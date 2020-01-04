@@ -1,8 +1,8 @@
 //Tutorial from: https://www.d3-graph-gallery.com/graph/pie_changeData.html
 // set the dimensions and margins of the graph
 let width = 300
-    height = 300
-    margin = 40
+let height = 300
+let margin = 40
 
 // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
 let radius = Math.min(width, height) / 2 - margin
