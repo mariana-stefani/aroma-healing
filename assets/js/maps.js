@@ -84,7 +84,7 @@ function initMap() {
             })(marker, data);
         });
         //StackOverflow helped to solve Marker Clustering issue: https://stackoverflow.com/questions/59521349/marker-clustering-on-google-maps-with-json-multi-markers
-        var markerCluster = new MarkerClusterer(map, clusterMarkers,
+        let markerCluster = new MarkerClusterer(map, clusterMarkers,
             {
                 imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
             });
