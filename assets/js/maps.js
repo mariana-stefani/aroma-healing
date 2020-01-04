@@ -88,7 +88,6 @@ function initMap() {
             {
                 imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
             });
-
     });
 
 }
@@ -107,9 +106,9 @@ $(document).on('change', '#selectlocation', function () {
 
 //Back to top Button
 
-$("#topBtn").click(function(){
+$("#topBtn").click(function () {
     $(window).scrollTop(0);
-  });
+});
 //   $(window).ready(function() {
 //     if ($(this).scrollTop()) {
 //         $('#topBtn:hidden').stop(true, true).fadeIn();
@@ -121,27 +120,27 @@ $("#topBtn").click(function(){
 
 //Recipe and Pie Chart update when selected recipe is clicked
 
-$("#stressReliefBtn").click(function() {
+$("#stressReliefBtn").click(function () {
     $("#recipeInst-text").html(('<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
     $(this).data(update(srChart));
 });
 
-$("#beHappyBtn").click(function() {
+$("#beHappyBtn").click(function () {
     $("#recipeInst-text").html(('<ul><li>Lavender: 5 drops</li> <br/> <li>Orange: 2 drops</li> <br/> <li>Lemon: 2 drops</li></ul>'));
     $(this).data(update(bhChart));
 });
 
-$("#stayFocusedBtn").click(function() {
+$("#stayFocusedBtn").click(function () {
     $("#recipeInst-text").html(('<ul><li>Orange: 6 drops</li> <br/> <li>Lemon: 2 drops</li> <br/> <li>Cedarwood: 3 drops</li></ul>'));
     $(this).data(update(sfChart));
 });
 
-$("#positiveEnergyBtn").click(function() {
+$("#positiveEnergyBtn").click(function () {
     $("#recipeInst-text").html(('<ul><li>Copaiba: 4 drops</li> <br/> <li>Lavender: 3 drops</li> <br/> <li>Blue Tansy: 3 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
     $(this).data(update(peChart));
 });
 
-$("#peacefulSleepBtn").click(function() {
+$("#peacefulSleepBtn").click(function () {
     $("#recipeInst-text").html(('<ul><li>Ylang Ylang: 3 drops</li> <br/> <li>Lavender: 2 drops</li> <br/> <li>Bergamot: 2 drops</li></ul>'));
     $(this).data(update(psChart));
 });
