@@ -26,6 +26,11 @@ p {
     margin-top: 1.25rem;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /*-- Navbar--*/
 
 .navbar-brand {
@@ -156,10 +161,13 @@ button.navbar-toggler {
     }
 }
 
-button {
+
+.recipeBtn {
     background-color: #E4DBF2;
     width: 9.375rem;
-    margin: 0.125rem 0.063rem;
+    margin: 2px 1px;
+    cursor:pointer;
+    padding: 5px 14px 5px;
 }
 
 #topBtn {
