@@ -109,3 +109,10 @@ $(document).on('change', '#selectlocation', function () {
 $("#topBtn").click(function(){
     $(window).scrollTop(0);
   });
+//   $(window).ready(function() {
+//     if ($(this).scrollTop()) {
+//         $('#topBtn:hidden').stop(true, true).fadeIn();
+//     } else {
+//         $('#topBtn').stop(true, true).fadeOut();
+//     }
+// });

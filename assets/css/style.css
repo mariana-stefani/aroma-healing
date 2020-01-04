@@ -178,6 +178,15 @@ button {
     width: 6.563rem;
 }
 
+@media screen and (max-width: 320px) {
+    #topBtn {
+        right: 0.5rem;
+        padding: 0.313rem;
+        font-size:  0.8125rem;
+        width: 5.688rem;
+    }    
+}
+
 #topBtn:hover {
     background-color: #7AA16B;
 }
