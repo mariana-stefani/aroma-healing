@@ -103,3 +103,9 @@ $(document).on('change', '#selectlocation', function () {
     map.setZoom(newzoom);
     map.setCenter({ lat: newlat, lng: newlng });
 });
+
+
+//Back to top Button
+$("#topBtn").click(function(){
+    $(window).scrollTop(0);
+  });

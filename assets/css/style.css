@@ -163,7 +163,6 @@ button {
 }
 
 #topBtn {
-    display: none;
     position: fixed;
     bottom: 1.25rem;
     right: 2.5rem;
