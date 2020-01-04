@@ -1,5 +1,5 @@
 let map;
-let jsonData = "assets/Data/maps.json";
+let jsonData = "assets/data/maps.json";
 
 const countries = [
     //Australia
