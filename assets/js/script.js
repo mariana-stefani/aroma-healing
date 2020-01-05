@@ -80,7 +80,9 @@ $(document).on('change', '#selectlocation', function () {
 });
 
 
-//Back to top Button
+/**
+ * Back to top Button
+ */
 $("#topBtn").click(function () {
     $(window).scrollTop(0);
 });
@@ -93,7 +95,9 @@ $("#topBtn").click(function () {
 // });
 
 
-//Recipe and Pie Chart update when selected recipe is clicked
+/**
+ * Recipe and Pie Chart update when selected recipe is clicked
+ */
 $("#stressReliefBtn").click(function () {
     $("#recipeInst-text").html(('<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
     $(this).data(update(srChart));
