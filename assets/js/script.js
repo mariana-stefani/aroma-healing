@@ -5,12 +5,22 @@ let countriesJsonData = "assets/data/countries.json";
 let icons = "assets/images/lotus.png"
 let countriesIcon = "assets/images/circle.png"
 let buttons = $(".recipeBtn");
+let recipeText;
+let infowindow = new google.maps.InfoWindow();
+let clusterMarkers = [];
+
+//Dimensions and Margins of Pie Chart
 let width = 300;
 let height = 300;
 let margin = 40;
 let radius = Math.min(width, height) / 2 - margin;
 
-let recipeText;
+//Aromatic Profile Data
+let srChart = { woody: 56.2, floral: 25, resinous: 18.8 };
+let bhChart = { floral: 62.5, citrus: 37.5 };
+let sfChart = { woody: 52.9, citrus: 47.1 };
+let peChart = { floral: 56.2, resinous: 43.8 };
+let psChart = { floral: 82.6, citrus: 17.4 };
 
 /**
  * Creates Map
@@ -36,9 +46,6 @@ function initMap() {
             $("#selectlocation").append('<option value="' + [data.lat, data.lng, data.zoom].join('|') + '">' + data.name + '</option>');
         });
     });
-
-    let infowindow = new google.maps.InfoWindow();
-    let clusterMarkers = [];
 
     /**
      * JSON Markers Clustering - Method found on StackOverflow: https://stackoverflow.com/questions/28606149/load-data-from-json-file-into-map-markers-in-google-maps
@@ -126,7 +133,7 @@ buttons.click(function (event) {
     } else if (this.id === "peacefulSleepBtn") {
         recipeText = "<ul><li>Ylang Ylang: 3 drops</li> <br/> <li>Lavender: 2 drops</li> <br/> <li>Bergamot: 2 drops</li></ul>";
         $(this).data(update(psChart));
-    } 
+    }
     $("#recipeInst-text").html(recipeText);
 });
 
@@ -141,14 +148,7 @@ let svg = d3.select("#recipe-graph")
     .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-/**
- * Aromatic Profile Data
- */
-let srChart = { woody: 56.2, floral: 25, resinous: 18.8 }
-let bhChart = { floral: 62.5, citrus: 37.5 }
-let sfChart = { woody: 52.9, citrus: 47.1 }
-let peChart = { floral: 56.2, resinous: 43.8 }
-let psChart = { floral: 82.6, citrus: 17.4 }
+
 let color = d3.scaleOrdinal()
     .domain(["woody", "floral", "resinous", "herbaceus", "citrus", "grassy"])
     .range(d3.schemeSet2);
