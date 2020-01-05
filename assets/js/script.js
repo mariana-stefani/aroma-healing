@@ -1,6 +1,4 @@
-/**
- * Maps
- */
+//Global Variables
 let map;
 let mapsJsonData = "assets/data/maps.json";
 let countriesJsonData = "assets/data/countries.json";
@@ -65,7 +63,7 @@ function initMap() {
                 });
             })(marker, data);
         });
-        
+
         let markerCluster = new MarkerClusterer(map, clusterMarkers,
             { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' }
         );

@@ -46,7 +46,7 @@ a.nav-link {
 }
 
 button.navbar-toggler {
-    width: 6.25rem;
+    width: 100px;
 }
 
 /*-- Containers --*/
@@ -165,12 +165,12 @@ button.navbar-toggler {
 
 .recipeBtn {
     background-color: #E4DBF2;
-    width: 9.375rem;
+    width: 150px;
     margin: 0.125rem 0.0625rem;
     cursor:pointer;
     padding: 0.3125rem 0.875rem 0.3125rem;
     border-style: solid;
-    border-width: 0.0625rem;
+    border-width: 1px;
     border-color: #A790D6;
 }
 
@@ -187,7 +187,7 @@ button.navbar-toggler {
     padding: 0.625rem;
     border-radius: 0.625rem;
     font-size: 0.938rem;
-    width: 6.563rem;
+    width: 105px;
 }
 
 @media screen and (max-width: 320px) {
@@ -195,7 +195,7 @@ button.navbar-toggler {
         right: 0.5rem;
         padding: 0.313rem;
         font-size:  0.8125rem;
-        width: 5.688rem;
+        width: 91px;
     }    
 }
 
@@ -221,14 +221,14 @@ button.navbar-toggler {
     margin-left: 4.375rem;
     border-radius: 4%;
     border-style: solid;
-    border-width: 0.125rem;
+    border-width: 2px;
     border-color: #A790D6;
 }
 
 @media screen and (max-width: 992px) {
     .recipeInst-container {
         margin-left: 0rem;
-        width: 12.5rem !important;
+        width: 200px !important;
         margin-top: 4.375rem;
     }
 }
@@ -241,7 +241,7 @@ svg {
     /* poor attempt at centering */
     height: auto !important;
     /* overrides inline */
-    width: 18.75rem !important;
+    width: 300px !important;
     /* overrides inline */
     display: block;
 }
@@ -271,7 +271,7 @@ svg {
     align-items: center;
     vertical-align: middle;
     justify-content: center;
-    width: 2.813rem;
+    width: 45px;
     height: 1.563rem;
     padding: 0.75rem 0;
     margin: 0.438rem;
@@ -313,7 +313,7 @@ svg {
 }
 
 .scroll-down {
-    width: 2.5rem;
+    width: 40px;
     height: 4.375rem;
     margin-left: -1.25rem;
     margin-top: -2.188rem;
@@ -330,8 +330,8 @@ svg {
 
 .scroll-down:before {
     content: '';
-    width: 0.625rem;
-    height: 0.625rem;
+    width: 10px;
+    height: 10px;
     background: black;
     margin-left: -0.313rem;
     top: 0.625rem;
@@ -373,8 +373,8 @@ footer {
     align-items: center;
     position: relative;
     justify-content: center;
-    width: 2.813rem;
-    height: 2.813rem;
+    width: 45px;
+    height: 45px;
     padding: 0.75rem 0;
     border-radius: 50%;
     font-size: 1.25rem;
