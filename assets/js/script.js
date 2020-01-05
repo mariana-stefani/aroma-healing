@@ -36,8 +36,7 @@ function initMap() {
     let clusterMarkers = [];
 
     /**
-     * JSON Markers Clustering
-     * Method found on StackOverflow: https://stackoverflow.com/questions/28606149/load-data-from-json-file-into-map-markers-in-google-maps
+     * JSON Markers Clustering - Method found on StackOverflow: https://stackoverflow.com/questions/28606149/load-data-from-json-file-into-map-markers-in-google-maps
      */
     $.getJSON(mapsJsonData, function (mapsMarkers) {
         $.each(mapsMarkers.markers, function (key, data) {
@@ -66,7 +65,7 @@ function initMap() {
                 });
             })(marker, data);
         });
-        //StackOverflow helped to solve Marker Clustering issue: https://stackoverflow.com/questions/59521349/marker-clustering-on-google-maps-with-json-multi-markers
+        
         let markerCluster = new MarkerClusterer(map, clusterMarkers,
             { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' }
         );
