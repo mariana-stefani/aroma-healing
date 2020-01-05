@@ -5,7 +5,6 @@ let countriesJsonData = "assets/data/countries.json";
 let icons = "assets/images/lotus.png"
 let countriesIcon = "assets/images/circle.png"
 
-
 /**
  * Creates Map
  */
@@ -20,7 +19,7 @@ function initMap() {
     };
     //Countries Markers
     map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
+    
     $.getJSON(countriesJsonData, function (countriesMarkers) {
         $.each(countriesMarkers.countries, function (key, data) {
             let countriesMarker = new google.maps.Marker({
@@ -82,7 +81,6 @@ $(document).on('change', '#selectlocation', function () {
 
 
 //Back to top Button
-
 $("#topBtn").click(function () {
     $(window).scrollTop(0);
 });
@@ -96,45 +94,35 @@ $("#topBtn").click(function () {
 
 
 //Recipe and Pie Chart update when selected recipe is clicked
-
 $("#stressReliefBtn").click(function () {
     $("#recipeInst-text").html(('<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
     $(this).data(update(srChart));
 });
-
 $("#beHappyBtn").click(function () {
     $("#recipeInst-text").html(('<ul><li>Lavender: 5 drops</li> <br/> <li>Orange: 2 drops</li> <br/> <li>Lemon: 2 drops</li></ul>'));
     $(this).data(update(bhChart));
 });
-
 $("#stayFocusedBtn").click(function () {
     $("#recipeInst-text").html(('<ul><li>Orange: 6 drops</li> <br/> <li>Lemon: 2 drops</li> <br/> <li>Cedarwood: 3 drops</li></ul>'));
     $(this).data(update(sfChart));
 });
-
 $("#positiveEnergyBtn").click(function () {
     $("#recipeInst-text").html(('<ul><li>Copaiba: 4 drops</li> <br/> <li>Lavender: 3 drops</li> <br/> <li>Blue Tansy: 3 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
     $(this).data(update(peChart));
 });
-
 $("#peacefulSleepBtn").click(function () {
     $("#recipeInst-text").html(('<ul><li>Ylang Ylang: 3 drops</li> <br/> <li>Lavender: 2 drops</li> <br/> <li>Bergamot: 2 drops</li></ul>'));
     $(this).data(update(psChart));
 });
 
-
-//PIE CHART
-
-//Tutorial from: https://www.d3-graph-gallery.com/graph/pie_changeData.html
-// set the dimensions and margins of the pie chart
+/**
+ * PIE CHART
+ * Tutorial from: https://www.d3-graph-gallery.com/graph/pie_changeData.html
+ */
 let width = 300
 let height = 300
 let margin = 40
-
-// The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
 let radius = Math.min(width, height) / 2 - margin
-
-// append the svg object to the div called '#recipe-graph'
 let svg = d3.select("#recipe-graph")
   .append("svg")
     .attr("width", width)
@@ -142,8 +130,9 @@ let svg = d3.select("#recipe-graph")
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-
-//Aromatic Profile Data
+/**
+ * Aromatic Profile Data
+ */
 let srChart = {woody:56.2, floral: 25, resinous:18.8} 
 let bhChart = {floral: 62.5, citrus: 37.5} 
 let sfChart = {woody: 52.9, citrus:47.1} 
