@@ -1,4 +1,4 @@
-//Maps 
+//Maps
 let map;
 let mapsJsonData = "assets/data/maps.json";
 let countriesJsonData = "assets/data/countries.json";
