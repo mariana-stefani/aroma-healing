@@ -152,7 +152,11 @@ button.navbar-toggler {
 /*-- Recipes buttons --*/
 
 .recipeBtnContainer {
-    margin: 2.813rem 3.125rem 0rem 0rem;
+    margin-top: 2.813rem;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -172,6 +176,10 @@ button.navbar-toggler {
     border-style: solid;
     border-width: 1px;
     border-color: #A790D6;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 #topBtn {
