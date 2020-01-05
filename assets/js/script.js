@@ -5,6 +5,10 @@ let countriesJsonData = "assets/data/countries.json";
 let icons = "assets/images/lotus.png"
 let countriesIcon = "assets/images/circle.png"
 let buttons = $(".recipeBtn");
+let width = 300;
+let height = 300;
+let margin = 40;
+let radius = Math.min(width, height) / 2 - margin;
 
 let recipeText;
 
@@ -126,41 +130,10 @@ buttons.click(function (event) {
     $("#recipeInst-text").html(recipeText);
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**
  * PIE CHART - Tutorial from: https://www.d3-graph-gallery.com/graph/pie_changeData.html
  */
-let width = 300
-let height = 300
-let margin = 40
-let radius = Math.min(width, height) / 2 - margin
+
 let svg = d3.select("#recipe-graph")
     .append("svg")
     .attr("width", width)
