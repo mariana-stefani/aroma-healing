@@ -36,8 +36,10 @@ function initMap() {
     let infowindow = new google.maps.InfoWindow();
     let clusterMarkers = [];
 
-    //JSON Markers Clustering
-    //Method found on StackOverflow: https://stackoverflow.com/questions/28606149/load-data-from-json-file-into-map-markers-in-google-maps
+    /**
+     * JSON Markers Clustering
+     * Method found on StackOverflow: https://stackoverflow.com/questions/28606149/load-data-from-json-file-into-map-markers-in-google-maps
+     */
     $.getJSON(mapsJsonData, function (mapsMarkers) {
         $.each(mapsMarkers.markers, function (key, data) {
             let latLng = new google.maps.LatLng(data.lat, data.lng);
