@@ -6,7 +6,7 @@ let icons = "assets/images/lotus.png"
 let countriesIcon = "assets/images/circle.png"
 let buttons = $(".recipeBtn");
 
-
+let recipeText;
 
 /**
  * Creates Map
@@ -20,7 +20,7 @@ function initMap() {
         zoom: 1.6,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    map = new google.maps.Map(document.getElementById("map"), mapOptions);    
+    map = new google.maps.Map(document.getElementById("map"), mapOptions);
     $.getJSON(countriesJsonData, function (countriesMarkers) {
         $.each(countriesMarkers.countries, function (key, data) {
             let countriesMarker = new google.maps.Marker({
@@ -52,7 +52,7 @@ function initMap() {
             });
 
             clusterMarkers.push(marker);
-            
+
             /**
              * Added click listener
              * @param {array} marker
@@ -104,26 +104,77 @@ $("#topBtn").click(function () {
 /**
  * Recipe and Pie Chart update when selected recipe is clicked
  */
-$("#stressReliefBtn").click(function () {
-    $("#recipeInst-text").html(('<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
-    $(this).data(update(srChart));
+// $("#stressReliefBtn").click(function () {
+//     $("#recipeInst-text").html(('<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
+//     $(this).data(update(srChart));
+// });
+// $("#beHappyBtn").click(function () {
+//     $("#recipeInst-text").html(('<ul><li>Lavender: 5 drops</li> <br/> <li>Orange: 2 drops</li> <br/> <li>Lemon: 2 drops</li></ul>'));
+//     $(this).data(update(bhChart));
+// });
+// $("#stayFocusedBtn").click(function () {
+//     $("#recipeInst-text").html(('<ul><li>Orange: 6 drops</li> <br/> <li>Lemon: 2 drops</li> <br/> <li>Cedarwood: 3 drops</li></ul>'));
+//     $(this).data(update(sfChart));
+// });
+// $("#positiveEnergyBtn").click(function () {
+//     $("#recipeInst-text").html(('<ul><li>Copaiba: 4 drops</li> <br/> <li>Lavender: 3 drops</li> <br/> <li>Blue Tansy: 3 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
+//     $(this).data(update(peChart));
+// });
+// $("#peacefulSleepBtn").click(function () {
+//     $("#recipeInst-text").html(('<ul><li>Ylang Ylang: 3 drops</li> <br/> <li>Lavender: 2 drops</li> <br/> <li>Bergamot: 2 drops</li></ul>'));
+//     $(this).data(update(psChart));
+// });
+
+/**
+ * Prevent scroll of the page to the top when buttons are clicked
+ */
+buttons.click(function (event) {
+    event.preventDefault();
+
+    $(`#${this.id}`).click(function () {
+        if (this.id === "stressReliefBtn") {
+            recipeText = "<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>";
+        } else if (this.id === "beHappyBtn") {
+            recipeText = "<ul><li>Lavender: 5 drops</li> <br/> <li>Orange: 2 drops</li> <br/> <li>Lemon: 2 drops</li></ul>";
+        } else if (this.id === "stayFocusedBtn") {
+            recipeText = "<ul><li>Orange: 6 drops</li> <br/> <li>Lemon: 2 drops</li> <br/> <li>Cedarwood: 3 drops</li></ul>";
+        } else if (this.id === "positiveEnergyBtn") {
+            recipeText = "<ul><li>Copaiba: 4 drops</li> <br/> <li>Lavender: 3 drops</li> <br/> <li>Blue Tansy: 3 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>";
+        } else if (this.id === "peacefulSleepBtn") {
+            recipeText = "<ul><li>Ylang Ylang: 3 drops</li> <br/> <li>Lavender: 2 drops</li> <br/> <li>Bergamot: 2 drops</li></ul>";
+        }
+        $("#recipeInst-text").html(recipeText);
+        $(this).data(update(srChart));
+    });
 });
-$("#beHappyBtn").click(function () {
-    $("#recipeInst-text").html(('<ul><li>Lavender: 5 drops</li> <br/> <li>Orange: 2 drops</li> <br/> <li>Lemon: 2 drops</li></ul>'));
-    $(this).data(update(bhChart));
-});
-$("#stayFocusedBtn").click(function () {
-    $("#recipeInst-text").html(('<ul><li>Orange: 6 drops</li> <br/> <li>Lemon: 2 drops</li> <br/> <li>Cedarwood: 3 drops</li></ul>'));
-    $(this).data(update(sfChart));
-});
-$("#positiveEnergyBtn").click(function () {
-    $("#recipeInst-text").html(('<ul><li>Copaiba: 4 drops</li> <br/> <li>Lavender: 3 drops</li> <br/> <li>Blue Tansy: 3 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
-    $(this).data(update(peChart));
-});
-$("#peacefulSleepBtn").click(function () {
-    $("#recipeInst-text").html(('<ul><li>Ylang Ylang: 3 drops</li> <br/> <li>Lavender: 2 drops</li> <br/> <li>Bergamot: 2 drops</li></ul>'));
-    $(this).data(update(psChart));
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  * PIE CHART - Tutorial from: https://www.d3-graph-gallery.com/graph/pie_changeData.html
@@ -133,59 +184,52 @@ let height = 300
 let margin = 40
 let radius = Math.min(width, height) / 2 - margin
 let svg = d3.select("#recipe-graph")
-  .append("svg")
+    .append("svg")
     .attr("width", width)
     .attr("height", height)
-  .append("g")
+    .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 /**
  * Aromatic Profile Data
  */
-let srChart = {woody:56.2, floral: 25, resinous:18.8} 
-let bhChart = {floral: 62.5, citrus: 37.5} 
-let sfChart = {woody: 52.9, citrus:47.1} 
-let peChart = {floral: 56.2, resinous: 43.8} 
-let psChart = {floral: 82.6, citrus: 17.4} 
+let srChart = { woody: 56.2, floral: 25, resinous: 18.8 }
+let bhChart = { floral: 62.5, citrus: 37.5 }
+let sfChart = { woody: 52.9, citrus: 47.1 }
+let peChart = { floral: 56.2, resinous: 43.8 }
+let psChart = { floral: 82.6, citrus: 17.4 }
 let color = d3.scaleOrdinal()
-  .domain(["woody", "floral", "resinous", "herbaceus", "citrus", "grassy"])
-  .range(d3.schemeSet2);
-  
+    .domain(["woody", "floral", "resinous", "herbaceus", "citrus", "grassy"])
+    .range(d3.schemeSet2);
+
 /**
  * A function that create / update the plot for a given variable:
  * @param {string} data 
  */
 function update(data) {
-  let pie = d3.pie()
-    .value(function(d) {return d.value; })
-  let data_ready = pie(d3.entries(data))
+    let pie = d3.pie()
+        .value(function (d) { return d.value; })
+    let data_ready = pie(d3.entries(data))
 
-  let u = svg.selectAll("path")
-    .data(data_ready)
-  u
-    .enter()
-    .append('path')
-    .merge(u)
-    .transition()
-    .duration(1000)
-    .attr('d', d3.arc()
-      .innerRadius(0)
-      .outerRadius(radius)
-    )
-    .attr('fill', function(d){ return(color(d.data.key)) })
-    .attr("stroke", "white")
-    .style("stroke-width", "2px")
-    .style("opacity", 1)
-  u
-    .exit()
-    .remove()
+    let u = svg.selectAll("path")
+        .data(data_ready)
+    u
+        .enter()
+        .append('path')
+        .merge(u)
+        .transition()
+        .duration(1000)
+        .attr('d', d3.arc()
+            .innerRadius(0)
+            .outerRadius(radius)
+        )
+        .attr('fill', function (d) { return (color(d.data.key)) })
+        .attr("stroke", "white")
+        .style("stroke-width", "2px")
+        .style("opacity", 1)
+    u
+        .exit()
+        .remove()
 }
 update(srChart)
 
-/**
- * Prevent scroll of the page to the top when buttons are clicked
- */
-buttons.click(function(event) {
-    event.preventDefault();
-    console.log(this.id);
-});
