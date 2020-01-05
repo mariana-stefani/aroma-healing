@@ -1,4 +1,6 @@
-//Maps
+/**
+ * Maps
+ */
 let map;
 let mapsJsonData = "assets/data/maps.json";
 let countriesJsonData = "assets/data/countries.json";
@@ -17,9 +19,7 @@ function initMap() {
         zoom: 1.6,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    //Countries Markers
-    map = new google.maps.Map(document.getElementById("map"), mapOptions);
-    
+    map = new google.maps.Map(document.getElementById("map"), mapOptions);    
     $.getJSON(countriesJsonData, function (countriesMarkers) {
         $.each(countriesMarkers.countries, function (key, data) {
             let countriesMarker = new google.maps.Marker({
@@ -52,7 +52,12 @@ function initMap() {
             });
 
             clusterMarkers.push(marker);
-            //Added click listener
+            
+            /**
+             * Added click listener
+             * @param {array} marker
+             * @param {object} data
+             */
             (function (marker, data) {
                 google.maps.event.addListener(marker, "click", function (e) {
                     infowindow.setContent(data.description);
@@ -68,8 +73,9 @@ function initMap() {
     });
 };
 
-// Created drop-down menu for each Country
-// Code from http://bl.ocks.org/amenadiel/353e4d04d4b2923c438e
+/**
+ * Created drop-down menu for each Country - Code from http://bl.ocks.org/amenadiel/353e4d04d4b2923c438e
+ */
 $(document).on('change', '#selectlocation', function () {
     let latlngzoom = $(this).val().split('|');
     let newzoom = 1 * latlngzoom[2],
@@ -120,8 +126,7 @@ $("#peacefulSleepBtn").click(function () {
 });
 
 /**
- * PIE CHART
- * Tutorial from: https://www.d3-graph-gallery.com/graph/pie_changeData.html
+ * PIE CHART - Tutorial from: https://www.d3-graph-gallery.com/graph/pie_changeData.html
  */
 let width = 300
 let height = 300
