@@ -5,7 +5,10 @@ let countriesJsonData = "assets/data/countries.json";
 let icons = "assets/images/lotus.png"
 let countriesIcon = "assets/images/circle.png"
 
-//Create Map
+
+/**
+ * Creates Map
+ */
 function initMap() {
     const mapOptions = {
         center: {
@@ -137,20 +140,21 @@ let svg = d3.select("#recipe-graph")
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-// create 2 data_set
-//Aromatic Profile
 
+//Aromatic Profile Data
 let srChart = {woody:56.2, floral: 25, resinous:18.8} 
 let bhChart = {floral: 62.5, citrus: 37.5} 
 let sfChart = {woody: 52.9, citrus:47.1} 
 let peChart = {floral: 56.2, resinous: 43.8} 
 let psChart = {floral: 82.6, citrus: 17.4} 
-
 let color = d3.scaleOrdinal()
   .domain(["woody", "floral", "resinous", "herbaceus", "citrus", "grassy"])
   .range(d3.schemeSet2);
-
-// A function that create / update the plot for a given variable:
+  
+/**
+ * A function that create / update the plot for a given variable:
+ * @param {string} data 
+ */
 function update(data) {
   let pie = d3.pie()
     .value(function(d) {return d.value; })
@@ -177,9 +181,3 @@ function update(data) {
     .remove()
 }
 update(srChart)
-
-//Change Recipe according to button selected
-function selectCategory(category, results) {
-    let postResults = document.getElementById(results);
-    postResults.innerHTML = category;
-  }
