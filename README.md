@@ -85,11 +85,11 @@ She is 35 years old and works as a Doula in Sydney. In her studies to become a d
 ## Technologies Used
 The technologies used were:
 
-[HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+[HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 
 * Is the markup language used for rendering the website. 
 
-[CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)
+[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)
 
 * Is the language used to style the HTML website.
 
@@ -97,7 +97,7 @@ The technologies used were:
 
 * Is used for the responsive and interactive elements of this project.
 
-[Bootstrap 4.4.1](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+[Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
 
 * Is the front-end framework used to assist in page layout, navigation and modal.
 
@@ -113,7 +113,7 @@ The technologies used were:
 
 * Its icons were used on the Footer.
 
-[Git/ GitHub](https://github.com/)
+[Git](https://github.com/)
 
 * Local git repository was pushed to remote repository on GitHub and site was published using GitHub pages.
 
@@ -121,7 +121,7 @@ The technologies used were:
 
 * Its fonts were used on the website. Main theme font was "Raleway" and sub-theme font was "Sans-Serif".
 
-[Google Maps JS API]( https://developers.google.com/maps/documentation/javascript/tutorial)
+[Google Maps](https://developers.google.com/maps/documentation/javascript/tutorial)
 
 * This project uses the Google Maps API and associated code to generate a map with multiple markers.
 
