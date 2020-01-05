@@ -82,7 +82,6 @@ function initMap() {
         );
     });
 };
-
 /**
  * Created drop-down menu for each Country - Code from http://bl.ocks.org/amenadiel/353e4d04d4b2923c438e
  */
@@ -94,8 +93,6 @@ $(document).on('change', '#selectlocation', function () {
     map.setZoom(newzoom);
     map.setCenter({ lat: newlat, lng: newlng });
 });
-
-
 /**
  * Back to top Button
  */
@@ -135,7 +132,6 @@ buttons.click(function (event) {
     }
     $("#recipeInst-text").html(recipeText);
 });
-
 /**
  * PIE CHART - Tutorial from: https://www.d3-graph-gallery.com/graph/pie_changeData.html
  */
