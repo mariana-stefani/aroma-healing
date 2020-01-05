@@ -6,10 +6,8 @@ let icons = "assets/images/lotus.png"
 let countriesIcon = "assets/images/circle.png"
 let buttons = $(".recipeBtn");
 let recipeText;
-let infowindow = new google.maps.InfoWindow();
-let clusterMarkers = [];
 
-//Dimensions and Margins of Pie Chart
+//dimensions and margins
 let width = 300;
 let height = 300;
 let margin = 40;
@@ -26,6 +24,8 @@ let psChart = { floral: 82.6, citrus: 17.4 };
  * Creates Map
  */
 function initMap() {
+    let infowindow = new google.maps.InfoWindow();
+    let clusterMarkers = [];
     const mapOptions = {
         center: {
             lat: 9.072264,
@@ -46,7 +46,6 @@ function initMap() {
             $("#selectlocation").append('<option value="' + [data.lat, data.lng, data.zoom].join('|') + '">' + data.name + '</option>');
         });
     });
-
     /**
      * JSON Markers Clustering - Method found on StackOverflow: https://stackoverflow.com/questions/28606149/load-data-from-json-file-into-map-markers-in-google-maps
      */
