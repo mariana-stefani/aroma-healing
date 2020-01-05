@@ -5,7 +5,7 @@ let countriesJsonData = "assets/data/countries.json";
 let icons = "assets/images/lotus.png"
 let countriesIcon = "assets/images/circle.png"
 let buttons = $(".recipeBtn");
-let recipeText;
+
 
 //dimensions and margins
 let width = 300;
@@ -114,6 +114,7 @@ $("#topBtn").click(function () {
 
 buttons.click(function (event) {
     event.preventDefault();
+    let recipeText = ""
     if (this.id === "stressReliefBtn") {
         recipeText = "<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>";
         $(this).data(update(srChart));
