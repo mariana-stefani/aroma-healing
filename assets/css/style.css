@@ -89,13 +89,13 @@ button.navbar-toggler {
 /*-- Maps --*/
 
 #map {
-    height: 37.5rem;
+    height: 600px;
     width: 100%;
 }
 
 @media screen and (max-width: 576px) {
     #map {
-        height: 25rem;
+        height: 400px;
         margin-top: 1.563rem;
     }
 }
@@ -216,7 +216,7 @@ button.navbar-toggler {
 
 .recipeInst-container {
     background-color: #f2eef9;
-    height: 20rem;
+    height: 448px;
     margin-top: 7.5rem;
     margin-left: 4.375rem;
     border-radius: 4%;
@@ -236,7 +236,7 @@ button.navbar-toggler {
 /*-- Recipes pie chart --*/
 
 svg {
-    max-height: 18.75rem;
+    max-height: 300px;
     margin: 0 auto;
     /* poor attempt at centering */
     height: auto !important;
@@ -272,12 +272,12 @@ svg {
     vertical-align: middle;
     justify-content: center;
     width: 45px;
-    height: 1.563rem;
+    height: 25px;
     padding: 0.75rem 0;
     margin: 0.438rem;
     border-radius: 10%;
     font-size: 1.25rem;
-    line-height: 0.438rem;
+    line-height: 7px;
 }
 
 /*-- Aromatic profile legend colors --*/
@@ -314,7 +314,7 @@ svg {
 
 .scroll-down {
     width: 40px;
-    height: 4.375rem;
+    height: 70px;
     margin-left: -1.25rem;
     margin-top: -2.188rem;
     box-shadow: inset 0 0 0 0.125rem black;
@@ -354,7 +354,7 @@ svg {
 /*-- Footer --*/
 
 footer {
-    min-height: 9.375rem;
+    min-height: 150px;
     text-align: center;
     background-color: #A790D6;
     padding: 0.313rem 0rem 0.313rem 0rem;
@@ -378,7 +378,7 @@ footer {
     padding: 0.75rem 0;
     border-radius: 50%;
     font-size: 1.25rem;
-    line-height: 0.438rem;
+    line-height: 7px;
     background: #f2eef9;
     color: #6E47BA;
     transition: all 0.5s ease-in-out;
