@@ -100,63 +100,30 @@ $("#topBtn").click(function () {
 //     }
 // });
 
-
-/**
- * Recipe and Pie Chart update when selected recipe is clicked
- */
-// $("#stressReliefBtn").click(function () {
-//     $("#recipeInst-text").html(('<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
-//     $(this).data(update(srChart));
-// });
-// $("#beHappyBtn").click(function () {
-//     $("#recipeInst-text").html(('<ul><li>Lavender: 5 drops</li> <br/> <li>Orange: 2 drops</li> <br/> <li>Lemon: 2 drops</li></ul>'));
-//     $(this).data(update(bhChart));
-// });
-// $("#stayFocusedBtn").click(function () {
-//     $("#recipeInst-text").html(('<ul><li>Orange: 6 drops</li> <br/> <li>Lemon: 2 drops</li> <br/> <li>Cedarwood: 3 drops</li></ul>'));
-//     $(this).data(update(sfChart));
-// });
-// $("#positiveEnergyBtn").click(function () {
-//     $("#recipeInst-text").html(('<ul><li>Copaiba: 4 drops</li> <br/> <li>Lavender: 3 drops</li> <br/> <li>Blue Tansy: 3 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
-//     $(this).data(update(peChart));
-// });
-// $("#peacefulSleepBtn").click(function () {
-//     $("#recipeInst-text").html(('<ul><li>Ylang Ylang: 3 drops</li> <br/> <li>Lavender: 2 drops</li> <br/> <li>Bergamot: 2 drops</li></ul>'));
-//     $(this).data(update(psChart));
-// });
-
 /**
  * Recipe and Pie Chart update when selected recipe is clicked
  * Prevent scroll of the page to the top when buttons are clicked
  */
 
-buttons.click(function(event) {
+buttons.click(function (event) {
     event.preventDefault();
-});
-
-
-buttons.click(function () {
     if (this.id === "stressReliefBtn") {
         recipeText = "<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>";
         $(this).data(update(srChart));
-        $("#recipeInst-text").html(recipeText);
     } else if (this.id === "beHappyBtn") {
         recipeText = "<ul><li>Lavender: 5 drops</li> <br/> <li>Orange: 2 drops</li> <br/> <li>Lemon: 2 drops</li></ul>";
         $(this).data(update(bhChart));
-        $("#recipeInst-text").html(recipeText);
     } else if (this.id === "stayFocusedBtn") {
         recipeText = "<ul><li>Orange: 6 drops</li> <br/> <li>Lemon: 2 drops</li> <br/> <li>Cedarwood: 3 drops</li></ul>";
         $(this).data(update(sfChart));
-        $("#recipeInst-text").html(recipeText);
     } else if (this.id === "positiveEnergyBtn") {
         recipeText = "<ul><li>Copaiba: 4 drops</li> <br/> <li>Lavender: 3 drops</li> <br/> <li>Blue Tansy: 3 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>";
         $(this).data(update(peChart));
-        $("#recipeInst-text").html(recipeText);
     } else if (this.id === "peacefulSleepBtn") {
         recipeText = "<ul><li>Ylang Ylang: 3 drops</li> <br/> <li>Lavender: 2 drops</li> <br/> <li>Bergamot: 2 drops</li></ul>";
         $(this).data(update(psChart));
-        $("#recipeInst-text").html(recipeText);
     } 
+    $("#recipeInst-text").html(recipeText);
 });
 
 
