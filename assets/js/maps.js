@@ -18,13 +18,6 @@ function initMap() {
     //Countries Markers
     map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-    // countries.forEach(function (data) {
-    //     let countriesMarker = new google.maps.Marker({
-    //         map: map,
-    //         position: { lat: data.lat, lng: data.lng },
-    //         title: data.name,
-    //         icon: countriesIcon
-    //     });
     $.getJSON(countriesJsonData, function (countriesMarkers) {
         $.each(countriesMarkers.countries, function (key, data) {
             let countriesMarker = new google.maps.Marker({
@@ -37,91 +30,87 @@ function initMap() {
         });
     });
 
-        let infowindow = new google.maps.InfoWindow();
-        let clusterMarkers = [];
+    let infowindow = new google.maps.InfoWindow();
+    let clusterMarkers = [];
 
-        //JSON Markers Clustering
-        //Method found on StackOverflow: https://stackoverflow.com/questions/28606149/load-data-from-json-file-into-map-markers-in-google-maps
-        $.getJSON(mapsJsonData, function (mapsMarkers) {
-            $.each(mapsMarkers.markers, function (key, data) {
-                let latLng = new google.maps.LatLng(data.lat, data.lng);
-                if (!data.title)
-                    data.title = "" + key;
-                let marker = new google.maps.Marker({
-                    position: latLng,
-                    map: map,
-                    icon: icons,
-                    title: data.title
-                });
-
-                clusterMarkers.push(marker);
-                //Added click listener
-                (function (marker, data) {
-                    google.maps.event.addListener(marker, "click", function (e) {
-                        infowindow.setContent(data.description);
-                        infowindow.open(map, marker);
-                        // map.setZoom(14);
-                    });
-                })(marker, data);
+    //JSON Markers Clustering
+    //Method found on StackOverflow: https://stackoverflow.com/questions/28606149/load-data-from-json-file-into-map-markers-in-google-maps
+    $.getJSON(mapsJsonData, function (mapsMarkers) {
+        $.each(mapsMarkers.markers, function (key, data) {
+            let latLng = new google.maps.LatLng(data.lat, data.lng);
+            if (!data.title)
+                data.title = "" + key;
+            let marker = new google.maps.Marker({
+                position: latLng,
+                map: map,
+                icon: icons,
+                title: data.title
             });
-            //StackOverflow helped to solve Marker Clustering issue: https://stackoverflow.com/questions/59521349/marker-clustering-on-google-maps-with-json-multi-markers
-            let markerCluster = new MarkerClusterer(map, clusterMarkers,
-                {
-                    imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-                });
-        });
 
-    }
+            clusterMarkers.push(marker);
+            //Added click listener
+            (function (marker, data) {
+                google.maps.event.addListener(marker, "click", function (e) {
+                    infowindow.setContent(data.description);
+                    infowindow.open(map, marker);
+                    // map.setZoom(14);
+                });
+            })(marker, data);
+        });
+        //StackOverflow helped to solve Marker Clustering issue: https://stackoverflow.com/questions/59521349/marker-clustering-on-google-maps-with-json-multi-markers
+        let markerCluster = new MarkerClusterer(map, clusterMarkers,
+            { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' }
+        );
+    });
+};
 
 // Created drop-down menu for each Country
 // Code from http://bl.ocks.org/amenadiel/353e4d04d4b2923c438e
 $(document).on('change', '#selectlocation', function () {
-        let latlngzoom = $(this).val().split('|');
-        let newzoom = 1 * latlngzoom[2],
-            newlat = 1 * latlngzoom[0],
-            newlng = 1 * latlngzoom[1];
-        map.setZoom(newzoom);
-        map.setCenter({ lat: newlat, lng: newlng });
-    });
+    let latlngzoom = $(this).val().split('|');
+    let newzoom = 1 * latlngzoom[2],
+        newlat = 1 * latlngzoom[0],
+        newlng = 1 * latlngzoom[1];
+    map.setZoom(newzoom);
+    map.setCenter({ lat: newlat, lng: newlng });
+});
 
+//Back to top Button
 
-    //Back to top Button
+$("#topBtn").click(function () {
+    $(window).scrollTop(0);
+});
+//   $(window).ready(function() {
+//     if ($(this).scrollTop()) {
+//         $('#topBtn:hidden').stop(true, true).fadeIn();
+//     } else {
+//         $('#topBtn').stop(true, true).fadeOut();
+//     }
+// });
 
-    $("#topBtn").click(function () {
-        $(window).scrollTop(0);
-    });
-    //   $(window).ready(function() {
-    //     if ($(this).scrollTop()) {
-    //         $('#topBtn:hidden').stop(true, true).fadeIn();
-    //     } else {
-    //         $('#topBtn').stop(true, true).fadeOut();
-    //     }
-    // });
+//Recipe and Pie Chart update when selected recipe is clicked
 
+$("#stressReliefBtn").click(function () {
+    $("#recipeInst-text").html(('<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
+    $(this).data(update(srChart));
+});
 
-    //Recipe and Pie Chart update when selected recipe is clicked
+$("#beHappyBtn").click(function () {
+    $("#recipeInst-text").html(('<ul><li>Lavender: 5 drops</li> <br/> <li>Orange: 2 drops</li> <br/> <li>Lemon: 2 drops</li></ul>'));
+    $(this).data(update(bhChart));
+});
 
-    $("#stressReliefBtn").click(function () {
-        $("#recipeInst-text").html(('<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
-        $(this).data(update(srChart));
-    });
+$("#stayFocusedBtn").click(function () {
+    $("#recipeInst-text").html(('<ul><li>Orange: 6 drops</li> <br/> <li>Lemon: 2 drops</li> <br/> <li>Cedarwood: 3 drops</li></ul>'));
+    $(this).data(update(sfChart));
+});
 
-    $("#beHappyBtn").click(function () {
-        $("#recipeInst-text").html(('<ul><li>Lavender: 5 drops</li> <br/> <li>Orange: 2 drops</li> <br/> <li>Lemon: 2 drops</li></ul>'));
-        $(this).data(update(bhChart));
-    });
+$("#positiveEnergyBtn").click(function () {
+    $("#recipeInst-text").html(('<ul><li>Copaiba: 4 drops</li> <br/> <li>Lavender: 3 drops</li> <br/> <li>Blue Tansy: 3 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
+    $(this).data(update(peChart));
+});
 
-    $("#stayFocusedBtn").click(function () {
-        $("#recipeInst-text").html(('<ul><li>Orange: 6 drops</li> <br/> <li>Lemon: 2 drops</li> <br/> <li>Cedarwood: 3 drops</li></ul>'));
-        $(this).data(update(sfChart));
-    });
-
-    $("#positiveEnergyBtn").click(function () {
-        $("#recipeInst-text").html(('<ul><li>Copaiba: 4 drops</li> <br/> <li>Lavender: 3 drops</li> <br/> <li>Blue Tansy: 3 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>'));
-        $(this).data(update(peChart));
-    });
-
-    $("#peacefulSleepBtn").click(function () {
-        $("#recipeInst-text").html(('<ul><li>Ylang Ylang: 3 drops</li> <br/> <li>Lavender: 2 drops</li> <br/> <li>Bergamot: 2 drops</li></ul>'));
-        $(this).data(update(psChart));
-    });
+$("#peacefulSleepBtn").click(function () {
+    $("#recipeInst-text").html(('<ul><li>Ylang Ylang: 3 drops</li> <br/> <li>Lavender: 2 drops</li> <br/> <li>Bergamot: 2 drops</li></ul>'));
+    $(this).data(update(psChart));
+});
