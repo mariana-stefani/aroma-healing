@@ -4,6 +4,9 @@ let mapsJsonData = "assets/data/maps.json";
 let countriesJsonData = "assets/data/countries.json";
 let icons = "assets/images/lotus.png"
 let countriesIcon = "assets/images/circle.png"
+let buttons = $(".recipeBtn");
+
+
 
 /**
  * Creates Map
@@ -178,3 +181,11 @@ function update(data) {
     .remove()
 }
 update(srChart)
+
+/**
+ * Prevent scroll of the page to the top when buttons are clicked
+ */
+buttons.click(function(event) {
+    event.preventDefault();
+    console.log(this.id);
+});

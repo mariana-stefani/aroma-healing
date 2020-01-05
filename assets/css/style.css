@@ -22,7 +22,7 @@ html {
 }
 
 p {
-    font-size: 1.125rem;
+    font-size: 1.0625rem;
     margin-top: 1.25rem;
 }
 
@@ -78,7 +78,7 @@ button.navbar-toggler {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -152,34 +152,33 @@ button.navbar-toggler {
 /*-- Recipes buttons --*/
 
 .recipeBtnContainer {
-    margin-top: 2.813rem;
+    margin: 45px 200px;
     position: relative;
     text-align: center;
     align-items: center;
     justify-content: center;
-    
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1265px) {
     .recipeBtnContainer {
-        margin: 0;
+        margin: 0px;
     }
 }
 
-
 .recipeBtn {
     background-color: #E4DBF2;
-    width: 150px;
-    margin: 0.125rem 0.0625rem;
-    cursor:pointer;
-    padding: 0.3125rem 0.875rem 0.3125rem;
+    width: auto;
+    height: auto;
+    margin: 5px;
+    cursor: pointer;
+    padding: 5px;
     border-style: solid;
     border-width: 1px;
     border-color: #A790D6;
-    position: relative;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+}
+
+.recipeBtn:hover {
+    color: black;
 }
 
 #topBtn {
@@ -202,9 +201,9 @@ button.navbar-toggler {
     #topBtn {
         right: 0.5rem;
         padding: 0.313rem;
-        font-size:  0.8125rem;
+        font-size: 0.8125rem;
         width: 91px;
-    }    
+    }
 }
 
 #topBtn:hover {
@@ -237,7 +236,7 @@ button.navbar-toggler {
     .recipeInst-container {
         margin-left: 0rem;
         width: 200px !important;
-        margin-top: 4.375rem;
+        margin-top: 50px;
     }
 }
 
@@ -246,11 +245,8 @@ button.navbar-toggler {
 svg {
     max-height: 300px;
     margin: 0 auto;
-    /* poor attempt at centering */
     height: auto !important;
-    /* overrides inline */
     width: 300px !important;
-    /* overrides inline */
     display: block;
 }
 
@@ -313,6 +309,7 @@ svg {
 }
 
 /*-- Mouse --*/
+
 /*-- Code from: https://codemyui.com/scroll-icon-animation/ --*/
 
 .scroll-down, .scroll-down:before {
