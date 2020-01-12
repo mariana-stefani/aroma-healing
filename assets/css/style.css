@@ -271,7 +271,7 @@ button.navbar-toggler {
     transform: translate(-50%, -50%)
 }
 
-.recipeInst-container {
+.recipe-inst-container {
     background-color: #f2eef9;
     height: 310px;
     margin-top: 7.5rem;
@@ -283,7 +283,7 @@ button.navbar-toggler {
 }
 
 @media screen and (max-width: 992px) {
-    .recipeInst-container {
+    .recipe-inst-container {
         margin-left: 0;
         width: 200px !important;
         margin-top: 3.125rem;
