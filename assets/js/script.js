@@ -117,7 +117,7 @@ buttons.click(function (event) {
     event.preventDefault();
     let recipeText = ""
     switch (this.id) {
-        case "stressReliefBtn":
+        case "stress-relief-btn":
             recipeText = "<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>";
             $(this).data(update(srChart));
             break;
