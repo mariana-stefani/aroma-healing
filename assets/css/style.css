@@ -67,6 +67,54 @@ button.navbar-toggler {
     }
 }
 
+/*-- Mouse --*/
+
+/*-- Code from: https://codemyui.com/scroll-icon-animation/ --*/
+
+.scroll-down, .scroll-down:before {
+    position: absolute;
+    left: 50%;
+}
+
+.scroll-down {
+    width: 40px;
+    height: 70px;
+    margin-left: -1.25rem;
+    margin-top: -2.188rem;
+    box-shadow: inset 0 0 0 0.125rem black;
+    border-radius: 1.563rem;
+    bottom: 0.625rem;
+}
+
+@media screen and (max-width: 320px) {
+    .scroll-down {
+        bottom: -2.813rem;
+    }
+}
+
+.scroll-down:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: black;
+    margin-left: -0.313rem;
+    top: 0.625rem;
+    border-radius: 0.313rem;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(2.875rem);
+    }
+}
+
 /*__ Back to top button --*/
 
 #topBtn {
@@ -307,54 +355,6 @@ svg {
 @media (max-width: 415px) and (min-width: 375px) {
     .legend li {
         margin: 0.313rem 1.188rem;
-    }
-}
-
-/*-- Mouse --*/
-
-/*-- Code from: https://codemyui.com/scroll-icon-animation/ --*/
-
-.scroll-down, .scroll-down:before {
-    position: absolute;
-    left: 50%;
-}
-
-.scroll-down {
-    width: 40px;
-    height: 70px;
-    margin-left: -1.25rem;
-    margin-top: -2.188rem;
-    box-shadow: inset 0 0 0 0.125rem black;
-    border-radius: 1.563rem;
-    bottom: 0.625rem;
-}
-
-@media screen and (max-width: 320px) {
-    .scroll-down {
-        bottom: -2.813rem;
-    }
-}
-
-.scroll-down:before {
-    content: '';
-    width: 10px;
-    height: 10px;
-    background: black;
-    margin-left: -0.313rem;
-    top: 0.625rem;
-    border-radius: 0.313rem;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-name: scroll;
-}
-
-@keyframes scroll {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(2.875rem);
     }
 }
 
