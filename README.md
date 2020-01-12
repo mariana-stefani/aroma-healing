@@ -138,6 +138,10 @@ The technologies used were:
 
 * When implementing the markers clustering on my map the data wasn't loading on the map. I was able to fix with the method found on [Stack Overflow](https://stackoverflow.com/questions/28606149/load-data-from-json-file-into-map-markers-in-google-maps).
 
+* When "Aroma Healing" was clicked on navbar it was showing 404 error page. I fixed it changing href="/" for href="index.html".
+
+* The navbar was not fixing to the top of the page when scrolling down. I found this was happening because Bootstrap class was overwriting "position: sticky;". I was able to fix it adding "!important" to position on nav.
+
 * The website was tested throughout the building of the project using the dev tools within the browser.
 
 * The HTML was checked on [HTML Validator](https://validator.w3.org/). 
