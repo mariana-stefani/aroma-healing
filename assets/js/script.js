@@ -137,7 +137,7 @@ buttons.click(function (event) {
             recipeText = "<ul><li>Ylang Ylang: 3 drops</li> <br/> <li>Lavender: 2 drops</li> <br/> <li>Bergamot: 2 drops</li></ul>";
             $(this).data(update(psChart));
     }
-    $("#recipeInst-text").html(recipeText);
+    $("#recipe-inst-text").html(recipeText);
 });
 
 /**

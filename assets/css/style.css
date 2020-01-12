@@ -262,7 +262,7 @@ button.navbar-toggler {
 
 /*-- Recipes Instructions --*/
 
-#recipeInst-text {
+#recipe-inst-text {
     font-size: 1.125rem;
     position: absolute;
     top: 53%;
