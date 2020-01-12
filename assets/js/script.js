@@ -129,7 +129,7 @@ buttons.click(function (event) {
             recipeText = "<ul><li>Orange: 6 drops</li> <br/> <li>Lemon: 2 drops</li> <br/> <li>Cedarwood: 3 drops</li></ul>";
             $(this).data(update(sfChart));
             break;
-        case "positiveEnergyBtn":
+        case "positive-energy-btn":
             recipeText = "<ul><li>Copaiba: 4 drops</li> <br/> <li>Lavender: 3 drops</li> <br/> <li>Blue Tansy: 3 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>";
             $(this).data(update(peChart));
             break;
