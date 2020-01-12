@@ -125,7 +125,7 @@ buttons.click(function (event) {
             recipeText = "<ul><li>Lavender: 5 drops</li> <br/> <li>Orange: 2 drops</li> <br/> <li>Lemon: 2 drops</li></ul>";
             $(this).data(update(bhChart));
             break;
-        case "stayFocusedBtn":
+        case "stay-focused-btn":
             recipeText = "<ul><li>Orange: 6 drops</li> <br/> <li>Lemon: 2 drops</li> <br/> <li>Cedarwood: 3 drops</li></ul>";
             $(this).data(update(sfChart));
             break;
