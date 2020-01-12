@@ -98,14 +98,14 @@ $(document).on('change', '#selectlocation', function () {
 /**
  * Back to top Button
  */
-$("#topBtn").click(function () {
+$("#top-btn").click(function () {
     $(window).scrollTop(0);
 });
 $(window).scroll(function() {
     if ($(window).scrollTop() > 0) {
-        topBtn.addClass('topBtnShow');
+        topBtn.addClass('top-btn-show');
     } else {
-        topBtn.removeClass('topBtnShow');
+        topBtn.removeClass('top-btn-show');
     }
   });
 
