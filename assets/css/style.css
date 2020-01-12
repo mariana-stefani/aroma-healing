@@ -254,6 +254,7 @@ button.navbar-toggler {
     border-style: solid;
     border-width: 1px;
     border-color: #A790D6;
+    box-shadow: 0.0625rem 0.0625rem 0.0625rem #9B9B9B;
 }
 
 .recipe-btn:hover {
