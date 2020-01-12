@@ -8,7 +8,6 @@ let buttons = $(".recipeBtn");
 let topBtn = $("#topBtn");
 let navbar = $(".navbar");
 
-
 //dimensions and margins
 let width = 300;
 let height = 300;
@@ -48,6 +47,7 @@ function initMap() {
             $("#selectlocation").append('<option value="' + [data.lat, data.lng, data.zoom].join('|') + '">' + data.name + '</option>');
         });
     });
+
     /**
      * JSON Markers Clustering - Method found on StackOverflow: https://stackoverflow.com/questions/28606149/load-data-from-json-file-into-map-markers-in-google-maps
      */
@@ -78,7 +78,6 @@ function initMap() {
                 });
             })(marker, data);
         });
-
         let markerCluster = new MarkerClusterer(map, clusterMarkers,
             { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' }
         );
@@ -95,13 +94,13 @@ $(document).on('change', '#selectlocation', function () {
     map.setZoom(newzoom);
     map.setCenter({ lat: newlat, lng: newlng });
 });
+
 /**
  * Back to top Button
  */
 $("#topBtn").click(function () {
     $(window).scrollTop(0);
 });
-
 $(window).scroll(function() {
     if ($(window).scrollTop() > 0) {
         topBtn.addClass('topBtnShow');
@@ -114,8 +113,6 @@ $(window).scroll(function() {
  * Recipe and Pie Chart update when selected recipe is clicked
  * Prevent scroll of the page to the top when buttons are clicked
  */
-
-
 buttons.click(function (event) {
     event.preventDefault();
     let recipeText = ""
@@ -140,7 +137,6 @@ buttons.click(function (event) {
             recipeText = "<ul><li>Ylang Ylang: 3 drops</li> <br/> <li>Lavender: 2 drops</li> <br/> <li>Bergamot: 2 drops</li></ul>";
             $(this).data(update(psChart));
     }
-
     $("#recipeInst-text").html(recipeText);
 });
 

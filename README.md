@@ -142,6 +142,8 @@ The technologies used were:
 
 * The navbar was not fixing to the top of the page when scrolling down. I found this was happening because Bootstrap class was overwriting "position: sticky;". I was able to fix it adding "!important" to position on nav.
 
+* When clicking on any button on the recipe container it was scrolling to the top of the page. I fixed it adding preventDefaul() event method to buttons function.
+
 * The website was tested throughout the building of the project using the dev tools within the browser.
 
 * The HTML was checked on [HTML Validator](https://validator.w3.org/). 
