@@ -133,16 +133,16 @@ button.navbar-toggler {
 }
 
 @media screen and (max-width: 992px) {
-    #topBtn {
+    #top-btn {
         right: 1.25rem;
     }
 }
 
-#topBtn:hover {
+#top-btn:hover {
     background-color: #7AA16B;
 }
 
-.topBtnShow {
+.top-btnShow {
     opacity: 1!important
 }
 
