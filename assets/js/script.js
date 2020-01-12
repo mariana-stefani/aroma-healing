@@ -5,7 +5,7 @@ let countriesJsonData = "assets/data/countries.json";
 let icons = "assets/images/lotus.png"
 let countriesIcon = "assets/images/circle.png"
 let buttons = $(".recipe-btn");
-let topBtn = $("#topBtn");
+let topBtn = $("#top-btn");
 let navbar = $(".navbar");
 
 //dimensions and margins
