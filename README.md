@@ -136,7 +136,7 @@ The technologies used were:
 
 ## Testing
 
-* When implementing the markers clustering on my map the data wasn't loading on the map. I was able to fix with the method found on [Stack Overflow](https://stackoverflow.com/questions/28606149/load-data-from-json-file-into-map-markers-in-google-maps).
+* When implementing the markers clustering on the map the data wasn't loading. I was able to fix with the method found on [Stack Overflow](https://stackoverflow.com/questions/28606149/load-data-from-json-file-into-map-markers-in-google-maps).
 
 * When "Aroma Healing" was clicked on navbar it was showing 404 error page. I fixed it changing href="/" for href="index.html".
 
