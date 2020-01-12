@@ -126,6 +126,8 @@ button.navbar-toggler {
     background-color: #A4BF9A;
     cursor: pointer;
     border-radius: 1.4375rem;
+    border-style: solid;
+    border-color: #7AA16B;
     width: 40px;
     height: 40px;
     opacity: 0;
