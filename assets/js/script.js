@@ -4,7 +4,7 @@ let mapsJsonData = "assets/data/maps.json";
 let countriesJsonData = "assets/data/countries.json";
 let icons = "assets/images/lotus.png"
 let countriesIcon = "assets/images/circle.png"
-let buttons = $(".recipeBtn");
+let buttons = $(".recipe-btn");
 let topBtn = $("#topBtn");
 let navbar = $(".navbar");
 

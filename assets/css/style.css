@@ -244,7 +244,7 @@ button.navbar-toggler {
     }
 }
 
-.recipeBtn {
+.recipe-btn {
     background-color: #E4DBF2;
     width: auto;
     height: auto;
@@ -256,7 +256,7 @@ button.navbar-toggler {
     border-color: #A790D6;
 }
 
-.recipeBtn:hover {
+.recipe-btn:hover {
     color: black;
 }
 
