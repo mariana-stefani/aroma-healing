@@ -121,7 +121,7 @@ buttons.click(function (event) {
             recipeText = "<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>";
             $(this).data(update(srChart));
             break;
-        case "beHappyBtn":
+        case "be-happy-btn":
             recipeText = "<ul><li>Lavender: 5 drops</li> <br/> <li>Orange: 2 drops</li> <br/> <li>Lemon: 2 drops</li></ul>";
             $(this).data(update(bhChart));
             break;
