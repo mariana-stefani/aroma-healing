@@ -181,33 +181,36 @@ button.navbar-toggler {
     color: black;
 }
 
+/*__ Back to top button --*/
+
 #topBtn {
     position: fixed;
     bottom: 1.25rem;
     right: 2.5rem;
     z-index: 99;
-    border: none;
-    outline: none;
-    color: #fff;
-    background-color: #B2C9AA;
+    color: #ffffff;
+    background-color: #A4BF9A;
     cursor: pointer;
     padding: 0.625rem;
-    border-radius: 0.625rem;
-    font-size: 0.938rem;
-    width: 105px;
+    border-radius: 1.4375rem;
+    width: 40px;
+    height: 40px;
+    opacity:0;
+    box-shadow:0.125rem 0.125rem 0.125rem #9B9B9B;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 992px) {
     #topBtn {
-        right: 0.5rem;
-        padding: 0.313rem;
-        font-size: 0.8125rem;
-        width: 91px;
+        right: 1.25rem;
     }
 }
 
 #topBtn:hover {
     background-color: #7AA16B;
+}
+
+.topBtnShow{
+    opacity:1!important
 }
 
 /*-- Recipes Instructions --*/

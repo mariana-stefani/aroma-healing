@@ -5,6 +5,8 @@ let countriesJsonData = "assets/data/countries.json";
 let icons = "assets/images/lotus.png"
 let countriesIcon = "assets/images/circle.png"
 let buttons = $(".recipeBtn");
+let topBtn = $("#topBtn");
+let navbar = $(".navbar")
 
 
 //dimensions and margins
@@ -99,13 +101,14 @@ $(document).on('change', '#selectlocation', function () {
 $("#topBtn").click(function () {
     $(window).scrollTop(0);
 });
-//   $(window).ready(function() {
-//     if ($(this).scrollTop()) {
-//         $('#topBtn:hidden').stop(true, true).fadeIn();
-//     } else {
-//         $('#topBtn').stop(true, true).fadeOut();
-//     }
-// });
+
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 0) {
+        topBtn.addClass('topBtnShow');
+    } else {
+        topBtn.removeClass('topBtnShow');
+    }
+  });
 
 /**
  * Recipe and Pie Chart update when selected recipe is clicked
