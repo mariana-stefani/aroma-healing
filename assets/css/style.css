@@ -211,6 +211,10 @@ button.navbar-toggler {
     }
 }
 
+.course-name {
+    color: #6E47BA;
+}
+
 /*---- Recipes container ----*/
 
 .recipe-container {
