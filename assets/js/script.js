@@ -143,14 +143,12 @@ buttons.click(function (event) {
 /**
  * PIE CHART - Tutorial from: https://www.d3-graph-gallery.com/graph/pie_changeData.html
  */
-
 let svg = d3.select("#recipe-graph")
     .append("svg")
     .attr("width", width)
     .attr("height", height)
     .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
 
 let color = d3.scaleOrdinal()
     .domain(["woody", "floral", "resinous", "herbaceus", "citrus", "grassy"])
