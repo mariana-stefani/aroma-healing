@@ -17,7 +17,6 @@ nav {
     z-index: 9999;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
@@ -110,8 +109,8 @@ button.navbar-toggler {
 
 @media screen and (max-width: 768px) {
     .style-maps {
-        margin-right: 0rem;
-        margin-left: 0rem;
+        margin-right: 0;
+        margin-left: 0;
     }
 }
 
@@ -162,7 +161,7 @@ button.navbar-toggler {
 
 @media screen and (max-width: 1265px) {
     .recipeBtnContainer {
-        margin: 0px;
+        margin: 0;
     }
 }
 
@@ -235,7 +234,7 @@ button.navbar-toggler {
 
 @media screen and (max-width: 992px) {
     .recipeInst-container {
-        margin-left: 0rem;
+        margin-left: 0;
         width: 200px !important;
         margin-top: 50px;
     }
