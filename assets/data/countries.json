@@ -3,7 +3,6 @@
     { "lat": -35.279382, "lng": 149.129349, "zoom": 4, "name": "Australia" },
     { "lat": -15.793889, "lng": -47.882778, "zoom": 4, "name": "Brazil" },
     { "lat": 45.422186, "lng": -75.692438, "zoom": 3, "name": "Canada" },
-    { "lat": 39.904218, "lng": 116.407432, "zoom": 5, "name": "China" },
     { "lat": 48.857497, "lng": 2.347628, "zoom": 5, "name": "France" },
     { "lat": 28.613068, "lng": 77.207920, "zoom": 4.5, "name": "India" },
     { "lat": 35.681244, "lng": 139.767123, "zoom": 6, "name": "Japan" },
