@@ -230,7 +230,7 @@ button.navbar-toggler {
 
 /*-- Recipes buttons --*/
 
-.recipeBtnContainer {
+.recipe-btn-container {
     margin: 2.8125rem 12.5rem;
     position: relative;
     text-align: center;
@@ -239,7 +239,7 @@ button.navbar-toggler {
 }
 
 @media screen and (max-width: 1265px) {
-    .recipeBtnContainer {
+    .recipe-btn-container {
         margin: 0;
     }
 }
