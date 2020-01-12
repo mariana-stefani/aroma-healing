@@ -112,27 +112,35 @@ $("#topBtn").click(function () {
  * Prevent scroll of the page to the top when buttons are clicked
  */
 
+
 buttons.click(function (event) {
     event.preventDefault();
     let recipeText = ""
-    if (this.id === "stressReliefBtn") {
-        recipeText = "<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>";
-        $(this).data(update(srChart));
-    } else if (this.id === "beHappyBtn") {
-        recipeText = "<ul><li>Lavender: 5 drops</li> <br/> <li>Orange: 2 drops</li> <br/> <li>Lemon: 2 drops</li></ul>";
-        $(this).data(update(bhChart));
-    } else if (this.id === "stayFocusedBtn") {
-        recipeText = "<ul><li>Orange: 6 drops</li> <br/> <li>Lemon: 2 drops</li> <br/> <li>Cedarwood: 3 drops</li></ul>";
-        $(this).data(update(sfChart));
-    } else if (this.id === "positiveEnergyBtn") {
-        recipeText = "<ul><li>Copaiba: 4 drops</li> <br/> <li>Lavender: 3 drops</li> <br/> <li>Blue Tansy: 3 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>";
-        $(this).data(update(peChart));
-    } else if (this.id === "peacefulSleepBtn") {
-        recipeText = "<ul><li>Ylang Ylang: 3 drops</li> <br/> <li>Lavender: 2 drops</li> <br/> <li>Bergamot: 2 drops</li></ul>";
-        $(this).data(update(psChart));
+    switch (this.id) {
+        case "stressReliefBtn":
+            recipeText = "<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>";
+            $(this).data(update(srChart));
+            break;
+        case "beHappyBtn":
+            recipeText = "<ul><li>Lavender: 5 drops</li> <br/> <li>Orange: 2 drops</li> <br/> <li>Lemon: 2 drops</li></ul>";
+            $(this).data(update(bhChart));
+            break;
+        case "stayFocusedBtn":
+            recipeText = "<ul><li>Orange: 6 drops</li> <br/> <li>Lemon: 2 drops</li> <br/> <li>Cedarwood: 3 drops</li></ul>";
+            $(this).data(update(sfChart));
+            break;
+        case "positiveEnergyBtn":
+            recipeText = "<ul><li>Copaiba: 4 drops</li> <br/> <li>Lavender: 3 drops</li> <br/> <li>Blue Tansy: 3 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>";
+            $(this).data(update(peChart));
+            break;
+        case "peacefulSleepBtn":
+            recipeText = "<ul><li>Ylang Ylang: 3 drops</li> <br/> <li>Lavender: 2 drops</li> <br/> <li>Bergamot: 2 drops</li></ul>";
+            $(this).data(update(psChart));
     }
+
     $("#recipeInst-text").html(recipeText);
 });
+
 /**
  * PIE CHART - Tutorial from: https://www.d3-graph-gallery.com/graph/pie_changeData.html
  */
