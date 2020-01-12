@@ -6,7 +6,7 @@ let icons = "assets/images/lotus.png"
 let countriesIcon = "assets/images/circle.png"
 let buttons = $(".recipeBtn");
 let topBtn = $("#topBtn");
-let navbar = $(".navbar")
+let navbar = $(".navbar");
 
 
 //dimensions and margins
