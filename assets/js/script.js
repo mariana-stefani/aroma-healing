@@ -133,7 +133,7 @@ buttons.click(function (event) {
             recipeText = "<ul><li>Copaiba: 4 drops</li> <br/> <li>Lavender: 3 drops</li> <br/> <li>Blue Tansy: 3 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>";
             $(this).data(update(peChart));
             break;
-        case "peacefulSleepBtn":
+        case "peaceful-sleep-btn":
             recipeText = "<ul><li>Ylang Ylang: 3 drops</li> <br/> <li>Lavender: 2 drops</li> <br/> <li>Bergamot: 2 drops</li></ul>";
             $(this).data(update(psChart));
     }
