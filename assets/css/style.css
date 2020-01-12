@@ -67,6 +67,37 @@ button.navbar-toggler {
     }
 }
 
+/*__ Back to top button --*/
+
+#topBtn {
+    position: fixed;
+    bottom: 1.25rem;
+    right: 2.5rem;
+    z-index: 99;
+    color: #ffffff;
+    background-color: #A4BF9A;
+    cursor: pointer;
+    border-radius: 1.4375rem;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    box-shadow: 0.125rem 0.125rem 0.125rem #9B9B9B;
+}
+
+@media screen and (max-width: 992px) {
+    #topBtn {
+        right: 1.25rem;
+    }
+}
+
+#topBtn:hover {
+    background-color: #7AA16B;
+}
+
+.topBtnShow {
+    opacity: 1!important
+}
+
 /*-- Callout Container --*/
 
 .callout-container {
@@ -179,37 +210,6 @@ button.navbar-toggler {
 
 .recipeBtn:hover {
     color: black;
-}
-
-/*__ Back to top button --*/
-
-#topBtn {
-    position: fixed;
-    bottom: 1.25rem;
-    right: 2.5rem;
-    z-index: 99;
-    color: #ffffff;
-    background-color: #A4BF9A;
-    cursor: pointer;
-    border-radius: 1.4375rem;
-    width: 40px;
-    height: 40px;
-    opacity:0;
-    box-shadow:0.125rem 0.125rem 0.125rem #9B9B9B;
-}
-
-@media screen and (max-width: 992px) {
-    #topBtn {
-        right: 1.25rem;
-    }
-}
-
-#topBtn:hover {
-    background-color: #7AA16B;
-}
-
-.topBtnShow{
-    opacity:1!important
 }
 
 /*-- Recipes Instructions --*/
