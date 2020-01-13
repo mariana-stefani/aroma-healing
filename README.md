@@ -17,6 +17,8 @@ These wireframes were created at [Moqups](https://moqups.com/).
 
 ![Wireframe]( wireframes/mobile-wireframe.png)
 
+![Wireframe]( wireframes/tablet-wireframe.png)
+
 
 ## UX
 
