@@ -167,21 +167,21 @@ The technologies used were:
 
 ## Deployment
 
-1. This project was developed using Visual Studio Code (VSC) and cloned to a Git Repository.
+* This project was developed using Visual Studio Code (VSC) and cloned to a Git Repository.
 
-2. The project files were regularly pushed to my [GitHub repository](https://github.com/mariana-stefani/aroma-healing).
+* The project files were regularly pushed to my [GitHub repository](https://github.com/mariana-stefani/aroma-healing).
 
-3. This website has been deployed using GitHub Pages and can be viewed [here](https://mariana-stefani.github.io/aroma-healing/).
+* This website has been deployed using GitHub Pages and can be viewed [here](https://mariana-stefani.github.io/aroma-healing/).
 
 The following steps were taken to deploy Aroma Healing:
 
-* I entered on the GitHub website and signed in with my username and password.
-* Selected 'aroma-healing' repository.
-* Clicked 'settings' on the top of the page.
-* I scrolled down to the 'GitHub Pages' section.
-* Under 'Source' there is a dropdown menu. There I selected 'master branch'.
-* A link to the page is provided next to 'Your site is ready to be published at:'.
-* Aroma Healing is now live on GitHub Pages.
+1. I entered on the GitHub website and signed in with my username and password.
+2. Selected 'aroma-healing' repository.
+3. Clicked 'settings' on the top of the page.
+4. I scrolled down to the 'GitHub Pages' section.
+5. Under 'Source' there is a dropdown menu. There I selected 'master branch'.
+6. A link to the page is provided next to 'Your site is ready to be published at:'.
+7. Aroma Healing is now live on GitHub Pages.
 
 ### Run the Code Locally
 
