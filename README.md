@@ -152,7 +152,7 @@ The technologies used were:
 
 * The HTML was checked on [HTML Validator](https://validator.w3.org/). 
 
-* CSS3 was checked on [CSS3 Validator](https://jigsaw.w3.org/css-validator/)
+* CSS was checked on [CSS3 Validator](https://jigsaw.w3.org/css-validator/)
 
 * JavaScript was checked on [JS Hint Validator](https://jshint.com/)
 
