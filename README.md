@@ -123,7 +123,7 @@ The technologies used were:
 
 [Google Fonts](https://fonts.google.com/)
 
-* Its fonts were used on the website. Main theme font was "Raleway" and sub-theme font was "Sans-Serif".
+* Its fonts were used on the website. Main theme font was *"Raleway"* and sub-theme font was *"Sans-Serif"*.
 
 [Google Maps](https://developers.google.com/maps/documentation/javascript/tutorial)
 
@@ -142,9 +142,9 @@ The technologies used were:
 
 * When implementing the markers clustering on the map the data wasn't loading. I was able to fix with the method found on [Stack Overflow](https://stackoverflow.com/questions/28606149/load-data-from-json-file-into-map-markers-in-google-maps).
 
-* When "Aroma Healing" was clicked on navbar it was showing 404 error page. I fixed it changing href="/" for href="index.html".
+* When *"Aroma Healing"* was clicked on navbar it was showing 404 error page. I fixed it changing href="/" for href="index.html".
 
-* The navbar was not fixing to the top of the page when scrolling down. I found this was happening because Bootstrap class was overwriting "position: sticky;". I was able to fix it adding "!important" to position on nav.
+* The navbar was not fixing to the top of the page when scrolling down. I found this was happening because Bootstrap class was overwriting *"position: sticky;"*. I was able to fix it adding *"!important"* to position on nav.
 
 * When clicking on any button on the recipe container it was scrolling to the top of the page. I fixed it adding preventDefault() event method to the buttons function.
 
@@ -176,22 +176,22 @@ The technologies used were:
 The following steps were taken to deploy Aroma Healing:
 
 1. I entered on the GitHub website and signed in with my username and password.
-2. Selected 'aroma-healing' repository.
-3. Clicked 'settings' on the top of the page.
-4. I scrolled down to the 'GitHub Pages' section.
-5. Under 'Source' there is a dropdown menu. There I selected 'master branch'.
-6. A link to the page is provided next to 'Your site is ready to be published at:'.
+2. Selected *"aroma-healing"* repository.
+3. Clicked *"settings"* on the top of the page.
+4. I scrolled down to the *"GitHub Pages"* section.
+5. Under *"Source"* there is a dropdown menu. There I selected *"master branch"*.
+6. A link to the page is provided next to *"Your site is ready to be published at"*.
 7. Aroma Healing is now live on GitHub Pages.
 
 ### Run the Code Locally
 
 1. Open the project [repository](https://github.com/mariana-stefani/aroma-healing).
 
-2. Under the repository name, click "Clone or Download".
+2. Under the repository name, click *"Clone or Download"*.
 
 3. Follow [GitHub instructions](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) to clone a repository.
 
-4. On the project file "index.html", please replace the Google Maps API key with your own key. (The key used on this project is restricted to my own use.)
+4. On the project file *"index.html"*, please replace the Google Maps API key with your own key. (The key used on this project is restricted to my own use.)
 
 
 ## Credits
