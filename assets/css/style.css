@@ -122,6 +122,7 @@ button.navbar-toggler {
     bottom: 1.25rem;
     right: 2.5rem;
     z-index: 99;
+    padding-right: 6px;
     color: #ffffff;
     background-color: #A4BF9A;
     cursor: pointer;
