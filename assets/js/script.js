@@ -8,7 +8,7 @@ let buttons = $(".recipe-btn");
 let topBtn = $("#top-btn");
 let navbar = $(".navbar");
 
-//dimensions and margins
+//Dimensions and margins
 let width = 300;
 let height = 300;
 let margin = 40;
@@ -136,6 +136,7 @@ buttons.click(function (event) {
         case "peaceful-sleep-btn":
             recipeText = "<ul><li>Ylang Ylang: 3 drops</li> <br/> <li>Lavender: 2 drops</li> <br/> <li>Bergamot: 2 drops</li></ul>";
             $(this).data(update(psChart));
+            break;
     }
     $("#recipe-inst-text").html(recipeText);
 });
