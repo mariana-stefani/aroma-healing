@@ -167,6 +167,12 @@
             "lat": 53.364176,
             "lng": -6.485412,
             "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"https://obus.ie/\" class=\"course-name\">School and Wellness Centre</a></h6><p>Diploma in Aromatherapy and Holistic Studies</p></div>"
+        },
+        {
+            "title": "UK",
+            "lat": 55.443331,
+            "lng": -5.127084,
+            "description": "<div id=\"web-info\"> <h6><a target=\"_blank\" href=\"http://www.herbalmedicine.org.uk/\" class=\"course-name\">The Scottish School of Herbal Medicine</a></h6><p>ITEC Diploma in Clinical Aromatherapy</p></div>"
         }
     ]
 }
