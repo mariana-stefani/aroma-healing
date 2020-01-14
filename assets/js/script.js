@@ -2,8 +2,8 @@
 let map;
 let mapsJsonData = "assets/data/maps.json";
 let countriesJsonData = "assets/data/countries.json";
-let icons = "assets/images/lotus.png"
-let countriesIcon = "assets/images/circle.png"
+let icons = "assets/images/lotus.png";
+let countriesIcon = "assets/images/circle.png";
 let buttons = $(".recipe-btn");
 let socialMedia = $(".social-btn");
 let topBtn = $("#top-btn");
@@ -83,7 +83,7 @@ function initMap() {
             { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' }
         );
     });
-};
+}
 /**
  * Created drop-down menu for each Country - Code from http://bl.ocks.org/amenadiel/353e4d04d4b2923c438e
  */
@@ -116,7 +116,7 @@ $(window).scroll(function() {
  */
 buttons.click(function (event) {
     event.preventDefault();
-    let recipeText = ""
+    let recipeText = "";
     switch (this.id) {
         case "stress-relief-btn":
             recipeText = "<ul><li>Cedarwood: 6 drops</li> <br/> <li>Lavender: 4 drops</li> <br/> <li>Frankincense: 2 drops</li></ul>";
@@ -162,8 +162,8 @@ let color = d3.scaleOrdinal()
  */
 function update(data) {
     let pie = d3.pie()
-        .value(function (d) { return d.value; })
-    let data_ready = pie(d3.entries(data))
+        .value(function (d) { return d.value; });
+    let data_ready = pie(d3.entries(data));
 
     let u = svg.selectAll("path")
         .data(data_ready);
@@ -177,13 +177,13 @@ function update(data) {
             .innerRadius(0)
             .outerRadius(radius)
         )
-        .attr('fill', function (d) { return (color(d.data.key)) })
+        .attr('fill', function (d) { return (color(d.data.key)) });
         .attr("stroke", "white")
         .style("stroke-width", "2px")
-        .style("opacity", 1)
+        .style("opacity", 1);
     u
         .exit()
-        .remove()
+        .remove();
 }
 update(srChart);
 
