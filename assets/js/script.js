@@ -5,9 +5,9 @@ let countriesJsonData = "assets/data/countries.json";
 let icons = "assets/images/lotus.png"
 let countriesIcon = "assets/images/circle.png"
 let buttons = $(".recipe-btn");
+let socialMedia = $(".social-btn");
 let topBtn = $("#top-btn");
 let navbar = $(".navbar");
-
 
 //Dimensions and margins
 let width = 300;
@@ -186,3 +186,10 @@ function update(data) {
         .remove()
 }
 update(srChart);
+
+/**
+ * Prevent scroll of the page to the top when buttons are clicked
+ */
+socialMedia.click(function (event) {
+    event.preventDefault();
+});
