@@ -165,7 +165,7 @@ function update(data) {
     let data_ready = pie(d3.entries(data))
 
     let u = svg.selectAll("path")
-        .data(data_ready)
+        .data(data_ready);
     u
         .enter()
         .append('path')
@@ -184,4 +184,4 @@ function update(data) {
         .exit()
         .remove()
 }
-update(srChart)
+update(srChart);
