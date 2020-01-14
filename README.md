@@ -175,7 +175,7 @@ The following steps were taken to deploy Aroma Healing:
 4. I scrolled down to the *"GitHub Pages"* section.
 5. Under *"Source"* there is a dropdown menu. There I selected *"master branch"*.
 6. A link to the page is provided next to *"Your site is ready to be published at"*.
-7. Aroma Healing is now live on GitHub Pages.
+7. [Aroma Healing](https://mariana-stefani.github.io/aroma-healing/) is now live on GitHub Pages.
 
 ### Run the Code Locally
 
