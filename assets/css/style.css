@@ -1,6 +1,6 @@
 /*-- Font Family --*/
-
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
 body {
     background-color: #D4C9EB;
     font-family: 'Raleway', sans-serif;
@@ -32,7 +32,6 @@ a {
 }
 
 /*-- Navbar--*/
-
 .navbar-brand {
     color: #6E47BA !important;
 }
@@ -50,7 +49,6 @@ button.navbar-toggler {
 }
 
 /*-- Containers --*/
-
 .containers {
     background-color: #fafafa;
     border-radius: 1.25rem;
@@ -68,9 +66,7 @@ button.navbar-toggler {
 }
 
 /*-- Mouse --*/
-
 /*-- Code from: https://codemyui.com/scroll-icon-animation/ --*/
-
 .scroll-down, .scroll-down:before {
     position: absolute;
     left: 50%;
@@ -116,7 +112,6 @@ button.navbar-toggler {
 }
 
 /*__ Back to top button --*/
-
 #top-btn {
     position: fixed;
     bottom: 1.25rem;
@@ -149,7 +144,6 @@ button.navbar-toggler {
 }
 
 /*-- Callout Container --*/
-
 .callout-container {
     background: url("../images/lavender.jpeg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -168,7 +162,6 @@ button.navbar-toggler {
 }
 
 /*-- Maps --*/
-
 #map {
     height: 600px;
     width: 100%;
@@ -216,7 +209,6 @@ button.navbar-toggler {
 }
 
 /*---- Recipes container ----*/
-
 .recipe-container {
     position: relative;
     text-align: center;
@@ -235,7 +227,6 @@ button.navbar-toggler {
 }
 
 /*-- Recipes buttons --*/
-
 .recipe-btn-container {
     margin: 2.8125rem 12.5rem;
     position: relative;
@@ -268,7 +259,6 @@ button.navbar-toggler {
 }
 
 /*-- Recipes Instructions --*/
-
 #recipe-inst-text {
     font-size: 1.125rem;
     position: absolute;
@@ -298,7 +288,6 @@ button.navbar-toggler {
 }
 
 /*-- Recipes pie chart --*/
-
 svg {
     max-height: 300px;
     margin: 0 auto;
@@ -318,7 +307,6 @@ svg {
 }
 
 /*-- Pie Chart/ Aromatic profile Legend --*/
-
 .aromatic-prof-text {
     display: inline;
     font-size: 0.938rem;
@@ -342,7 +330,6 @@ svg {
 }
 
 /*-- Aromatic profile legend colors --*/
-
 .woody {
     background: #66c2a5;
 }
@@ -366,7 +353,6 @@ svg {
 }
 
 /*-- Footer --*/
-
 footer {
     min-height: 150px;
     text-align: center;
