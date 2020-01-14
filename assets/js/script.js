@@ -177,13 +177,13 @@ function update(data) {
             .innerRadius(0)
             .outerRadius(radius)
         )
-        .attr('fill', function (d) { return (color(d.data.key)) });
+        .attr('fill', function (d) { return (color(d.data.key)) })
         .attr("stroke", "white")
         .style("stroke-width", "2px")
         .style("opacity", 1);
     u
         .exit()
-        .remove();
+        .remove()
 }
 update(srChart);
 
