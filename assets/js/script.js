@@ -8,6 +8,7 @@ let buttons = $(".recipe-btn");
 let topBtn = $("#top-btn");
 let navbar = $(".navbar");
 
+
 //Dimensions and margins
 let width = 300;
 let height = 300;
