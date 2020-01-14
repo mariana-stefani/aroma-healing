@@ -16,28 +16,28 @@ The [wireframes](wireframes) were created at [Moqups](https://moqups.com/).
 
 ## UX
 
-This website is intended for anyone who wants start an aromatherapy course and wants to find the closest school/ institute. The bonus recipes on the website have the purpose to show the power of essential oils for those who are very new to the concept of aromatherapy. 
+This website is intended for anyone who wants start an aromatherapy course and wants to find the closest school/ institute. The bonus recipes on the website have the purpose to show the power of essential oils for those who are very new to the concept of aromatherapy. 
 
 ### User Stories
 
 1. Juliana
 
-She is a young adult from Rio de Janeiro and just started yoga classes. On the classes her teacher uses a blend of essential oils on a diffuser that makes her very relaxed. Juliana wants to learn how to make more blends.
+She is a young adult from Rio de Janeiro and just started yoga classes. On the classes, her teacher uses a blend of essential oils on a diffuser that makes her very relaxed. Juliana wants to learn how to make more blends.
 
- 
+ 
 2. Clara
 
-She is a busy professional living in the New York. She has frequent migraines and wants to reduce taking so much medicine every day. She has a friend that recommended the use of essential oils, but she never used them. She wants to learn how to cure her migraines with essential oils. 
+She is a busy professional living in the New York. She has frequent migraines and wants to reduce taking so much medicine every day. She has a friend that recommended the use of essential oils, but she never used them. She wants to learn how to cure her migraines with essential oils. 
 
 
 3. Mauricio
 
-He is 45 years old, living in London. He has always been passionate about oriental medicine and works as a acupuncturist. He wants to study aromatherapy and start using it with his patients.
+He is 45 years old, living in London. He has always been passionate about oriental medicine and works as an acupuncturist. He wants to study aromatherapy and start using it with his patients.
 
 
 4. Melinda
 
-She is 35 years old and works as a Doula in Sydney. In her studies to become a doula she has studied some aromatherapy and really liked. She was able to see the real effects of the essential oils with her patients in labor. Now she wants to understand more about aromatherapy and find more uses within her patients. 
+She is 35 years old and works as a Doula in Sydney. In her studies to become a doula she has studied some aromatherapy and really liked. She was able to see the real effects of the essential oils with her patients in labour. Now she wants to understand more about aromatherapy and find more uses within her patients. 
 
 
 ## Features
@@ -50,17 +50,17 @@ She is 35 years old and works as a Doula in Sydney. In her studies to become a d
 **Background Image and Logo**
 * Shows a full width image of a lavender field and the Aroma Healing logo.
 
-**Maps Drop-down Menu** 
+**Maps Drop-down Menu** 
 * It shows all countries that have Aromatherapy courses listed on our map.
 
 **The Map**
 * It is an interactive map where the user can move it and click on the markers in order to see the information of selected school/ institute.
 
 **Recipes Container**
-* In this container the user will find information of the use of essential oils.
+* In this container, the user will find information of the use of essential oils.
 
 **Recipe Buttons**
-* Each button shows recipes for the most common afflictions. By clicking on each button the user will see a recipe and the aromatic profile for each recipe.
+* Each button shows recipes for the most common afflictions. By clicking on each button, the user will see a recipe and the aromatic profile for each recipe.
 
 **Recipe Container**
 * This container has a text asking the user to click on the buttons above. When a button is selected a recipe will show on this container.
@@ -69,15 +69,15 @@ She is 35 years old and works as a Doula in Sydney. In her studies to become a d
 * This pie chart will move accordingly to the selected button. It will show the aromatic profile for each recipe. There is a legend below the pie chart that will allow the user to understand the pie chart.
 
 **Back to Top Button**
-* This button shows once the user reaches The Map container. By clicking on this button the screen scroll to the top of the page.
+* This button shows once the user reaches The Map container. By clicking on this button, the screen scrolls to the top of the page.
 
 **Footer**
 * It contains links to social media pages that the user can click if they would like to follow the company on social media platforms.
- 
+ 
 ### Features Left to Implement
-* A online store where the user can buy essential oils.
+* An online store where the user can buy essential oils.
 * More recipes with video instructions.
-* A essential oils online course where the user can learn the basics of aromatherapy.
+* An essential oils online course where the user can learn the basics of aromatherapy.
 
 
 ## Technologies Used
@@ -85,7 +85,7 @@ The technologies used were:
 
 [HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 
-* Is the markup language used for rendering the website. 
+* Is the markup language used for rendering the website. 
 
 [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)
 
@@ -144,7 +144,7 @@ The technologies used were:
 
 * The website was tested throughout the building of the project using the dev tools within the browser.
 
-* The HTML was checked on [HTML Validator](https://validator.w3.org/). 
+* The HTML was checked on [HTML Validator](https://validator.w3.org/). 
 
 * CSS was checked on [CSS3 Validator](https://jigsaw.w3.org/css-validator/)
 
@@ -196,7 +196,7 @@ The following steps were taken to deploy Aroma Healing:
 
 * The logo was designed by me on [Canva](https://www.canva.com/).
 
-* Responsiveness across devices image from [Am I Reponsive Design](http://ami.responsivedesign.is/).
+* Responsiveness across devices image from [Am I Responsive Design](http://ami.responsivedesign.is/).
 
 * Icons used on maps markers are made by Pixel perfect and Smashicons from [Flat Icon](https://www.flaticon.com/).
 
@@ -204,8 +204,6 @@ The following steps were taken to deploy Aroma Healing:
 
 ## Acknowledgments
 
-All my gratitude to my husband and family who always have supported me. 
-A big thank you to my mentor Simen Daehlin. Thank you to Tim Nelson from Code Institute for your time and assistance.
+All my gratitude to my wonderful husband and family who always have supported me. 
+A big thank you to my mentor Simen Daehlin! Thank you to Tim Nelson from Code Institute for your time and assistance.
 Thank you to everyone from Code Institute!
-
-
