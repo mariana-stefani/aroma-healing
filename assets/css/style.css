@@ -400,3 +400,8 @@ a:link {
     font-size: 16pt;
     font-family: Arial;
 }
+
+/* Logo */
+.img-fluid {
+    margin-top: -100px;
+}
